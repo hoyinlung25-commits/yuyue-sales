@@ -28,7 +28,7 @@
 |------|------|
 | **用戶名** | `@dozeify` 或 `@dozeify.axo`（越短越好記） |
 | **顯示名稱** | Dozeify · Axo |
-| **大頭貼** | `assets/axo/pen/axo-pen-canonical.svg` 或 `pen/png/axo-pen-canonical.png` 裁 320×320（**保留畫紙色**） |
+| **大頭貼** | `pen/png/axo-pen-canonical.png` 裁 Axo 臉部 320×320（標準立姿、無雲） |
 | **Bio（繁中範例）** | 再生式休息｜Axo 什麼都沒做，但你可以。🫠 |
 | **Bio（英一句）** | Regenerative rest. Doing nothing, together. |
 | **連結** | 先不放商店；可放 Linktree「即將推出」或留空 |

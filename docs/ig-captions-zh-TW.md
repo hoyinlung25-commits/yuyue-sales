@@ -46,7 +46,7 @@ Glad you're here. 🫠
 
 ### 配圖
 
-`assets/axo/pen/png/axo-pen-canonical.png`（標準立姿 · 畫紙）
+`assets/axo/pen/png/axo-pen-canonical.png`（**標準立姿** · 畫紙 · 鎖定眼嘴 · **無思考雲**）
 
 ---
 

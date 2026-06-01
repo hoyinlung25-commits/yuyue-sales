@@ -13,7 +13,7 @@
 **主參考檔（視覺真源）：**  
 `assets/axo/pen/png/axo-pen-canonical.png`（**布局 + 鎖定眼嘴**，見 `axo-face-locked-zh-TW.md`）
 
-**構圖規則（必守）：** [`axo-layout-template-zh-TW.md`](./axo-layout-template-zh-TW.md)
+**構圖：** 預設標準立姿（無思考雲）— [`axo-layout-template-zh-TW.md`](./axo-layout-template-zh-TW.md)
 
 ---
 
@@ -50,11 +50,14 @@
 
 ---
 
-## 五、構圖模板（已鎖定，不可變）
+## 五、構圖
 
-**所有貼文唯一版型：** 上方空白思考雲 + 下方偏小 Axo（見 layout template 文件）。
+| 類型 | 說明 |
+|------|------|
+| **標準立姿** | 居中、畫紙、**無思考雲** — 多數貼文 |
+| **發呆（可選）** | 可加空白思考雲 — 僅特定帖 |
 
-構圖不可變；**顏色與筆觸不可變**；僅可改下方 Axo 的姿勢／道具。
+**顏色與筆觸不可變**；眼嘴不可變。
 
 ---
 

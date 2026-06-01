@@ -1,68 +1,62 @@
-# Axo 官方構圖模板（所有貼文必用）
+# Axo 構圖模板
 
-**生效：** 2026-06-01 · **狀態：** 鎖定，不可更換版型
+**更新：** 2026-06-01
 
 ---
 
-## 唯一標準構圖
-
-每一則 IG（含 Day 2、Day 3…）都必須使用 **同一張畫紙框架**：
-
-```
-┌─────────────────────────┐
-│   空白思考雲（必空）      │  ← 上方約 40%，雲內無字、無 ...
-│                         │
-├─────────────────────────┤
-│   Axo（偏小，在下方）     │  ← 下方約 60%，只改姿勢／道具
-│   + 場景（麵碗等）        │
-└─────────────────────────┘
-```
+## A. 標準立姿（預設 · 多數貼文）
 
 **主檔（視覺真源）：**  
 `assets/axo/pen/png/axo-pen-canonical.png`  
 `assets/axo/pen/axo-pen-canonical.svg`
 
-**布局參考（封存）：** `png/reference/axo-pen-day1-layout-master.png`
+```
+┌─────────────────────────┐
+│      畫紙底色            │
+│   Axo 居中、標準立姿      │  ← 無思考雲
+│   鎖定眼嘴               │
+└─────────────────────────┘
+```
+
+- 用於：介紹 Axo、Day 2 麵碗、多數日常帖  
+- **臉：** 見 [`axo-face-locked-zh-TW.md`](./axo-face-locked-zh-TW.md)  
+- 新姿勢：複製 canonical，**只改**身體／道具，不改眼嘴、不加雲（除非選 B）
 
 ---
 
-## 臉部規格（永久鎖定）
+## B. 發呆帖（可選 · 有空白思考雲）
 
-| 部位 | 規格 |
-|------|------|
-| 眼睛 | 極小黑點、**眼距偏寬** — 見 [`axo-face-locked-zh-TW.md`](./axo-face-locked-zh-TW.md) |
-| 嘴巴 | **短直橫線 `_`**（所有貼文相同，含介紹、發呆、Day 2） |
+**僅在需要「發呆」視覺時使用，非每篇必備。**
 
-**禁止** 改用 `w` 嘴、張口、或其他嘴型（除非品牌方書面解禁）。
+`assets/axo/pen/axo-pen-day1-blank-stare.svg` · `png/axo-pen-day1.png`
+
+```
+┌─────────────────────────┐
+│   空白思考雲（必空）      │
+│   Axo 偏小在下方          │
+└─────────────────────────┘
+```
+
+- 雲內：**無字、無 `...`**  
+- 臉：與標準立姿**相同**（鎖定眼嘴）
 
 ---
 
 ## 如何做新的一篇
 
-1. 複製 `axo-pen-canonical.svg`  
-2. **保留**畫紙 + 空白思考雲（勿刪、勿加字進雲裡）  
-3. **只改**下方 `#axo-slot` 區塊：姿勢、道具、表情（汗、鰓直立等）  
-4. 用 `axo-pen-canonical.png` 當 reference 出 PNG，**禁止**換成居中大圖構圖  
-
----
-
-## 檔案對照
-
-| 檔案 | 用途 |
-|------|------|
-| `axo-pen-canonical.*` | 官方模板 · 介紹 Axo、預設貼文 |
-| `axo-pen-day1-blank-stare.svg` | 發呆帖（`_` 嘴） |
-| `axo-pen-day1.png` | 發呆帖 PNG |
-| `axo-pen-day2.png` | Day 2 麵碗（同模板） |
+1. 預設從 **`axo-pen-canonical`** 出發  
+2. Reference `axo-pen-canonical.png` + 鎖定臉  
+3. 只改姿勢／場景；**色票**見 color-consistency 文件  
+4. 若要發呆梗 → 改用 **B** 模板，不要強制每篇加雲  
 
 ---
 
 ## 禁止
 
-- ❌ 角色居中填滿畫面（舊版標準立姿構圖）  
-- ❌ 沒有思考雲的貼文  
-- ❌ 思考雲裡寫字（字在 caption，不在雲裡）  
+- ❌ 更改鎖定眼嘴  
+- ❌ 漂移畫紙色／水彩色  
+- ❌ 思考雲裡寫字  
 
 ---
 
-*色票見 [`axo-color-consistency-zh-TW.md`](./axo-color-consistency-zh-TW.md)*
+*色票：[`axo-color-consistency-zh-TW.md`](./axo-color-consistency-zh-TW.md)*
