@@ -2,6 +2,8 @@
 
 **Brand:** Dozeify · **Role:** Mascot · **Vibe:** Chronically exhausted, free-spirited, regenerative rest
 
+**繁體中文需求規格：** [`axo-需求規格-zh-TW.md`](./axo-需求規格-zh-TW.md) · **風格問卷（待填）：** [`axo-風格問卷-zh-TW.md`](./axo-風格問卷-zh-TW.md)
+
 ---
 
 ## Canonical assets
