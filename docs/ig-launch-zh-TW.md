@@ -58,7 +58,7 @@
 | 天 | 主題 | 繁中主文案 | 英文副文案（可選） |
 |----|------|------------|-------------------|
 | **1** | 發呆 | 今天什麼都沒做，什麼也沒想。（**空白思考雲**） | I am doing nothing today, and thinking nothing. |
-| **2** | 躺平正當 | 休息不是偷懶，是充電。 | Rest isn't lazy. It's recharge. |
+| **2** | 麵碗震驚 | 鰓直立、狂流汗、超大碗麵（見 caption） | Giant noodles. Gills up. Brain offline. |
 | **3** | 已讀不回 | 訊息已讀，靈魂離線。 | Seen. Soul offline. |
 | **4** | 鬧鐘 | 鬧鐘響了，我沒有。 | Alarm rang. I didn't. |
 | **5** | 週一 | 週一：存在，但不參與。 | Monday: present, not participating. |
@@ -68,9 +68,10 @@
 **資產對應：**
 
 - Day 1 → `axo-pen-day1-blank-stare.svg`（發呆＋空白思考雲）  
+- Day 2 → `axo-pen-day2-noodles.svg` · `png/axo-pen-day2.png`  
 - Day 6 → `axo-with-mug.svg`（已有）  
-- Day 2、7 → `axo-sleepy.svg` / `axo-wave.svg` 可改字  
-- Day 3–5 → 需新增姿勢（或 AI 出稿 + 設計師修線）
+- Day 7 → `axo-wave.svg` 可改字  
+- Day 3–5 → 待新增
 
 ---
 

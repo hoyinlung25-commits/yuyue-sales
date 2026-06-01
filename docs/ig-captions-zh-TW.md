@@ -94,6 +94,52 @@ I am doing nothing today, and thinking nothing. 🫠
 
 ---
 
+## 7 日系列 · Day 2 — 麵碗震驚
+
+### 畫面
+
+站在小桌旁，低頭盯著**超大碗麵**，狂流汗，外鰓嚇到直立。
+
+### 繁中 Caption（複製用）
+
+```
+Axo 只是想吃一口。
+
+然後面前出現了一碗
+大到需要重新思考人生的麵。
+
+鰓：直立。
+汗：很多。
+腦：暫時下線。
+
+你今天被什麼嚇到了？🫠
+
+—
+
+#Dozeify #Axo #發呆 #震驚 #麵 #再生式休息 #療癒漫畫 #今天什麼都沒做
+```
+
+### English（置頂留言可選）
+
+```
+Axo just wanted a bite.
+
+Then life served a noodle bowl
+big enough to reboot existence.
+
+Gills: up.
+Sweat: yes.
+Brain: offline.
+
+What shocked you today? 🫠
+```
+
+### 配圖
+
+`assets/axo/pen/png/axo-pen-day2.png` · SVG：`axo-pen-day2-noodles.svg`
+
+---
+
 ## 發文小提醒
 
 | 項目 | 建議 |
