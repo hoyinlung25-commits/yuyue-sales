@@ -60,12 +60,10 @@
       <path class="wash ink ink-main" d="M 118 288 L 100 318 Q 94 328 102 334 Q 110 340 120 330 L 128 298 Z"/>
       <path class="wash ink ink-main" d="M 218 288 L 200 312 Q 194 320 202 324 Q 210 328 216 318 L 212 298 Z"/>
 
-      <!-- Eyes looking down -->
-      <circle class="eye" cx="158" cy="188" r="2.8"/>
-      <circle class="eye" cx="188" cy="198" r="2.8"/>
-
-      <!-- Shocked tiny o mouth -->
-      <ellipse class="ink ink-main" cx="172" cy="212" rx="5" ry="4" fill="#2A2420" stroke="none"/>
+      <!-- LOCKED FACE (looking down — same dots + flat mouth) -->
+      <circle class="eye" cx="152" cy="186" r="2.5"/>
+      <circle class="eye" cx="198" cy="192" r="2.5"/>
+      <path class="ink ink-main" stroke-width="2" d="M 168 210 L 184 210"/>
 
       <!-- Sweat -->
       <path class="sweat" d="M 138 168 Q 134 178 138 186"/>

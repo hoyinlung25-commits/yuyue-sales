@@ -11,7 +11,7 @@
 禁止因換姿勢、換 AI 出圖、或換設計師而漂移色號、畫風或**版型**。
 
 **主參考檔（視覺真源）：**  
-`assets/axo/pen/png/axo-pen-canonical.png`（**Day 1 布局 + 空白思考雲 + 小眼 + w 嘴**）
+`assets/axo/pen/png/axo-pen-canonical.png`（**布局 + 鎖定眼嘴**，見 `axo-face-locked-zh-TW.md`）
 
 **構圖規則（必守）：** [`axo-layout-template-zh-TW.md`](./axo-layout-template-zh-TW.md)
 
