@@ -18,6 +18,8 @@
 
 All files are **true vector SVG** — no AI cleanup required for base poses. Open in Illustrator to tweak or export at 300 DPI for Printfly.
 
+**AI-generated PNG previews (Phase 1 IG):** [`assets/axo/png/`](../assets/axo/png/) — use for mood/tests; **SVG remains source of truth** for brand-accurate dot eyes and colors.
+
 ---
 
 ## Style locked (v2 — client approved 2026-06-01)

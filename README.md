@@ -11,6 +11,8 @@
 
 Canonical vector assets live in [`assets/axo/`](assets/axo/). Start with [`axo-canonical.svg`](assets/axo/axo-canonical.svg).
 
+**PNG 預覽圖（AI 生成）：** [`assets/axo/png/`](assets/axo/png/) — 可直接發 IG 測試；正式系列建議設計師依 SVG 修線。
+
 See the [Axo character sheet](docs/axo-character-sheet.md) for colors, anatomy rules, and Printfly export steps.
 
 **風格已鎖定（繁中）：** [axo-style-locked-zh-TW.md](docs/axo-style-locked-zh-TW.md) · **Day 1 貼文：** `assets/axo/axo-doing-nothing.svg`
