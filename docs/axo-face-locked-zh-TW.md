@@ -10,7 +10,7 @@
 | 部位 | 規格 | 禁止 |
 |------|------|------|
 | **眼睛** | 兩顆**極小**實心黑點；**距離偏寬**（大臉兩側，呆視前方） | 大眼白、睫毛、瞇眼、斜眼 |
-| **嘴巴** | **小小 `w` 形嘴**（居中、略低於眼線） | 橫線 `_` 嘴、張口、橢圓嘴、牙齒 |
+| **嘴巴** | **平嘴** — 一條短、細、直的水平線（居中、略低於眼線） | `w` 嘴、張口、橢圓嘴、牙齒 |
 | **表情** | 死板、空白、發呆、無情緒 | 笑、哭、驚訝 o 嘴（除非品牌方書面解禁） |
 
 ### SVG 數值（標準立姿 400×520）
@@ -19,7 +19,7 @@
 |------|-----|
 | 左眼 | `cx="170" cy="168" r="2.5"` |
 | 右眼 | `cx="230" cy="168" r="2.5"` |
-| 嘴 | `M 188 202 Q 193 208 198 202 Q 203 208 208 202` stroke ~2px（tiny w） |
+| 嘴 | `M 192 204 L 208 204` stroke 1.8–2px（平嘴） |
 
 > 換姿勢時**只移動身體**，眼嘴相對頭部位置與形狀不變。
 
@@ -46,5 +46,5 @@
 ## Midjourney 臉部片段（貼進主提示詞）
 
 ```
-very tiny solid black dot eyes far apart on wide face, tiny centered w-shaped mouth, blank deadpan cute expression
+very tiny solid black dot eyes far apart on wide face, one short thin straight horizontal flat line mouth 平嘴, blank deadpan 發呆 expression
 ```
