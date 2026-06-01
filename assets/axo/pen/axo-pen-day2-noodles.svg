@@ -63,7 +63,7 @@
       <!-- LOCKED FACE (looking down — same dots + flat mouth) -->
       <circle class="eye" cx="152" cy="186" r="2.5"/>
       <circle class="eye" cx="198" cy="192" r="2.5"/>
-      <path class="ink ink-main" stroke-width="2" d="M 168 210 L 184 210"/>
+      <path class="ink ink-main" stroke-width="2.2" d="M 164 208 Q 169 214 174 208 Q 179 214 184 208"/>
 
       <!-- Sweat -->
       <path class="sweat" d="M 138 168 Q 134 178 138 186"/>

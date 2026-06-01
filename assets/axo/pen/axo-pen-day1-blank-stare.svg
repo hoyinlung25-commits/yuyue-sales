@@ -42,7 +42,7 @@
       <path class="wash ink ink-main" d="M 268 286 L 290 326 Q 296 336 288 342 Q 280 348 272 338 L 262 300 Z"/>
       <circle class="eye" cx="170" cy="164" r="2.5"/>
       <circle class="eye" cx="230" cy="164" r="2.5"/>
-      <path class="ink ink-main" stroke-width="2" d="M 192 200 L 208 200"/>
+      <path class="ink ink-main" stroke-width="2.2" d="M 188 200 Q 193 206 198 200 Q 203 206 208 200"/>
     </g>
   </g>
 </svg>
