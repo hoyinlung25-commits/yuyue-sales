@@ -1,12 +1,19 @@
 # Axo Execution Guide: Team Requirements & AI Persona
 
-Hybrid workflow for the **7-Day Instagram Launch Rollout** and the **Printfly** apparel drop: AI handles heavy lifting and conceptualization; a human designer handles perfection and consistency.
+**Current priority (2026-06-01):** **Instagram growth first** — attract followers with Axo comics. **Printfly is paused** until Phase 1 milestones are met.
+
+| Phase | Focus | Doc |
+|-------|--------|-----|
+| **1 (active)** | 7-day IG rollout, engagement, followers | [`ig-launch-zh-TW.md`](./ig-launch-zh-TW.md) |
+| **2 (paused)** | Printfly POD apparel | Character sheet Printfly section |
+
+Hybrid workflow: AI handles concepts and drafts; a human designer handles line art, lettering, and mobile-readable layout.
 
 ---
 
 ## Section 1: The Human Designer (Who to Hire)
 
-You do not need a full agency. Hire a single, highly capable freelancer who specializes in **2D vector art** and **print-on-demand (POD) production**.
+You do not need a full agency. Hire a single, highly capable freelancer who specializes in **2D vector art** and **Instagram comic layout** (POD/Printfly skills needed only in Phase 2).
 
 ### Role: 2D Illustrator / "The AI Finisher"
 
@@ -23,7 +30,7 @@ You do not need a full agency. Hire a single, highly capable freelancer who spec
 1. **AI clean-up (crucial)** — Trace or clean Midjourney output so Axo stays **100% flat, 2D minimalist vector** (fix extra toes, warped lines, unwanted shading).
 2. **The "Dot Eye" enforcer** — Eyes are always exactly two pure black dots (`• •`); mouth is exactly a tiny `w` or `_`. AI drifts; the human corrects.
 3. **Lettering & layout** — Place script dialogue in the comic with custom handwriting; must read clearly on mobile.
-4. **Printfly optimization** — Export final art on **pure transparent** background, **300 DPI**, **Pastel Pink** color profile tuned for Bella+Canvas or Comfort Colors blanks without white fringing.
+4. **Printfly optimization** *(Phase 2 only — paused)* — Export final art on transparent background, 300 DPI, color proof on blanks.
 
 ---
 
@@ -56,9 +63,9 @@ A minimalist 2D line-art doodle of a cute, chubby axolotl character standing upr
 ```mermaid
 flowchart LR
   AI[AI: prompts, scripts, concepts] --> MJ[Midjourney V7]
-  MJ --> FIN[Human: vector clean-up]
-  FIN --> IG[Instagram rollout]
-  FIN --> PF[Printfly POD export]
+  MJ --> FIN[Human: vector + lettering]
+  FIN --> IG[Instagram Phase 1]
+  IG --> PF[Printfly Phase 2 - paused]
 ```
 
 ---

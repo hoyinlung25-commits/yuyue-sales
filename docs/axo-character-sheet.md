@@ -69,13 +69,24 @@ A minimalist 2D line-art doodle of a cute, chubby axolotl character standing upr
 
 ---
 
-## Printfly export checklist
+## Printfly export checklist *(Phase 2 — paused; IG first)*
+
+Deferred until Instagram growth milestones. See [`ig-launch-zh-TW.md`](./ig-launch-zh-TW.md).
+
+When ready:
 
 1. Open SVG in Adobe Illustrator → expand strokes if vendor requires
 2. Artboard: character only, **transparent** background
 3. Export PNG **300 DPI**, sRGB, no matte fringe
-4. Run **Pastel Pink** proof on sample blank before bulk run
+4. Run **Lavender Pink** `#E4D4EA` proof on sample blank before bulk run
 5. Human finisher enforces dot eyes after any AI comic panels
+
+## Instagram export (Phase 1 — active)
+
+1. Canvas **1080 × 1350 px** (4:5), white background
+2. Small full-body Axo low in frame; **large brush-style caption** above
+3. Export JPG or PNG, sRGB, under 8 MB
+4. Asset starter: `assets/axo/axo-doing-nothing.svg`
 
 ---
 
