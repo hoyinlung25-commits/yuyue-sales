@@ -28,7 +28,7 @@
 |------|------|
 | **用戶名** | `@dozeify` 或 `@dozeify.axo`（越短越好記） |
 | **顯示名稱** | Dozeify · Axo |
-| **大頭貼** | `assets/axo/axo-canonical.svg` 匯出 320×320，白底 |
+| **大頭貼** | `assets/axo/pen/axo-pen-canonical.svg` 或 `pen/png/axo-pen-canonical.png` 裁 320×320（**保留畫紙色**） |
 | **Bio（繁中範例）** | 再生式休息｜Axo 什麼都沒做，但你可以。🫠 |
 | **Bio（英一句）** | Regenerative rest. Doing nothing, together. |
 | **連結** | 先不放商店；可放 Linktree「即將推出」或留空 |
@@ -42,9 +42,10 @@
 
 ### 第一篇貼文
 
-- **檔案：** [`assets/axo/axo-doing-nothing.svg`](../assets/axo/axo-doing-nothing.svg)  
-- **設計師任務：** 把佔位字改成**手寫毛筆感**（字要大、手機可讀）  
-- **比例：** 4:5 直式（1080×1350）最適合 IG 動態牆  
+- **檔案：** [`assets/axo/pen/axo-pen-doing-nothing.svg`](../assets/axo/pen/axo-pen-doing-nothing.svg) 或 `pen/png/axo-pen-day1.png`  
+- **風格：** **鋼筆手繪 + 畫紙**（參考 rachelliao_illustration）  
+- **設計師任務：** 字與 Axo 畫在同一張畫紙上，**手寫毛筆／鋼筆感**，字要大  
+- **比例：** 4:5（1080×1350），**不要裁掉紙紋底色**  
 
 ---
 

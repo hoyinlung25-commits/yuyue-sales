@@ -1,6 +1,13 @@
-# Axo 繪畫風格（已鎖定 v2）
+# Axo 繪畫風格
 
-**更新日期：** 2026-06-01 · **狀態：** 品牌方已確認
+**目前主版本：v3 鋼筆手繪 × 畫紙** → 詳見 [`axo-style-v3-pen-zh-TW.md`](./axo-style-v3-pen-zh-TW.md)  
+**參考：** [@rachelliao_illustration](https://www.instagram.com/rachelliao_illustration/)
+
+---
+
+# v2 平面向量（封存）
+
+**更新日期：** 2026-06-01 · **狀態：** 已由 v3 取代為 IG 主視覺
 
 ---
 

@@ -9,9 +9,9 @@
 
 ## Axo (mascot)
 
-Canonical vector assets live in [`assets/axo/`](assets/axo/). Start with [`axo-canonical.svg`](assets/axo/axo-canonical.svg).
+**主視覺 v3（鋼筆 × 畫紙）：** [`assets/axo/pen/`](assets/axo/pen/) · 風格說明 [`docs/axo-style-v3-pen-zh-TW.md`](docs/axo-style-v3-pen-zh-TW.md)
 
-**PNG 預覽圖（AI 生成）：** [`assets/axo/png/`](assets/axo/png/) — 可直接發 IG 測試；正式系列建議設計師依 SVG 修線。
+v2 平面向量（封存）：[`assets/axo/`](assets/axo/)
 
 See the [Axo character sheet](docs/axo-character-sheet.md) for colors, anatomy rules, and Printfly export steps.
 
