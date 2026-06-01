@@ -6,8 +6,8 @@
 
 **色彩／畫風一致（必守）：** [`axo-color-consistency-zh-TW.md`](./axo-color-consistency-zh-TW.md)
 
-**視覺真源（勿整張重畫換風格）：** `assets/axo/pen/png/axo-pen-canonical.png`  
-**畫風參考檔（僅供對照）：** `assets/axo/pen/png/reference/axo-pen-canonical-master-style.png`
+**視覺真源：** `assets/axo/pen/png/axo-pen-canonical.png`  
+**構圖（所有貼文必用）：** [`axo-layout-template-zh-TW.md`](./axo-layout-template-zh-TW.md)
 
 ---
 
