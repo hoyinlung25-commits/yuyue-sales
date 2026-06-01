@@ -15,7 +15,7 @@ v2 平面向量（封存）：[`assets/axo/`](assets/axo/)
 
 See the [Axo character sheet](docs/axo-character-sheet.md) for colors, anatomy rules, and Printfly export steps.
 
-**風格已鎖定（繁中）：** [axo-style-locked-zh-TW.md](docs/axo-style-locked-zh-TW.md) · **Day 1 貼文：** `assets/axo/axo-doing-nothing.svg`
+**風格 v3（繁中）：** [axo-style-v3-pen-zh-TW.md](docs/axo-style-v3-pen-zh-TW.md) · **Day 1 發呆：** `assets/axo/pen/axo-pen-day1-blank-stare.svg`
 
 ## Docs
 

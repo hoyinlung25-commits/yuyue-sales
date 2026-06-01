@@ -51,14 +51,15 @@
 
 ---
 
-## 首發貼文（Day 1）
+## 首發貼文（Day 1 — 發呆）
 
 | 語言 | 文案 |
 |------|------|
 | 繁中 | 今天什麼都沒做，什麼也沒想。 |
 | English | I am doing nothing today, and thinking nothing |
 
-**資產：** [`assets/axo/axo-doing-nothing.svg`](../assets/axo/axo-doing-nothing.svg)
+| 視覺 | 直視前方空白表情 + **空白思考雲** |
+| 資產 | [`assets/axo/pen/axo-pen-day1-blank-stare.svg`](../assets/axo/pen/axo-pen-day1-blank-stare.svg) |
 
 ---
 

@@ -42,10 +42,11 @@
 
 ### 第一篇貼文
 
-- **檔案：** [`assets/axo/pen/axo-pen-doing-nothing.svg`](../assets/axo/pen/axo-pen-doing-nothing.svg) 或 `pen/png/axo-pen-day1.png`  
-- **風格：** **鋼筆手繪 + 畫紙**（參考 rachelliao_illustration）  
-- **設計師任務：** 字與 Axo 畫在同一張畫紙上，**手寫毛筆／鋼筆感**，字要大  
-- **比例：** 4:5（1080×1350），**不要裁掉紙紋底色**  
+- **檔案：** [`assets/axo/pen/axo-pen-day1-blank-stare.svg`](../assets/axo/pen/axo-pen-day1-blank-stare.svg) 或 `pen/png/axo-pen-day1.png`  
+- **畫面：** Axo **直視前方發呆** + 頭上 **空白思考雲**（雲裡什麼都沒有）  
+- **表情：** 超小點眼 + **平線嘴 `_`**（完全空白、無情緒）  
+- **文案（圖下方）：** 今天什麼都沒做，什麼也沒想。  
+- **比例：** 4:5（1080×1350），保留畫紙紋理  
 
 ---
 
@@ -56,7 +57,7 @@
 
 | 天 | 主題 | 繁中主文案 | 英文副文案（可選） |
 |----|------|------------|-------------------|
-| **1** | 放空 | 今天什麼都沒做，什麼也沒想。 | I am doing nothing today, and thinking nothing. |
+| **1** | 發呆 | 今天什麼都沒做，什麼也沒想。（**空白思考雲**） | I am doing nothing today, and thinking nothing. |
 | **2** | 躺平正當 | 休息不是偷懶，是充電。 | Rest isn't lazy. It's recharge. |
 | **3** | 已讀不回 | 訊息已讀，靈魂離線。 | Seen. Soul offline. |
 | **4** | 鬧鐘 | 鬧鐘響了，我沒有。 | Alarm rang. I didn't. |
@@ -66,7 +67,7 @@
 
 **資產對應：**
 
-- Day 1 → `axo-doing-nothing.svg`（已有）  
+- Day 1 → `axo-pen-day1-blank-stare.svg`（發呆＋空白思考雲）  
 - Day 6 → `axo-with-mug.svg`（已有）  
 - Day 2、7 → `axo-sleepy.svg` / `axo-wave.svg` 可改字  
 - Day 3–5 → 需新增姿勢（或 AI 出稿 + 設計師修線）
