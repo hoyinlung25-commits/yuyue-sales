@@ -4,6 +4,11 @@
 
 **取代：** v2 純平面向量為**次要**；對外 IG 以 **v3 手繪畫紙** 為主。
 
+**色彩／畫風一致（必守）：** [`axo-color-consistency-zh-TW.md`](./axo-color-consistency-zh-TW.md)
+
+**視覺真源（勿整張重畫換風格）：** `assets/axo/pen/png/axo-pen-canonical.png`  
+**畫風參考檔（僅供對照）：** `assets/axo/pen/png/reference/axo-pen-canonical-master-style.png`
+
 ---
 
 ## 視覺定義
@@ -37,9 +42,9 @@
 
 | 元素 | 說明 |
 |------|------|
-| 表情 | 直視前方、**完全空白**、平線嘴 `_` |
-| 構圖 | 頭上 **空白思考雲**（thought cloud，裡面什麼都沒有） |
-| 意義 | 讓人一眼看懂 Axo 在 **發呆**，不是在想事情 |
+| **布局** | 沿用 `reference/axo-pen-day1-layout-master.png`（角色在下方偏小） |
+| **唯一新增** | 頭上 **空白思考雲**（裡面無字、無 `...`） |
+| 表情 | 空白、平線嘴 `_`、小點眼 |
 | 檔案 | `axo-pen-day1-blank-stare.svg` · `png/axo-pen-day1.png` |
 
 ---

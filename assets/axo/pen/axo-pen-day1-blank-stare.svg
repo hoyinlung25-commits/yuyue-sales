@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Day 1 IG: blank stare + empty thought cloud = |F -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 640" width="400" height="640" role="img" aria-label="Axo Day 1 blank stare with empty thought cloud">
-  <title>Axo  Day 1 |Fz}ò	</title>
+<!-- Day 1: same layout as day1-layout-master — small Axo bottom, empty cloud top only -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 640" width="400" height="640" role="img" aria-label="Axo Day 1 blank thought cloud">
+  <title>Axo — Day 1 layout + empty thought cloud</title>
   <defs>
     <filter id="paperGrain" x="0%" y="0%" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" result="noise"/>
@@ -14,34 +14,27 @@
       .wash { fill: #E8D8E8; opacity: 0.55; }
       .ink { fill: none; stroke: #2A2420; stroke-linecap: round; stroke-linejoin: round; }
       .ink-main { stroke-width: 2.8; }
-      .ink-light { stroke-width: 1.6; opacity: 0.9; }
+      .ink-light { stroke-width: 1.6; }
       .eye { fill: #2A2420; }
-      .caption { fill: #2A2420; font-family: "PingFang TC", "Noto Sans TC", cursive; font-size: 22px; font-weight: 600; }
-      .caption-sub { fill: #2A2420; font-size: 12px; opacity: 0.7; }
     </style>
   </defs>
 
   <g filter="url(#paperGrain)">
     <rect class="paper" width="400" height="640"/>
 
-    <!-- Empty thought cloud (hand-drawn pen, completely blank inside) -->
-    <g id="empty-thought-cloud">
-      <ellipse class="cloud-fill ink ink-main" cx="200" cy="118" rx="118" ry="72"/>
-      <path class="ink ink-main" d="M 168 178 Q 178 192 188 200"/>
-      <circle class="cloud-fill ink ink-main" cx="178" cy="208" r="14"/>
-      <path class="ink ink-light" d="M 186 218 Q 192 228 198 234"/>
-      <circle class="cloud-fill ink ink-main" cx="202" cy="242" r="9"/>
-      <path class="ink ink-light" d="M 206 248 L 210 258"/>
-      <circle class="cloud-fill ink ink-main" cx="212" cy="264" r="5"/>
-    </g>
+    <!-- Empty thought cloud only (top area — no text inside) -->
+    <ellipse class="cloud-fill ink ink-main" cx="200" cy="130" rx="110" ry="68"/>
+    <circle class="cloud-fill ink ink-main" cx="178" cy="218" r="12"/>
+    <circle class="cloud-fill ink ink-main" cx="202" cy="248" r="7"/>
+    <circle class="cloud-fill ink ink-main" cx="210" cy="268" r="4"/>
 
-    <!-- Axo: small, lower frame, staring blankly forward -->
-    <g transform="translate(0, 268)">
+    <!-- Small Axo bottom (Day 1 layout) -->
+    <g transform="translate(0, 155)">
       <path class="wash ink ink-main" d="M 250 338 C 292 350, 308 392, 286 428 C 272 444, 248 448, 236 434 C 224 420, 230 398, 248 380 Z"/>
-      <ellipse class="wash" cx="200" cy="318" rx="70" ry="82"/>
-      <ellipse class="ink ink-main" cx="200" cy="318" rx="70" ry="82"/>
-      <ellipse class="wash" cx="200" cy="172" rx="82" ry="74"/>
-      <ellipse class="ink ink-main" cx="200" cy="172" rx="82" ry="74"/>
+      <ellipse class="wash" cx="200" cy="318" rx="72" ry="84"/>
+      <ellipse class="ink ink-main" cx="200" cy="318" rx="72" ry="84"/>
+      <ellipse class="wash" cx="200" cy="172" rx="84" ry="76"/>
+      <ellipse class="ink ink-main" cx="200" cy="172" rx="84" ry="76"/>
 
       <path class="ink ink-main" d="M 128 150 C 104 140, 90 158, 96 176"/>
       <path class="ink ink-light" d="M 124 170 C 100 166, 88 184, 94 202"/>
@@ -50,21 +43,12 @@
 
       <path class="wash ink ink-main" d="M 162 398 L 154 452 Q 152 464 164 464 Q 176 464 174 450 L 172 398 Z"/>
       <path class="wash ink ink-main" d="M 238 398 L 246 452 Q 248 464 236 464 Q 224 464 226 450 L 228 398 Z"/>
-
-      <!-- Arms limp at sides -->
       <path class="wash ink ink-main" d="M 132 286 L 110 326 Q 104 336 112 342 Q 120 348 128 338 L 138 300 Z"/>
       <path class="wash ink ink-main" d="M 268 286 L 290 326 Q 296 336 288 342 Q 280 348 272 338 L 262 300 Z"/>
 
-      <!-- Blank stare: tiny dot eyes, fixed forward -->
-      <circle class="eye" cx="178" cy="164" r="2.8"/>
-      <circle class="eye" cx="222" cy="164" r="2.8"/>
-
-      <!-- Empty expression: flat line mouth (not w) -->
+      <circle class="eye" cx="176" cy="164" r="2.8"/>
+      <circle class="eye" cx="224" cy="164" r="2.8"/>
       <path class="ink ink-main" stroke-width="2" d="M 190 198 L 210 198"/>
     </g>
-
-    <!-- Caption below character -->
-    <text class="caption" x="200" y="600" text-anchor="middle">Ê)À¼ý’ZÀ¼_’ó</text>
-    <text class="caption-sub" x="200" y="622" text-anchor="middle">I am doing nothing today, and thinking nothing</text>
   </g>
 </svg>

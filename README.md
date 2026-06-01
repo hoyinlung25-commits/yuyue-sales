@@ -21,6 +21,7 @@ See the [Axo character sheet](docs/axo-character-sheet.md) for colors, anatomy r
 
 - **[Instagram 上線計畫（繁中）](docs/ig-launch-zh-TW.md)** — 7 日腳本、漲粉策略、開帳 checklist
 - [路線圖（繁中）](docs/roadmap-zh-TW.md) — Phase 1 / 2 分工
+- [Axo 色彩一致規則（繁中）](docs/axo-color-consistency-zh-TW.md) — **每張圖必須同色同風**
 - [Axo 需求規格（繁體中文）](docs/axo-需求規格-zh-TW.md) — 團隊、繪畫硬性規定
 - [Axo 風格問卷（繁體中文）](docs/axo-風格問卷-zh-TW.md) — 請填寫以鎖定繪畫風格
 - [Axo Execution Guide](docs/axo-execution-guide.md) — human designer hire spec + hybrid AI/human workflow
