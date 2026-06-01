@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520" role="img" aria-label="Axo sleepy with blanket">
+  <title>Axo  sleepy</title>
+  <defs>
+    <style>
+      .axo-fill { fill: #FAD4D8; }
+      .axo-stroke { fill: none; stroke: #1A1A1A; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+      .axo-eye { fill: #1A1A1A; }
+      .blanket { fill: #E8E4F0; }
+    </style>
+  </defs>
+
+  <!-- Cozy blanket behind -->
+  <path class="blanket axo-stroke" d="M 70 360 Q 200 300 330 360 L 330 480 Q 200 510 70 480 Z"/>
+
+  <path class="axo-fill axo-stroke" d="M 248 340 C 300 355, 315 400, 285 440 C 270 458, 248 462, 235 445 C 222 428, 230 405, 248 385 Z"/>
+  <ellipse class="axo-fill axo-stroke" cx="200" cy="300" rx="90" ry="100"/>
+  <ellipse class="axo-fill axo-stroke" cx="200" cy="175" rx="105" ry="95"/>
+
+  <path class="axo-stroke" d="M 108 155 C 72 145, 58 165, 62 185"/>
+  <path class="axo-stroke" d="M 102 175 C 66 172, 52 192, 58 212"/>
+  <path class="axo-stroke" d="M 108 198 C 74 205, 64 228, 72 248"/>
+  <path class="axo-stroke" d="M 292 155 C 328 145, 342 165, 338 185"/>
+  <path class="axo-stroke" d="M 298 175 C 334 172, 348 192, 342 212"/>
+  <path class="axo-stroke" d="M 292 198 C 326 205, 336 228, 328 248"/>
+
+  <!-- Sitting / tucked legs -->
+  <path class="axo-fill axo-stroke" d="M 155 370 Q 140 420 155 445 Q 170 455 185 440 L 195 375 Z"/>
+  <path class="axo-fill axo-stroke" d="M 245 370 Q 260 420 245 445 Q 230 455 215 440 L 205 375 Z"/>
+
+  <path class="axo-fill axo-stroke" d="M 115 290 L 95 315 Q 88 325 95 332 Q 102 339 112 328 L 125 298 Z"/>
+  <path class="axo-fill axo-stroke" d="M 285 290 L 305 315 Q 312 325 305 332 Q 298 339 288 328 L 275 298 Z"/>
+
+  <circle class="axo-eye" cx="168" cy="168" r="7"/>
+  <circle class="axo-eye" cx="232" cy="168" r="7"/>
+  <!-- Underscore mouth (sleepier variant) -->
+  <path class="axo-stroke" stroke-width="5" d="M 186 202 L 214 202"/>
+
+  <!-- Zzz -->
+  <text x="300" y="120" font-family="Comic Sans MS, Marker Felt, cursive" font-size="28" font-weight="bold" fill="#1A1A1A">z</text>
+  <text x="322" y="95" font-family="Comic Sans MS, Marker Felt, cursive" font-size="22" font-weight="bold" fill="#1A1A1A">z</text>
+  <text x="338" y="75" font-family="Comic Sans MS, Marker Felt, cursive" font-size="16" font-weight="bold" fill="#1A1A1A">z</text>
+</svg>
