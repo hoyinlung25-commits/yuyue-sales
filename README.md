@@ -8,6 +8,8 @@ Canonical vector assets live in [`assets/axo/`](assets/axo/). Start with [`axo-c
 
 See the [Axo character sheet](docs/axo-character-sheet.md) for colors, anatomy rules, and Printfly export steps.
 
+**風格已鎖定（繁中）：** [axo-style-locked-zh-TW.md](docs/axo-style-locked-zh-TW.md) · **Day 1 貼文：** `assets/axo/axo-doing-nothing.svg`
+
 ## Docs
 
 - [Axo 需求規格（繁體中文）](docs/axo-需求規格-zh-TW.md) — 團隊、印刷、繪畫硬性規定

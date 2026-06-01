@@ -24,9 +24,10 @@
 | 項目 | 規定 |
 |------|------|
 | 維度 | 僅限 **平面 2D** 線稿塗色，禁止陰影、漸層、3D 立體光 |
-| 輪廓線 | 墨色 `#1A1A1A`，線寬 **7px**（以 400×520 畫布為基準），圓角端點 |
-| 身體填色 | 粉彩粉 `#FAD4D8`（Pastel Pink） |
-| 眼睛 | **恰好兩顆**純黑圓點 `• •`，禁止大眼白、睫毛、表情符號眼 |
+| 輪廓線 | 墨色 `#1A1A1A`，線寬 **5px**（以 400×520 畫布為基準），圓角端點 |
+| 身體填色 | 薰衣草粉 `#E4D4EA`（Lavender Pink） |
+| 眼睛 | **恰好兩顆**純黑圓點 `• •`（**r=4.5**，更小更呆），禁止大眼白、睫毛、表情符號眼 |
+| 腮紅 | **禁止** |
 | 嘴巴 | 極小 **`w`**（預設）或 **`_`**（更睏）；禁止牙齒、張口橢圓 |
 | 姿態 | 像人一樣 **雙腳直立**；外鰓為簡單弧線，不寫實 |
 | 背景（IG） | 純白 |
@@ -41,9 +42,11 @@ A minimalist 2D line-art doodle of a cute, chubby axolotl character standing upr
 
 ---
 
-## 三、繪畫風格待確認事項（需品牌方回覆）
+## 三、繪畫風格（已鎖定 v2）
 
-請回答 [`docs/axo-風格問卷-zh-TW.md`](./axo-風格問卷-zh-TW.md) 中的問題。回覆後將更新至 [`docs/axo-character-sheet.md`](./axo-character-sheet.md) 並調整 SVG 資產。
+品牌方已於 2026-06-01 確認。完整紀錄：[`axo-style-locked-zh-TW.md`](./axo-style-locked-zh-TW.md)
+
+問卷存檔：[`axo-風格問卷-zh-TW.md`](./axo-風格問卷-zh-TW.md)
 
 ---
 
@@ -83,8 +86,10 @@ A minimalist 2D line-art doodle of a cute, chubby axolotl character standing upr
 
 | 檔案 | 用途 |
 |------|------|
-| `assets/axo/axo-canonical.svg` | 標準站姿、頭像、POD 主檔 |
-| `assets/axo/axo-wave.svg` | 打招呼、上線貼文 |
+| `assets/axo/axo-canonical.svg` | 標準站姿 v2 |
+| `assets/axo/axo-doing-nothing.svg` | **Day 1 首發**（全身小圖 + 大字） |
+| `assets/axo/axo-with-mug.svg` | 拿杯子（簡單手指） |
+| `assets/axo/axo-wave.svg` | 打招呼 |
 | `assets/axo/axo-sleepy.svg` | 休息、療癒主題 |
 
 英文技術細節：[`docs/axo-character-sheet.md`](./axo-character-sheet.md)

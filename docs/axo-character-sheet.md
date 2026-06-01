@@ -11,6 +11,8 @@
 | File | Use |
 |------|-----|
 | [`assets/axo/axo-canonical.svg`](../assets/axo/axo-canonical.svg) | Hero reference, POD master, social avatar |
+| [`assets/axo/axo-doing-nothing.svg`](../assets/axo/axo-doing-nothing.svg) | **Day 1 IG** — small body + caption layout |
+| [`assets/axo/axo-with-mug.svg`](../assets/axo/axo-with-mug.svg) | Cup prop + simple fingers |
 | [`assets/axo/axo-wave.svg`](../assets/axo/axo-wave.svg) | Launch / hello posts |
 | [`assets/axo/axo-sleepy.svg`](../assets/axo/axo-sleepy.svg) | Rest / cozy content |
 
@@ -18,17 +20,30 @@ All files are **true vector SVG** — no AI cleanup required for base poses. Ope
 
 ---
 
+## Style locked (v2 — client approved 2026-06-01)
+
+**Keywords:** Stupid cute · 呆 · 非常呆 · heartfelt/sour-cute IG (Keigo, rachelliao_illustration, yiyinehamster)
+
+**繁體中文完整紀錄：** [`axo-style-locked-zh-TW.md`](./axo-style-locked-zh-TW.md)
+
+---
+
 ## Anatomy rules (non‑negotiable)
 
 | Feature | Rule |
 |---------|------|
-| **Eyes** | Exactly **two** solid black circles (`• •`), radius **7px** at 400×520 viewBox scale |
-| **Mouth** | Tiny **`w`** (default) or **`_`** (sleepier) — never teeth, never open oval |
+| **Eyes** | Exactly **two** solid black circles (`• •`), radius **4.5px** at 400×520 viewBox scale |
+| **Mouth** | Tiny **`w`** almost always; **`_`** rare (sleep only) — never teeth, never open oval |
+| **Blush** | **Never** |
 | **Style** | Flat 2D line art only — **no** shading, gradients, or 3D lighting |
-| **Outline** | `#1A1A1A`, **7px** stroke, round caps/joins |
-| **Fill** | Pastel pink **`#FAD4D8`** on body/head/limbs |
+| **Outline** | `#1A1A1A`, **5px** stroke, round caps/joins |
+| **Fill** | Lavender pastel pink **`#E4D4EA`** on body/head/limbs |
+| **Proportions** | **3 heads tall**; simple fingers when holding props |
 | **Pose** | Stands upright on two legs like a human; gills as simple curved strokes |
+| **Colors in scene** | Black, white, pink fill, **max 1–2 accents** (e.g. `#E8E4F0` blanket) |
 | **Background** | Pure white for IG; **transparent** for Printfly export |
+| **IG layout** | Small full-body character + **large handwritten caption** |
+| **Avoid** | Hyper-realistic, aggressive, toddler-ish, over-moe anime |
 
 ---
 
@@ -36,7 +51,7 @@ All files are **true vector SVG** — no AI cleanup required for base poses. Ope
 
 | Name | Hex | Usage |
 |------|-----|--------|
-| Pastel Pink | `#FAD4D8` | Axo body fill (print: verify on Bella+Canvas / Comfort Colors) |
+| Lavender Pink | `#E4D4EA` | Axo body fill (print: verify on Bella+Canvas / Comfort Colors) |
 | Ink Black | `#1A1A1A` | Outlines, eyes, mouth |
 | Cozy Lilac | `#E8E4F0` | Props (e.g. blanket) — optional accent only |
 
@@ -47,7 +62,7 @@ All files are **true vector SVG** — no AI cleanup required for base poses. Ope
 Use for AI-generated comics; hand off to illustrator for vector finish:
 
 ```
-A minimalist 2D line-art doodle of a cute, chubby axolotl character standing upright on two legs like a human. Solid black dot eyes, tiny w mouth, flat pale pastel pink coloring, pure white background. [Action/Prop]
+A minimalist 2D line-art doodle of a cute, chubby axolotl character standing upright on two legs like a human. Very small solid black dot eyes, tiny w mouth, flat pale lavender-pink coloring, thin clean outlines, no blush, no shading, pure white background. Stupid cute deadpan vibe. [Action/Prop]
 ```
 
 **Example [Action/Prop]:** `holding a steaming mug, deadpan tired expression`

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Launch Day 1: full-body small character + space for large handwritten caption above -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 640" width="400" height="640" role="img" aria-label="Axo doing nothing">
+  <title>Axo  doing nothing (Day 1)</title>
+  <defs>
+    <style>
+      .axo-fill { fill: #E4D4EA; }
+      .axo-stroke { fill: none; stroke: #1A1A1A; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .axo-eye { fill: #1A1A1A; }
+      .caption { fill: #1A1A1A; font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif; font-size: 26px; font-weight: 600; }
+      .caption-sub { fill: #1A1A1A; font-size: 14px; opacity: 0.75; }
+    </style>
+  </defs>
+
+  <!-- Caption zone (replace with brush lettering in final comic) -->
+  <text class="caption" x="200" y="72" text-anchor="middle">Ê)À¼ý’Z</text>
+  <text class="caption" x="200" y="108" text-anchor="middle">À¼_’ó</text>
+  <text class="caption-sub" x="200" y="138" text-anchor="middle">I am doing nothing today, and thinking nothing</text>
+
+  <!-- Small full-body Axo, centered low -->
+  <g transform="translate(0, 155)">
+    <path class="axo-fill axo-stroke" d="M 248 340 C 300 352, 312 395, 288 430 C 275 448, 252 452, 238 438 C 224 424, 228 400, 248 378 Z"/>
+    <ellipse class="axo-fill axo-stroke" cx="200" cy="318" rx="72" ry="84"/>
+    <ellipse class="axo-fill axo-stroke" cx="200" cy="172" rx="84" ry="76"/>
+
+    <path class="axo-stroke" d="M 128 152 C 100 144, 88 160, 92 178"/>
+    <path class="axo-stroke" d="M 124 170 C 96 166, 84 184, 90 202"/>
+    <path class="axo-stroke" d="M 128 192 C 102 198, 94 216, 100 234"/>
+    <path class="axo-stroke" d="M 272 152 C 300 144, 312 160, 308 178"/>
+    <path class="axo-stroke" d="M 276 170 C 304 166, 316 184, 310 202"/>
+    <path class="axo-stroke" d="M 272 192 C 298 198, 306 216, 300 234"/>
+
+    <path class="axo-fill axo-stroke" d="M 162 398 L 154 448 Q 152 462 164 462 Q 176 462 174 448 L 172 398 Z"/>
+    <path class="axo-fill axo-stroke" d="M 238 398 L 246 448 Q 248 462 236 462 Q 224 462 226 448 L 228 398 Z"/>
+
+    <!-- Arms dangling (doing nothing) -->
+    <path class="axo-fill axo-stroke" d="M 132 288 L 108 340 Q 102 352 110 358 Q 118 364 126 350 L 138 298 Z"/>
+    <path class="axo-fill axo-stroke" d="M 268 288 L 292 340 Q 298 352 290 358 Q 282 364 274 350 L 262 298 Z"/>
+
+    <circle class="axo-eye" cx="176" cy="166" r="4.5"/>
+    <circle class="axo-eye" cx="224" cy="166" r="4.5"/>
+    <path class="axo-stroke" stroke-width="3.5" d="M 186 196 Q 191 202 196 196 Q 201 202 206 196 Q 211 202 216 196"/>
+  </g>
+</svg>

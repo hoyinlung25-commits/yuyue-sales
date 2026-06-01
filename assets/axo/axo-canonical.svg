@@ -1,52 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520" role="img" aria-label="Axo  Dozeify mascot axolotl">
-  <title>Axo  canonical</title>
-  <desc>Minimalist 2D line-art axolotl mascot. Pastel pink fill, black dot eyes, tiny w mouth.</desc>
-
-  <!-- Brand colors (see docs/axo-character-sheet.md) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520" role="img" aria-label="Axo — Dozeify mascot">
+  <title>Axo — canonical (v2)</title>
   <defs>
     <style>
-      .axo-fill { fill: #FAD4D8; }
-      .axo-stroke { fill: none; stroke: #1A1A1A; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+      .axo-fill { fill: #E4D4EA; }
+      .axo-stroke { fill: none; stroke: #1A1A1A; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
       .axo-eye { fill: #1A1A1A; }
     </style>
   </defs>
 
-  <!-- Tail (behind body) -->
-  <path class="axo-fill axo-stroke" d="M 248 340
-    C 310 360, 330 420, 300 470
-    C 285 495, 255 500, 235 478
-    C 218 460, 225 430, 248 400
-    Z"/>
+  <path class="axo-fill axo-stroke" d="M 248 340 C 310 360, 330 420, 300 470 C 285 495, 255 500, 235 478 C 218 460, 225 430, 248 400 Z"/>
+  <ellipse class="axo-fill axo-stroke" cx="200" cy="318" rx="88" ry="102"/>
+  <ellipse class="axo-fill axo-stroke" cx="200" cy="172" rx="102" ry="92"/>
 
-  <!-- Body -->
-  <ellipse class="axo-fill axo-stroke" cx="200" cy="310" rx="95" ry="110"/>
+  <path class="axo-stroke" d="M 110 152 C 76 142, 62 162, 66 182"/>
+  <path class="axo-stroke" d="M 104 172 C 70 168, 56 188, 62 208"/>
+  <path class="axo-stroke" d="M 110 195 C 76 202, 66 224, 74 244"/>
+  <path class="axo-stroke" d="M 290 152 C 324 142, 338 162, 334 182"/>
+  <path class="axo-stroke" d="M 296 172 C 330 168, 344 188, 338 208"/>
+  <path class="axo-stroke" d="M 290 195 C 324 202, 334 224, 326 244"/>
 
-  <!-- Head -->
-  <ellipse class="axo-fill axo-stroke" cx="200" cy="175" rx="105" ry="95"/>
+  <path class="axo-fill axo-stroke" d="M 158 398 L 148 458 Q 146 474 160 474 Q 174 474 172 458 L 170 398 Z"/>
+  <path class="axo-fill axo-stroke" d="M 242 398 L 252 458 Q 254 474 240 474 Q 226 474 228 458 L 230 398 Z"/>
 
-  <!-- Left gills -->
-  <path class="axo-stroke" d="M 108 155 C 72 145, 58 165, 62 185"/>
-  <path class="axo-stroke" d="M 102 175 C 66 172, 52 192, 58 212"/>
-  <path class="axo-stroke" d="M 108 198 C 74 205, 64 228, 72 248"/>
+  <path class="axo-fill axo-stroke" d="M 112 288 L 82 322 Q 72 334 80 343 Q 88 352 100 340 L 120 302 Z"/>
+  <path class="axo-fill axo-stroke" d="M 288 288 L 318 322 Q 328 334 320 343 Q 312 352 300 340 L 280 302 Z"/>
 
-  <!-- Right gills -->
-  <path class="axo-stroke" d="M 292 155 C 328 145, 342 165, 338 185"/>
-  <path class="axo-stroke" d="M 298 175 C 334 172, 348 192, 342 212"/>
-  <path class="axo-stroke" d="M 292 198 C 326 205, 336 228, 328 248"/>
+  <!-- Dot eyes r=4.5 — smaller, stupider -->
+  <circle class="axo-eye" cx="172" cy="166" r="4.5"/>
+  <circle class="axo-eye" cx="228" cy="166" r="4.5"/>
 
-  <!-- Legs -->
-  <path class="axo-fill axo-stroke" d="M 155 395 L 145 455 Q 143 472 158 472 Q 173 472 171 455 L 168 395 Z"/>
-  <path class="axo-fill axo-stroke" d="M 245 395 L 255 455 Q 257 472 242 472 Q 227 472 229 455 L 232 395 Z"/>
-
-  <!-- Arms (relaxed at sides) -->
-  <path class="axo-fill axo-stroke" d="M 108 285 L 78 320 Q 68 332 76 342 Q 84 352 96 340 L 118 300 Z"/>
-  <path class="axo-fill axo-stroke" d="M 292 285 L 322 320 Q 332 332 324 342 Q 316 352 304 340 L 282 300 Z"/>
-
-  <!-- Dot eyes (" ")  do not change radius or spacing without brand approval -->
-  <circle class="axo-eye" cx="168" cy="168" r="7"/>
-  <circle class="axo-eye" cx="232" cy="168" r="7"/>
-
-  <!-- Tiny w mouth -->
-  <path class="axo-stroke" stroke-width="5" d="M 182 198 Q 188 206 194 198 Q 200 206 206 198 Q 212 206 218 198"/>
+  <path class="axo-stroke" stroke-width="3.5" d="M 184 196 Q 189 202 194 196 Q 199 202 204 196 Q 209 202 214 196"/>
 </svg>
