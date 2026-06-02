@@ -10,7 +10,7 @@
 ## Axo (mascot)
 
 **標準立姿（主檔）：** [`assets/axo/pen/png/axo-pen-canonical.png`](assets/axo/pen/png/axo-pen-canonical.png) — 畫紙、鎖定眼嘴、**無思考雲**  
-**發呆帖（可選雲）：** `axo-pen-day1.png` · **構圖：** [`docs/axo-layout-template-zh-TW.md`](docs/axo-layout-template-zh-TW.md) · **眼嘴：** [`docs/axo-face-locked-zh-TW.md`](docs/axo-face-locked-zh-TW.md)
+**發呆帖（可選雲）：** `axo-pen-day1.png` · **構圖：** [`docs/axo-layout-template-zh-TW.md`](docs/axo-layout-template-zh-TW.md) · **眼嘴：** [`docs/axo-face-locked-zh-TW.md`](docs/axo-face-locked-zh-TW.md) · **外鰓六角：** [`docs/axo-gills-zh-TW.md`](docs/axo-gills-zh-TW.md)
 
 v2 平面向量（封存）：[`assets/axo/`](assets/axo/)
 

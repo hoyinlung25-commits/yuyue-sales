@@ -12,8 +12,8 @@
 | 動作 | 手裡拿**一杯水**（或無害小物，如葉子） |
 | 眼 | 豆豆眼**直視前方** |
 | 嘴 | 平嘴 |
-| 手寫字 | **今天我要做很多事。** |
-| English | Today I will do many things. |
+| 外鰓（六角） | 頭兩側 **各 3 支，共 6 支**（見 [`axo-gills-zh-TW.md`](./axo-gills-zh-TW.md)） |
+| 手寫字（圖上） | **Today I will do many things.**（英文） |
 | 檔案 | `png/axo-pen-day2-slide1.png` |
 
 ---

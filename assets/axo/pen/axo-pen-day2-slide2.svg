@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Slide 2: 1:1 body ref prone sleep, Zzz, English text -->
+<!-- Slide 2: prone nap, all 6 gills, Zzz, English -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 640" width="400" height="640">
-  <title>Day 2 Slide 2 - Thing 1 Nap</title>
+  <title>Day 2 Slide 2</title>
   <defs>
     <filter id="paperGrain" x="0%" y="0%" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" result="noise"/>
@@ -11,10 +11,12 @@
     <style>
       .paper { fill: #F2EBD9; }
       .wash { fill: #E8D8E8; opacity: 0.55; }
+      .gill-wash { fill: #D4C0E0; opacity: 0.45; }
       .ink { fill: none; stroke: #2A2420; stroke-linecap: round; stroke-linejoin: round; }
       .ink-main { stroke-width: 2.8; }
-      .ink-thin { stroke-width: 1.6; }
+      .ink-light { stroke-width: 1.6; }
       .eye { fill: #2A2420; }
+      .cup { fill: #FAF6EE; }
     </style>
   </defs>
   <g filter="url(#paperGrain)">
@@ -23,6 +25,30 @@
     <text x="175" y="148" font-family="cursive" font-size="28" font-weight="bold" fill="#2A2420">Z</text>
     <text x="198" y="126" font-family="cursive" font-size="22" font-weight="bold" fill="#2A2420">z</text>
     <text x="215" y="108" font-family="cursive" font-size="16" font-weight="bold" fill="#2A2420">z</text>
-    <!-- Body layout note: match reference axo-pen-day1 prone 1:1 in PNG -->
+    <rect class="cup ink ink-main" x="292" y="425" width="28" height="34" rx="3"/>
+
+    <g transform="translate(28, 268)">
+      <ellipse class="wash" cx="172" cy="188" rx="95" ry="62"/>
+      <ellipse class="ink ink-main" cx="172" cy="188" rx="95" ry="62"/>
+      <ellipse class="wash" cx="108" cy="168" rx="50" ry="44"/>
+      <ellipse class="ink ink-main" cx="108" cy="168" rx="50" ry="44"/>
+      <path class="wash ink ink-main" d="M 258 186 C 308 180, 322 200, 305 220 C 290 230, 265 226, 255 206 Z"/>
+      <!-- Left 3 gills (drooping, all visible) -->
+      <path class="gill-wash ink ink-light" d="M 62 148 C 54 168, 52 188, 58 208"/>
+      <path class="gill-wash ink ink-light" d="M 72 152 C 66 172, 64 192, 70 212"/>
+      <path class="gill-wash ink ink-light" d="M 82 156 C 78 176, 76 196, 82 216"/>
+      <!-- Right 3 gills -->
+      <path class="gill-wash ink ink-light" d="M 148 154 C 154 174, 156 194, 150 214"/>
+      <path class="gill-wash ink ink-light" d="M 138 150 C 144 170, 146 190, 140 210"/>
+      <path class="gill-wash ink ink-light" d="M 128 146 C 134 166, 136 186, 130 206"/>
+      <path class="ink ink-light" d="M 88 208 L 62 222"/>
+      <path class="ink ink-light" d="M 58 222 L 54 226 M 58 222 L 60 228 M 56 222 L 52 224"/>
+      <path class="ink ink-light" d="M 248 208 L 272 218"/>
+      <path class="ink ink-light" d="M 128 242 L 126 256 M 126 256 L 122 258 M 126 256 L 130 258"/>
+      <path class="ink ink-light" d="M 210 240 L 214 254"/>
+      <circle class="eye" cx="94" cy="162" r="2.5"/>
+      <circle class="eye" cx="118" cy="162" r="2.5"/>
+      <path class="ink ink-main" stroke-width="1.8" d="M 100 176 L 112 176"/>
+    </g>
   </g>
 </svg>
