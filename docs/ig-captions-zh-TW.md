@@ -94,49 +94,45 @@ I am doing nothing today, and thinking nothing. 🫠
 
 ---
 
-## 7 日系列 · Day 2 — 麵碗震驚
+## 7 日系列 · Day 2 — 兩格漫畫（輪播）
 
-### 畫面
+**形式：** IG Carousel · 詳見 [`ig-day2-comic-zh-TW.md`](./ig-day2-comic-zh-TW.md)
 
-站在小桌旁，低頭盯著**超大碗麵**，狂流汗，外鰓嚇到直立。
+| 格 | 畫面 | 手寫字 |
+|----|------|--------|
+| **Slide 1** | 雙腳站立、手拿水杯、豆豆眼直視前方 | 今天我要做很多事。 |
+| **Slide 2** | 趴地睡著、杯放旁邊、外鰓垂下 | 第一件事：睡午覺。 |
 
 ### 繁中 Caption（複製用）
 
 ```
-Axo 只是想吃一口。
+Axo 的待辦清單：
 
-然後面前出現了一碗
-大到需要重新思考人生的麵。
+今天我要做很多事。✅
+第一件事：睡午覺。✅
 
-鰓：直立。
-汗：很多。
-腦：暫時下線。
-
-你今天被什麼嚇到了？🫠
+你呢？你的第一件事是什麼？🫠
 
 —
 
-#Dozeify #Axo #發呆 #震驚 #麵 #再生式休息 #療癒漫畫 #今天什麼都沒做
+#Dozeify #Axo #再生式休息 #睡午覺 #待辦清單 #療癒漫畫
 ```
 
 ### English（置頂留言可選）
 
 ```
-Axo just wanted a bite.
+Axo's to-do list:
 
-Then life served a noodle bowl
-big enough to reboot existence.
+Today I will do many things. ✅
+Thing 1: Nap. ✅
 
-Gills: up.
-Sweat: yes.
-Brain: offline.
-
-What shocked you today? 🫠
+What's your Thing 1? 🫠
 ```
 
 ### 配圖
 
-`assets/axo/pen/png/axo-pen-day2.png` · SVG：`axo-pen-day2-noodles.svg`
+- Slide 1：`assets/axo/pen/png/axo-pen-day2-slide1.png`
+- Slide 2：`assets/axo/pen/png/axo-pen-day2-slide2.png`
 
 ---
 
