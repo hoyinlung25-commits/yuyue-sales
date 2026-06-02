@@ -29,9 +29,9 @@ def main() -> None:
     cairosvg.svg2png(url=f"file://{SVG}", write_to=str(OUT), output_width=W, output_height=H)
 
     sx, sy = W / 400, H / 640
-    # phone group: translate(48,290) + (118,168) + screen center (34,47)
-    cx = (48 + 118 + 34) * sx
-    cy = (290 + 168 + 47) * sy
+    # phone: translate(56,300) + (112,108) + screen center (31,41)
+    cx = (56 + 112 + 31) * sx
+    cy = (300 + 108 + 41) * sy
 
     im = Image.open(OUT).convert("RGBA")
     draw = ImageDraw.Draw(im)

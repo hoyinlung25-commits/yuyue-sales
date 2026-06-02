@@ -4,7 +4,8 @@
 
 **取代：** v2 純平面向量為**次要**；對外 IG 以 **v3 手繪畫紙** 為主。
 
-**色彩／畫風一致（必守）：** [`axo-color-consistency-zh-TW.md`](./axo-color-consistency-zh-TW.md)
+**色彩／畫風一致（必守）：** [`axo-color-consistency-zh-TW.md`](./axo-color-consistency-zh-TW.md)  
+**平面 2D（禁止立體）：** [`axo-flat-2d-zh-TW.md`](./axo-flat-2d-zh-TW.md)
 
 **視覺真源：** `assets/axo/pen/png/axo-pen-canonical.png`  
 **構圖（所有貼文必用）：** [`axo-layout-template-zh-TW.md`](./axo-layout-template-zh-TW.md)
