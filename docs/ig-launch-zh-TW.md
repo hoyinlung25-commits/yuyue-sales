@@ -58,7 +58,7 @@
 | 天 | 主題 | 繁中主文案 | 英文副文案（可選） |
 |----|------|------------|-------------------|
 | **1** | 發呆 | 今天什麼都沒做，什麼也沒想。（**空白思考雲**） | I am doing nothing today, and thinking nothing. |
-| **2** | 麵碗震驚 | 鰓直立、狂流汗、超大碗麵（見 caption） | Giant noodles. Gills up. Brain offline. |
+| **2** | 待辦→午睡 | 輪播 2 格：站立拿水杯 → 趴睡（見 ig-day2-comic） | Many things → Thing 1: Nap. |
 | **3** | 已讀不回 | 訊息已讀，靈魂離線。 | Seen. Soul offline. |
 | **4** | 鬧鐘 | 鬧鐘響了，我沒有。 | Alarm rang. I didn't. |
 | **5** | 週一 | 週一：存在，但不參與。 | Monday: present, not participating. |
