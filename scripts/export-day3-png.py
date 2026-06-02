@@ -1,39 +1,48 @@
 #!/usr/bin/env python3
-"""Export Day 3 SVG to PNG and stamp 已讀 on phone screen."""
+"""Export Day 3 SVG to 1080x1350 PNG with 已讀 on phone."""
+import urllib.request
+from pathlib import Path
+
 import cairosvg
 from PIL import Image, ImageDraw, ImageFont
 
-SVG = "/workspace/assets/axo/pen/axo-pen-day3-seen.svg"
-OUT = "/workspace/assets/axo/pen/png/axo-pen-day3-seen.png"
+SVG = Path("/workspace/assets/axo/pen/axo-pen-day3-seen.svg")
+OUT = Path("/workspace/assets/axo/pen/png/axo-pen-day3-seen.png")
+FONT = Path("/tmp/NotoSansTC-Bold.otf")
+FONT_URL = (
+    "https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/"
+    "Sans/OTF/TraditionalChinese/NotoSansCJKtc-Bold.otf"
+)
 W, H = 1080, 1350
 
-cairosvg.svg2png(url=f"file://{SVG}", write_to=OUT, output_width=W, output_height=H)
 
-im = Image.open(OUT).convert("RGBA")
-draw = ImageDraw.Draw(im)
+def ensure_font() -> Path:
+    if not FONT.exists():
+        print("Downloading Noto Sans TC...")
+        urllib.request.urlretrieve(FONT_URL, FONT)
+    return FONT
 
-# Phone screen center: SVG (128+8+24, 268+188+12+32) -> scale to 1080x1350
-sx, sy = W / 400, H / 640
-cx = (36 + 128 + 8 + 24) * sx
-cy = (268 + 188 + 12 + 32) * sy
-font = None
-for path in (
-    "/tmp/NotoSansTC-Bold.otf",
-    "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
-    "/usr/share/fonts/truetype/noto/NotoSansCJK-Bold.ttc",
-):
-    try:
-        font = ImageFont.truetype(path, 52)
-        break
-    except OSError:
-        continue
-if font is None:
-    font = ImageFont.load_default()
 
-text = "已讀"
-bbox = draw.textbbox((0, 0), text, font=font)
-tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
-draw.text((cx - tw // 2, cy - th // 2), text, fill="#2A2420", font=font)
+def main() -> None:
+    ensure_font()
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    cairosvg.svg2png(url=f"file://{SVG}", write_to=str(OUT), output_width=W, output_height=H)
 
-im.save(OUT, "PNG")
-print(f"Wrote {OUT}")
+    sx, sy = W / 400, H / 640
+    # phone group: translate(48,290) + (118,168) + screen center (34,47)
+    cx = (48 + 118 + 34) * sx
+    cy = (290 + 168 + 47) * sy
+
+    im = Image.open(OUT).convert("RGBA")
+    draw = ImageDraw.Draw(im)
+    font = ImageFont.truetype(str(FONT), 46)
+    text = "\u5df2\u8b80"  # 已讀
+    bbox = draw.textbbox((0, 0), text, font=font)
+    tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+    draw.text((cx - tw / 2, cy - th / 2), text, fill="#2A2420", font=font)
+    im.save(OUT, "PNG")
+    print(f"Wrote {OUT} ({W}x{H})")
+
+
+if __name__ == "__main__":
+    main()
