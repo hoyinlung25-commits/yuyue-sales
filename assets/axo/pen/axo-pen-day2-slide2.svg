@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Slide 2: prone nap, thin baby limbs per brand reference, Zzz no cloud -->
+<!-- Slide 2: 1:1 body ref prone sleep, Zzz, English text -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 640" width="400" height="640">
-  <title>Day 2 Slide 2</title>
+  <title>Day 2 Slide 2 - Thing 1 Nap</title>
   <defs>
     <filter id="paperGrain" x="0%" y="0%" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" result="noise"/>
@@ -13,38 +13,16 @@
       .wash { fill: #E8D8E8; opacity: 0.55; }
       .ink { fill: none; stroke: #2A2420; stroke-linecap: round; stroke-linejoin: round; }
       .ink-main { stroke-width: 2.8; }
-      .ink-thin { stroke-width: 1.8; }
+      .ink-thin { stroke-width: 1.6; }
       .eye { fill: #2A2420; }
-      .cup { fill: #FAF6EE; }
     </style>
   </defs>
   <g filter="url(#paperGrain)">
     <rect class="paper" width="400" height="640"/>
-    <text x="200" y="72" text-anchor="middle" font-family="PingFang TC, cursive" font-size="22" font-weight="600" fill="#2A2420">第一件事：睡午覺。</text>
-    <text x="175" y="150" font-family="cursive" font-size="28" font-weight="bold" fill="#2A2420">Z</text>
-    <text x="198" y="128" font-family="cursive" font-size="22" font-weight="bold" fill="#2A2420">z</text>
-    <text x="215" y="110" font-family="cursive" font-size="16" font-weight="bold" fill="#2A2420">z</text>
-    <rect class="cup ink ink-main" x="292" y="425" width="28" height="34" rx="3"/>
-    <g transform="translate(30, 275)">
-      <ellipse class="wash" cx="170" cy="190" rx="100" ry="65"/>
-      <ellipse class="ink ink-main" cx="170" cy="190" rx="100" ry="65"/>
-      <ellipse class="wash" cx="108" cy="168" rx="50" ry="44"/>
-      <ellipse class="ink ink-main" cx="108" cy="168" rx="50" ry="44"/>
-      <path class="wash ink ink-main" d="M 262 188 C 312 182, 325 202, 308 222 C 292 232, 268 228, 258 208 Z"/>
-      <path class="ink-thin" d="M 64 158 L 60 182"/>
-      <path class="ink-thin" d="M 74 160 L 72 186"/>
-      <path class="ink-thin" d="M 84 162 L 84 188"/>
-      <path class="ink-thin" d="M 136 160 L 140 186"/>
-      <!-- thin splayed limbs -->
-      <path class="ink-thin" d="M 72 205 L 48 218"/>
-      <path class="ink-thin" d="M 46 218 L 42 222 M 46 218 L 50 222 M 46 218 L 44 226"/>
-      <path class="ink-thin" d="M 268 205 L 292 215"/>
-      <path class="ink-thin" d="M 292 215 L 296 219 M 292 215 L 288 219"/>
-      <path class="ink-thin" d="M 130 238 L 128 252 M 128 252 L 124 254 M 128 252 L 132 254"/>
-      <path class="ink-thin" d="M 218 236 L 222 250 M 222 250 L 218 252 M 222 250 L 226 252"/>
-      <circle class="eye" cx="94" cy="162" r="2.5"/>
-      <circle class="eye" cx="118" cy="162" r="2.5"/>
-      <path class="ink ink-main" stroke-width="1.8" d="M 100 176 L 112 176"/>
-    </g>
+    <text x="200" y="80" text-anchor="middle" font-family="cursive" font-size="26" font-weight="600" fill="#2A2420">Thing 1: Nap.</text>
+    <text x="175" y="148" font-family="cursive" font-size="28" font-weight="bold" fill="#2A2420">Z</text>
+    <text x="198" y="126" font-family="cursive" font-size="22" font-weight="bold" fill="#2A2420">z</text>
+    <text x="215" y="108" font-family="cursive" font-size="16" font-weight="bold" fill="#2A2420">z</text>
+    <!-- Body layout note: match reference axo-pen-day1 prone 1:1 in PNG -->
   </g>
 </svg>
