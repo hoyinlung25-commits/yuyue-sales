@@ -12,7 +12,10 @@ cairosvg.svg2png(url=f"file://{SVG}", write_to=OUT, output_width=W, output_heigh
 im = Image.open(OUT).convert("RGBA")
 draw = ImageDraw.Draw(im)
 
-# Phone screen center ~ (432, 720) in 1080x1350 (from SVG layout)
+# Phone screen center: SVG (128+8+24, 268+188+12+32) -> scale to 1080x1350
+sx, sy = W / 400, H / 640
+cx = (128 + 8 + 24) * sx
+cy = (268 + 188 + 12 + 32) * sy
 font = None
 for path in (
     "/tmp/NotoSansTC-Bold.otf",
