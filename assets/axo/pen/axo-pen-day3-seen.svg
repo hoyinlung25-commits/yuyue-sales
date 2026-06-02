@@ -85,11 +85,10 @@
       <path class="wash ink ink-light" d="M 132 302 L 120 322 Q 116 330 124 332 Q 132 334 134 322 Z"/>
       <path class="wash ink ink-light" d="M 196 302 L 208 322 Q 212 330 204 332 Q 196 334 194 322 Z"/>
 
-      <!-- Phone with ?? -->
+      <!-- Phone (?? added in PNG post-process) -->
       <g transform="translate(128, 188)">
         <rect class="phone-screen ink ink-main" x="0" y="0" width="64" height="96" rx="7"/>
         <rect x="8" y="12" width="48" height="64" rx="3" fill="#F2EBD9" stroke="#2A2420" stroke-width="1.2"/>
-        <text x="32" y="52" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#2A2420">&#24050;&#35712;</text>
       </g>
 
       <!-- LOCKED FACE -->
