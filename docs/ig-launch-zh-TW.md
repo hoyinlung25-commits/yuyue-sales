@@ -1,7 +1,9 @@
 # Instagram 優先上線計畫（Phase 1）
 
 **品牌：** Dozeify · **吉祥物：** Axo  
-**目標：** 先開 IG、用內容吸粉；**Printfly 暫停**，等粉絲與互動穩定再啟動 Phase 2。
+**目標：** **吸引追蹤者（followers first）** · Printfly 暫停  
+
+**完整策略：** [`marketing-strategy-zh-TW.md`](./marketing-strategy-zh-TW.md) · **每日執行：** [`action-plan-zh-TW.md`](./action-plan-zh-TW.md)
 
 ---
 

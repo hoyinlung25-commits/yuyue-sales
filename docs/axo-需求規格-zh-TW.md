@@ -15,7 +15,7 @@
 | 溝通語言 | 繁體中文規格為主 | — |
 | 主檔格式 | 向量 SVG；IG 匯出 **1080×1350（4:5）白底** | Phase 1 |
 
-**IG 執行手冊：** [`ig-launch-zh-TW.md`](./ig-launch-zh-TW.md) · **路線圖：** [`roadmap-zh-TW.md`](./roadmap-zh-TW.md)
+**行銷策略：** [`marketing-strategy-zh-TW.md`](./marketing-strategy-zh-TW.md) · **行動計畫：** [`action-plan-zh-TW.md`](./action-plan-zh-TW.md) · **IG：** [`ig-launch-zh-TW.md`](./ig-launch-zh-TW.md)
 
 ---
 

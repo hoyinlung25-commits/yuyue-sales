@@ -1,17 +1,30 @@
 # Dozeify 路線圖
 
+**North Star（Phase 1）：** **吸引 Instagram 追蹤者**
+
 ```mermaid
 flowchart TD
-  P1[Phase 1: Instagram 漲粉] --> GATE{達標?}
-  GATE -->|是| P2[Phase 2: Printfly 服飾]
-  GATE -->|否| P1
-  P2 --> P3[Phase 3: 商店 / 周邊擴充]
+  P1[Phase 1: IG 漲粉 30天] --> G{達標?}
+  G -->|14天連更 + 500粉 或 5k Reels| P2[Phase 2: Printfly]
+  G -->|未達標| P1
+  P2 --> P3[Phase 3: 轉換與商店]
 ```
 
-| Phase | 目標 | 產出 |
-|-------|------|------|
-| **1 — 現在** | 開 IG、7 日內容、互動、追蹤成長 | 漫畫貼文、Reels、Stories |
-| **2 — 暫停** | Printfly POD 上架 | 胸印、試色、商品頁 |
-| **3 — 未來** | 轉換粉絲為買家 | 官網 / 預購 / 聯名 |
+| Phase | 目標 | 關鍵產出 | 文件 |
+|-------|------|----------|------|
+| **1 — 現在** | **吸粉、互動、品牌辨識** | Feed、Reels、Stories、輪播 | [`marketing-strategy-zh-TW.md`](./marketing-strategy-zh-TW.md) · [`action-plan-zh-TW.md`](./action-plan-zh-TW.md) |
+| **2 — 暫停** | POD 上架 | 胸印、試色 | `axo-character-sheet` Printfly 段 |
+| **3 — 未來** | 粉絲 → 顧客 | 官網、預購 | TBD |
 
-**目前專注：** 僅 Phase 1。詳見 [`ig-launch-zh-TW.md`](./ig-launch-zh-TW.md)。
+## Phase 1 成功標準
+
+| 指標 | 門檻 |
+|------|------|
+| 連續發文 | **14 天** |
+| 追蹤 | **500+** *或* |
+| Reels | 單支 **5,000+** 播放 |
+| 購買意圖 | 留言「哪裡買」≥ **5**（開 Phase 2 訊號） |
+
+## 本週立即做
+
+見 [`action-plan-zh-TW.md`](./action-plan-zh-TW.md) → Week 0 / Week 1 勾選表。

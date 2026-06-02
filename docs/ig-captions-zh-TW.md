@@ -100,7 +100,7 @@ I am doing nothing today, and thinking nothing. 🫠
 
 | 格 | 畫面 | 手寫字 |
 |----|------|--------|
-| **Slide 1** | 雙腳站立、手拿水杯、豆豆眼直視前方 | 今天我要做很多事。 |
+| **Slide 1** | 雙腳站立、水杯、**6 支外鰓完整** | **Today I will do many things.** |
 | **Slide 2** | 初版趴睡、**六角完整**、Zzz、英文 | **Thing 1: Nap.** |
 
 ### 繁中 Caption（複製用）
