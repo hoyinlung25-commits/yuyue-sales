@@ -73,7 +73,7 @@
 
 - Day 1 → `axo-pen-day1.png`  
 - Day 2 輪播 → `day2-slide1.png` · `day2-slide2.png`  
-- Day 3–7 → `axo-pen-day3-seen.png` … `day7-stay.png`（待製）
+- Day 3 ✅ `assets/axo/pen/png/axo-pen-day3-seen.png` · Day 4–7 → `day4` … `day7`（待製）
 
 ---
 
