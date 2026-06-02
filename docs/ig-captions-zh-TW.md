@@ -140,19 +140,20 @@ What's your Thing 1? 🫠
 
 **完整企劃（畫面、emo 線、AI 提示）：** [`ig-day3-7-plan-zh-TW.md`](./ig-day3-7-plan-zh-TW.md)
 
-### Day 3 — Seen. Soul offline.（😔 emo）
+### Day 3 — ........（空氣泡 · 😔 emo）
+
+**版型：** 左上 Day 3 · 上中 `........` · `assets/axo/pen/png/axo-pen-day3.png`
 
 ```
-不是生氣。
-只是突然不知道要回什麼。
+打了很長。
+刪掉了。
+最後只剩 ........ 
 
-或者，其實什麼都不想回。
-
-你今天也有已讀不回的時刻嗎？🫠
+你也是嗎？🫠
 
 —
 
-#Dozeify #Axo #已讀不回 #emo #再生式休息 #療癒漫畫
+#Dozeify #Axo #說不出口 #emo #再生式休息 #療癒漫畫
 ```
 
 ### Day 4 — Alarm rang. I didn't.

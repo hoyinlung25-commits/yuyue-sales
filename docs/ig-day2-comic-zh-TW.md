@@ -1,6 +1,7 @@
 # Day 2 貼文 — 兩格漫畫
 
-**形式：** IG Carousel 2 張 · **風格：** 鋼筆手繪 × 畫紙 · **臉：** 小眼、平嘴（鎖定）
+**形式：** IG Carousel 2 張 · **版型：** 左上 `Day 2` + 上中一句英文（見 [`ig-series-format-zh-TW.md`](./ig-series-format-zh-TW.md)）  
+**風格：** 色鉛筆平面 2D · **臉：** 小眼、平嘴（鎖定）
 
 ---
 
