@@ -68,7 +68,7 @@
 **資產對應：**
 
 - Day 1 → `axo-pen-day1-blank-stare.svg`（發呆＋空白思考雲）  
-- Day 2 → `axo-pen-day2-noodles.svg` · `png/axo-pen-day2.png`  
+- Day 2 → `png/axo-pen-day2-slide1.png` · `png/axo-pen-day2-slide2.png`  
 - Day 6 → `axo-with-mug.svg`（已有）  
 - Day 7 → `axo-wave.svg` 可改字  
 - Day 3–5 → 待新增
