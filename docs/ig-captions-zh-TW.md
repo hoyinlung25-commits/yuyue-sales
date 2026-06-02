@@ -136,6 +136,82 @@ What's your Thing 1? 🫠
 
 ---
 
+## 7 日系列 · Day 3–7
+
+**完整企劃（畫面、emo 線、AI 提示）：** [`ig-day3-7-plan-zh-TW.md`](./ig-day3-7-plan-zh-TW.md)
+
+### Day 3 — Seen. Soul offline.（😔 emo）
+
+```
+不是生氣。
+只是突然不知道要回什麼。
+
+或者，其實什麼都不想回。
+
+你今天也有已讀不回的時刻嗎？🫠
+
+—
+
+#Dozeify #Axo #已讀不回 #emo #再生式休息 #療癒漫畫
+```
+
+### Day 4 — Alarm rang. I didn't.
+
+```
+鬧鐘：很努力。
+我：也很努力（躺著）。
+
+你今天起床了嗎？🫠
+
+—
+
+#Dozeify #Axo #起床失敗 #再生式休息
+```
+
+### Day 5 — Monday: present, not participating.（🌧️ emo）
+
+```
+週一的我：
+身體在開會。心在睡覺。靈魂在抗議。
+
+這週的週一，你還好嗎？🫠
+
+—
+
+#Dozeify #Axo #週一 #emo #打工人
+```
+
+### Day 6 — Today's plan: hold the cup.（🫠 輕 emo 療癒）
+
+```
+沒有完成什麼大事。但有喝到一口。
+
+這樣，也算照顧了自己。🫠
+
+你的今天，有好好喝一口嗎？
+
+—
+
+#Dozeify #Axo #自我照顧 #再生式休息
+```
+
+### Day 7 — If you're also doing nothing—stay.
+
+```
+這一週，Axo 什麼都沒做很多。你可能也是。
+
+如果你也需要一個不用努力的角落——追蹤一下。
+我們一起發呆。🫠
+
+謝謝你來。真的。
+
+—
+
+#Dozeify #Axo #追蹤我 #再生式休息 #療癒漫畫
+```
+
+---
+
 ## 發文小提醒
 
 | 項目 | 建議 |

@@ -45,11 +45,13 @@
 | D1 | Post 1 介紹 Axo | 投票：你認識 Axo 了嗎 | — |
 | D2 | Post 2 發呆 | 問答：你今天發呆了嗎 | 發呆圖 7 秒 |
 | D3 | Day 2 輪播（英文圖字） | 轉發輪播 +「你的 Thing 1」 | 輪播 Slide2 午睡 |
-| D4 | Day 3 已讀不回（待圖） | 投票：靈魂在線嗎 | — |
-| D5 | Day 4 鬧鐘（待圖） | — | 鬧鐘梗 7 秒 |
-| D6 | Day 5 週一（待圖） | 週一表情 pack | — |
-| D7 | Day 6 杯子（`axo-with-mug`） | — | — |
-| D8 | Day 7 邀請追蹤 | 「要繼續看 Axo 嗎」投票 | — |
+| D4 | Day 3 Seen（emo） | 投票：靈魂在線嗎 | — |
+| D5 | Day 4 Alarm | — | 鬧鐘梗 7 秒 |
+| D6 | Day 5 Monday（emo） | 週一 emoji 問答 | — |
+| D7 | Day 6 Cup（療癒） | 喝什麼投票 | — |
+| D8 | Day 7 Stay | 「要繼續看 Axo 嗎」 | — |
+
+> Day 3–7 畫面詳見 [`ig-day3-7-plan-zh-TW.md`](./ig-day3-7-plan-zh-TW.md)
 
 ### W1 檢核（週日）
 

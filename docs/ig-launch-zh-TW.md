@@ -61,19 +61,19 @@
 |----|------|------------|-------------------|
 | **1** | 發呆 | 今天什麼都沒做，什麼也沒想。（**空白思考雲**） | I am doing nothing today, and thinking nothing. |
 | **2** | 待辦→午睡 | 輪播 2 格：站立拿水杯 → 趴睡（見 ig-day2-comic） | Many things → Thing 1: Nap. |
-| **3** | 已讀不回 | 訊息已讀，靈魂離線。 | Seen. Soul offline. |
-| **4** | 鬧鐘 | 鬧鐘響了，我沒有。 | Alarm rang. I didn't. |
-| **5** | 週一 | 週一：存在，但不參與。 | Monday: present, not participating. |
-| **6** | 杯子 | 今天的計畫：拿著杯子。 | Today's plan: hold mug. |
-| **7** | 邀請追蹤 | 如果你也什麼都不想做，歡迎留下。 | If you're also doing nothing—stay. |
+| **3** | 😔 已讀不回 emo | Seen. Soul offline. | 坐著看手機、靈魂下線 |
+| **4** | 😶 麻木 | Alarm rang. I didn't. | 鬧鐘響、Axo 不動 |
+| **5** | 🌧️ 週一 emo | Monday: present, not participating. | 站立靈魂出竅 |
+| **6** | 🫠 杯子療癒 | Today's plan: hold the cup. | 捧杯低頭、照顧自己 |
+| **7** | 💜 邀請 | If you're also doing nothing—stay. | 溫柔收尾、追蹤 CTA |
 
-**資產對應：**
+**完整企劃：** [`ig-day3-7-plan-zh-TW.md`](./ig-day3-7-plan-zh-TW.md) · **Bio：** [`ig-bio-zh-TW.md`](./ig-bio-zh-TW.md)
 
-- Day 1 → `axo-pen-day1-blank-stare.svg`（發呆＋空白思考雲）  
-- Day 2 → `png/axo-pen-day2-slide1.png` · `png/axo-pen-day2-slide2.png`  
-- Day 6 → `axo-with-mug.svg`（已有）  
-- Day 7 → `axo-wave.svg` 可改字  
-- Day 3–5 → 待新增
+**資產：**
+
+- Day 1 → `axo-pen-day1.png`  
+- Day 2 輪播 → `day2-slide1.png` · `day2-slide2.png`  
+- Day 3–7 → `axo-pen-day3-seen.png` … `day7-stay.png`（待製）
 
 ---
 
@@ -102,7 +102,20 @@
 
 ---
 
-## 四、漲粉策略（2026 IG 實務）
+## 四、建議發文順序（漲粉向）
+
+| # | 內容 | 資產 |
+|---|------|------|
+| 1 | 介紹 Axo | `axo-pen-canonical.png` |
+| 2 | 發呆 + 空白雲 | `axo-pen-day1.png` |
+| 3 | 輪播：很多事 → 午睡 | `day2-slide1` · `day2-slide2`（英文圖字） |
+| 4+ | 7 日表 Day 3–7 | 見下方 |
+
+> 詳細日曆：[`action-plan-zh-TW.md`](./action-plan-zh-TW.md)
+
+---
+
+## 五、漲粉策略（2026 IG 實務）
 
 ### 內容形式優先順序
 
@@ -131,7 +144,7 @@
 
 ---
 
-## 五、Phase 1 設計師需求（縮小範圍）
+## 六、Phase 1 設計師需求（縮小範圍）
 
 **現在需要：**
 
@@ -146,7 +159,7 @@
 
 ---
 
-## 六、本週你可執行的最小步驟
+## 七、本週你可執行的最小步驟
 
 - [ ] 註冊 IG 帳號 + 上傳大頭貼  
 - [ ] 設計師把 Day 1 SVG 做成 1080×1350 完稿  
@@ -156,7 +169,7 @@
 
 ---
 
-## 七、Phase 2（Printfly）— 暫存
+## 八、Phase 2（Printfly）— 暫存
 
 等 Phase 1 達標後再開啟：
 
