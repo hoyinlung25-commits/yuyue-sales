@@ -129,10 +129,11 @@ Thing 1: Nap. ✅
 What's your Thing 1? 🫠
 ```
 
-### 配圖
+### 配圖（輪播 3 張）
 
-- Slide 1：`assets/axo/pen/png/axo-pen-day2-slide1.png`
-- Slide 2：`assets/axo/pen/png/axo-pen-day2-slide2.png`
+1. `axo-pen-day2-text.png`（文字 · happy）
+2. `axo-pen-day2-slide1.png`
+3. `axo-pen-day2-slide2.png`
 
 ---
 
@@ -140,9 +141,10 @@ What's your Thing 1? 🫠
 
 **完整企劃（畫面、emo 線、AI 提示）：** [`ig-day3-7-plan-zh-TW.md`](./ig-day3-7-plan-zh-TW.md)
 
-### Day 3 — ........（空氣泡 · 😔 emo）
+### Day 3 — ........（😔 emo · 2 張輪播）
 
-**版型：** 左上 Day 3 · 上中 `........` · `assets/axo/pen/png/axo-pen-day3.png`
+1. `axo-pen-day3-text.png` — *Sometimes you type a whole paragraph. Then delete it.*
+2. `axo-pen-day3.png` — 漫畫 · 左上 Day 3 · `........` · 空氣泡
 
 ```
 打了很長。

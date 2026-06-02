@@ -14,6 +14,7 @@
 | 眼 | 豆豆眼**直視前方** |
 | 嘴 | 平嘴 |
 | 外鰓（六角） | 頭兩側 **各 3 支，共 6 支**（見 [`axo-gills-zh-TW.md`](./axo-gills-zh-TW.md)） |
+| 左上 | **Day 2** |
 | 手寫字（圖上） | **Today I will do many things.**（英文） |
 | 檔案 | `png/axo-pen-day2-slide1.png` |
 
@@ -28,6 +29,7 @@
 | 姿勢 | **趴地熟睡** |
 | 外鰓（六角） | **6 支全畫**（趴睡時下垂，但不可缺支） |
 | 睡眠符號 | 頭上 **Zzz** |
+| 左上 | **Day 2** |
 | 手寫字（圖上） | **Thing 1: Nap.** |
 | 檔案 | `png/axo-pen-day2-slide2.png` |
 
@@ -39,8 +41,12 @@
 
 ---
 
-## 發文
+## 發文（3 張輪播）
 
-- 類型：**輪播（Carousel）** 先 Slide 1 再 Slide 2  
-- 比例：4:5（1080×1350）  
-- 保留畫紙紋理  
+| 順序 | 檔案 | 類型 |
+|------|------|------|
+| 1 | `axo-pen-day2-text.png` | 文字主軸（happy） |
+| 2 | `axo-pen-day2-slide1.png` | 漫畫 |
+| 3 | `axo-pen-day2-slide2.png` | 漫畫 |
+
+見 [`ig-series-format-zh-TW.md`](./ig-series-format-zh-TW.md)
