@@ -14,7 +14,7 @@ draw = ImageDraw.Draw(im)
 
 # Phone screen center: SVG (128+8+24, 268+188+12+32) -> scale to 1080x1350
 sx, sy = W / 400, H / 640
-cx = (128 + 8 + 24) * sx
+cx = (36 + 128 + 8 + 24) * sx
 cy = (268 + 188 + 12 + 32) * sy
 font = None
 for path in (
@@ -33,7 +33,6 @@ if font is None:
 text = "已讀"
 bbox = draw.textbbox((0, 0), text, font=font)
 tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
-cx, cy = 432, 718
 draw.text((cx - tw // 2, cy - th // 2), text, fill="#2A2420", font=font)
 
 im.save(OUT, "PNG")
