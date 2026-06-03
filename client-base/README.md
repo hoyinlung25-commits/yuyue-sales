@@ -12,3 +12,7 @@
 2. **Clients Summary** — grouped view (inforce count per client) derived from Policies only
 
 Prospect/network PDF data has been **removed** from the workbook.
+
+## Google Sheet
+
+To use your Google Sheet as the source, see **`GOOGLE_SHEET_IMPORT.md`** and run `import_google_sheet.py`.
