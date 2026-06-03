@@ -23,4 +23,7 @@ Refresh after editing Google Sheet:
 
 ```bash
 cd client-base && python3 import_google_sheet.py
+# or: python3 upgrade_pipeline.py  (after raw CSV exists)
 ```
+
+**Upgrade guide:** `GOOGLE_SHEET_UPGRADE.md` — import `google_sheet_upgraded.csv` back to Google.

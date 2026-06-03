@@ -165,3 +165,9 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+    upgrade = BASE / "upgrade_pipeline.py"
+    if upgrade.exists():
+        import subprocess
+
+        print("\nRunning upgrade_pipeline.py ...")
+        subprocess.run(["python3", str(upgrade)], check=False)
