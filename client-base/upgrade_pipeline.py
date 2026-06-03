@@ -456,7 +456,9 @@ def main() -> None:
         with POLICIES_CSV.open(encoding="utf-8") as f:
             policy_data = list(csv.reader(f))[1:]
 
-    build_excel(rows, policy_data)
+    from build_beautiful_xlsx import build_workbook
+
+    build_workbook(rows, policy_data, OUTPUT_XLSX)
     print(f"Upgraded {len(rows)} contacts → {UPGRADED_CSV.name}, {OUTPUT_XLSX.name}")
 
 
