@@ -2,17 +2,25 @@
 
 | File | Purpose |
 |------|---------|
-| **`client_base.xlsx`** | Excel workbook — **policy screenshot data only** |
-| `policies_register.csv` | Source data from your policy book screenshots |
-| `build_excel.py` | Regenerate: `python3 build_excel.py` |
+| **`client_base.xlsx`** | Main workbook (Google Sheet + policy screenshots) |
+| `google_sheet_raw.csv` | Latest download from your Google Sheet |
+| `policies_register.csv` | Policy book from screenshots |
+| `import_google_sheet.py` | Sync sheet → Excel: `python3 import_google_sheet.py` |
+
+## Google Sheet (live source)
+
+https://docs.google.com/spreadsheets/d/1qPNnq7tOPYX5Rk4UpiL9UaCCbEyRseC-g2-LC6itupM/edit
 
 ## Excel sheets
 
-1. **Policies** — matches your screenshots (銷售團隊, 代理人, 權益人, 保單號碼, 基本計劃, etc.)
-2. **Clients Summary** — grouped view (inforce count per client) derived from Policies only
+| Sheet | Content |
+|-------|---------|
+| **Prospects & Pipeline** | Your Google Sheet (~104 contacts) |
+| **Policies** | In-force book from screenshots (31 policies) |
+| **How to Use** | Summary + refresh instructions |
 
-Prospect/network PDF data has been **removed** from the workbook.
+Refresh after editing Google Sheet:
 
-## Google Sheet
-
-To use your Google Sheet as the source, see **`GOOGLE_SHEET_IMPORT.md`** and run `import_google_sheet.py`.
+```bash
+cd client-base && python3 import_google_sheet.py
+```

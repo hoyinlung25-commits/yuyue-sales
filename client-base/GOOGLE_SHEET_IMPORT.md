@@ -3,7 +3,13 @@
 Your sheet:  
 https://docs.google.com/spreadsheets/d/1qPNnq7tOPYX5Rk4UpiL9UaCCbEyRseC-g2-LC6itupM/edit
 
-This environment **cannot sign in to Google**, so the link must be public **or** you export a file.
+The agent can sync via Google's `gviz` CSV export when the sheet is shared. Run:
+
+```bash
+cd client-base && python3 import_google_sheet.py
+```
+
+Manual export is only needed if automatic download fails.
 
 ---
 
