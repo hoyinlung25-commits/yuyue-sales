@@ -113,21 +113,28 @@ def build_policies(wb: Workbook) -> None:
 
 def build_prospects(wb: Workbook) -> None:
     ws = wb.create_sheet("Prospects Network")
-    headers, data = read_csv("prospects_network_top.csv")
-    extra = [
-        "Last Contact",
-        "Next Follow-up",
-        "L0",
-        "Invited",
-        "L1",
-        "L2",
-        "NEED",
-        "Outcome",
-    ]
-    headers = headers + extra
-    data = [row + [""] * len(extra) for row in data]
+    csv_name = (
+        "prospects_network_full.csv"
+        if (BASE / "prospects_network_full.csv").exists()
+        else "prospects_network_top.csv"
+    )
+    headers, data = read_csv(csv_name)
     nrows = write_table(ws, headers, data)
     style_sheet(ws, len(headers), nrows)
+
+    # Summary by priority on same sheet (right side) — optional small stats
+    ws.cell(row=1, column=len(headers) + 2, value="Count by score")
+    scores: dict[str, int] = {}
+    score_idx = headers.index("relationship_score_5") if "relationship_score_5" in headers else -1
+    if score_idx >= 0:
+        for row in data:
+            s = row[score_idx] if score_idx < len(row) else "?"
+            scores[s] = scores.get(s, 0) + 1
+        r = 2
+        for s in sorted(scores.keys(), reverse=True):
+            ws.cell(row=r, column=len(headers) + 2, value=f"Score {s}")
+            ws.cell(row=r, column=len(headers) + 3, value=scores[s])
+            r += 1
 
 
 def build_weekly_actions(wb: Workbook) -> None:
