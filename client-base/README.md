@@ -2,7 +2,8 @@
 
 | File | Purpose |
 |------|---------|
-| **`client_base.xlsx`** | Main workbook (Google Sheet + policy screenshots) |
+| **`client_base.xlsx`** | Beautiful Excel — Dashboard, Clients, Add form, Policies |
+| `EXCEL_GUIDE.md` | How to use the xlsx file |
 | `google_sheet_raw.csv` | Latest download from your Google Sheet |
 | `policies_register.csv` | Policy book from screenshots |
 | `import_google_sheet.py` | Sync sheet → Excel: `python3 import_google_sheet.py` |
