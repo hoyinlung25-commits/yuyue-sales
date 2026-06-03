@@ -1,57 +1,73 @@
 # client_base.xlsx — User guide
 
-## Open this file
+## Sheets
 
-**`client_base.xlsx`** — use Excel, WPS, or Apple Numbers.
-
----
-
-## Sheets (tabs)
-
-| Tab | What it does |
-|-----|----------------|
-| **Start Here** | Quick instructions |
-| **Dashboard** | Overview counts (Hot / Warm / Clients) |
-| **➕ Add New Client** | Form to add someone new |
-| **Clients** | Full list + green rows at bottom for new entries |
-| **This Week** | Top priorities to call |
-| **Policies** | In-force policies from your book |
+| Tab | Purpose |
+|-----|---------|
+| **Start Here** | Instructions |
+| **Dashboard** | KPIs + live referral/birthday counts |
+| **➕ Add New Client** | Form with referral & birthday fields |
+| **Clients** | Master list (all functions) |
+| **Referral System** | Champions, scripts, referral log |
+| **Birthdays** | Auto-list birthdays within 30 days |
+| **Approach Funnel** | Count by approach status |
+| **This Week** | Priority calls |
+| **Policies** | In-force policies |
 
 ---
 
-## Add a new client (easy way)
+## Referral system
 
-### Method A — Green rows on **Clients** tab
+On **Clients** sheet:
 
-1. Scroll to the bottom → light **green** rows labelled “ADD NEW CLIENTS BELOW”.
-2. Type directly — use **dropdowns** for Category, Stage, Gender.
-3. Press **Tab** to move across; the table expands as you add rows.
+| Column | Use |
+|--------|-----|
+| **Referral Tier** | Auto: Champion / High Potential / Standard (updates when Referrals Given changes) |
+| **Referral Asked?** | Dropdown: No → Yes - will refer → Yes - referred someone |
+| **Referrals Given** | Number of people they introduced |
+| **Referred By** | Who introduced this prospect |
+| **Last Referral Date** | When you received the intro |
+| **Referral Notes** | Free text |
 
-### Method B — **➕ Add New Client** form
+**Referral System** tab:
 
-1. Fill the **yellow** cells (name, phone, category, etc.).
-2. The **green row** below updates automatically.
-3. Select that entire green row → **Copy**.
-4. Go to **Clients** → click first empty green row → **Paste**.
-
----
-
-## Colours
-
-| Colour | Meaning |
-|--------|---------|
-| Red tint | **Hot** lead — call soon |
-| Green tint | **Client** — already has policy |
-| Orange tint | **Warm** — book a meeting |
-| Light green rows | Where to add new people |
+- Top **champions** to call first  
+- **WhatsApp scripts** (Cantonese)  
+- **Referral log** — write each new introduction  
 
 ---
 
-## Refresh from Google Sheet
+## Customer birthdays
+
+1. On **Clients**, enter **Birthday** (column W) — use date format `1990-05-15` or Excel date picker.  
+2. **Days to Birthday** (column X) calculates automatically.  
+3. **Birthday ≤30d?** shows **YES** when within 30 days.  
+4. Open **Birthdays** tab — names appear automatically (may need Excel to recalculate: press `F9`).
+
+**Suggested action** on Birthdays tab: Champion → birthday + referral ask; others → birthday message only.
+
+---
+
+## Client approach status
+
+| Column | Use |
+|--------|-----|
+| **Approach Status** | Dropdown: Not contacted → Meeting → Quoted → Active client → Lost |
+| **Next Touch Date** | Your next follow-up date |
+
+**Approach Funnel** tab shows how many people are at each stage (live `COUNTIF` formulas).
+
+---
+
+## Add new client
+
+1. **➕ Add New Client** — fill yellow cells (including birthday & approach status).  
+2. Copy the green row → paste into **Clients** (green rows at bottom).  
+
+---
+
+## Refresh data
 
 ```bash
-cd client-base
-python3 import_google_sheet.py
+cd client-base && python3 import_google_sheet.py
 ```
-
-This downloads your Google Sheet and rebuilds a fresh `client_base.xlsx`.

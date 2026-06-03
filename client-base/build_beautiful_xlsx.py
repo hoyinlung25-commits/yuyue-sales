@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import re
 from datetime import datetime
 
 from openpyxl import Workbook
@@ -28,7 +29,44 @@ FONT = "Calibri"
 THIN = Side(style="thin", color="CBD5E0")
 BORDER = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
 
-# Main table columns (user-friendly order)
+# Column indexes (1-based) — keep in sync with CLIENT_HEADERS
+C = {
+    "rank": 1,
+    "category": 2,
+    "score": 3,
+    "action": 4,
+    "stage": 5,
+    "is_client": 6,
+    "name": 7,
+    "nick": 8,
+    "phone": 9,
+    "gender": 10,
+    "age": 11,
+    "relationship": 12,
+    "rel_sc": 13,
+    "poss": 14,
+    "job": 15,
+    "area": 16,
+    "income": 17,
+    "product": 18,
+    "remarks": 19,
+    "last_note": 20,
+    "approach": 21,
+    "next_touch": 22,
+    "birthday": 23,
+    "days_to_bday": 24,
+    "bday_soon": 25,
+    "ref_tier": 26,
+    "ref_asked": 27,
+    "ref_given": 28,
+    "ref_by": 29,
+    "ref_date": 30,
+    "ref_notes": 31,
+    "l0": 32,
+    "l1": 33,
+    "l2": 34,
+}
+
 CLIENT_HEADERS = [
     "Rank",
     "Category",
@@ -50,40 +88,143 @@ CLIENT_HEADERS = [
     "Product Interest",
     "Remarks",
     "Last Note",
+    "Approach Status",
+    "Next Touch Date",
+    "Birthday",
+    "Days to Birthday",
+    "Birthday ≤30d?",
+    "Referral Tier",
+    "Referral Asked?",
+    "Referrals Given",
+    "Referred By",
+    "Last Referral Date",
+    "Referral Notes",
     "L0",
     "L1",
     "L2",
 ]
 
+APPROACH_OPTIONS = (
+    "Not contacted,First contact,Meeting scheduled,Needs analysis,"
+    "Quoted,Follow-up,Negotiating,Won - pending,Active client,"
+    "Referral partner,Nurture,Lost"
+)
+REF_ASKED_OPTIONS = "No,Yes - declined,Yes - will refer,Yes - referred someone"
+
 # Map from OUT_HEADERS indices in upgrade_pipeline rows
 # 0 rank, 1 cat, 2 score, 3 next, 4 stage, 5 is client, 6 policy match, 7 products,
 # 8 en, 9 nick, 10 phone, ...
-def slim_row(full: list) -> list:
+def policy_champion_set(policy_rows: list[list]) -> set[str]:
+    """Policyowners with 2+ policies = referral champion."""
+    from collections import Counter
+
+    counts: Counter[str] = Counter()
+    for row in policy_rows:
+        if len(row) > 2:
+            owner = row[2]
+            key = re.sub(r"[^a-z0-9]", "", owner.lower())
+            if key:
+                counts[key] += 1
+    return {k for k, v in counts.items() if v >= 2}
+
+
+def map_approach_status(stage: str, is_client: str) -> str:
+    if is_client == "Yes":
+        return "Active client"
+    mapping = {
+        "NEW": "Not contacted",
+        "L0": "First contact",
+        "L1": "Meeting scheduled",
+        "L2": "Quoted",
+        "L3": "Negotiating",
+    }
+    return mapping.get((stage or "").upper(), "Not contacted")
+
+
+def initial_referral_tier(is_client: str, rel_sc: int, name: str, champions: set[str]) -> str:
+    key = re.sub(r"[^a-z0-9]", "", (name or "").lower())
+    if is_client == "Yes" or key in champions:
+        return "Champion"
+    if rel_sc >= 4:
+        return "High Potential"
+    if rel_sc >= 3:
+        return "Standard"
+    return "New"
+
+
+def slim_row(full: list, champions: set[str] | None = None) -> list:
+    champions = champions or set()
+    stage = str(full[4] or "")
+    is_client = str(full[5] or "")
+    try:
+        rel_sc = int(full[14]) if full[14] != "" else 0
+    except (TypeError, ValueError):
+        rel_sc = 0
+    name = str(full[8] or "")
     return [
         full[0],
         full[1],
         full[2],
         full[3],
-        full[4],
-        full[5],
-        full[8],
+        stage,
+        is_client,
+        name,
         full[9],
         full[10],
         full[11],
         full[12],
         full[13],
-        full[14],
-        full[15],
+        rel_sc or "",
+        full[15] or "",
         full[16],
         full[17],
         full[18],
         full[7],
         full[19],
         full[20],
+        map_approach_status(stage, is_client),
+        "",  # next touch
+        "",  # birthday
+        None,  # days formula
+        None,  # soon formula
+        initial_referral_tier(is_client, rel_sc, name, champions),
+        "No",  # referral asked default
+        0,  # referrals given
+        "",  # referred by
+        "",  # last referral date
+        "",  # referral notes
         full[23],
         full[24],
         full[25],
     ]
+
+
+def col_letter(key: str) -> str:
+    return get_column_letter(C[key])
+
+
+def row_formula_days_to_birthday(r: int) -> str:
+    b = f"${col_letter('birthday')}{r}"
+    return (
+        f'=IF({b}="","",IF(DATE(YEAR(TODAY()),MONTH({b}),DAY({b}))>=TODAY(),'
+        f"DATE(YEAR(TODAY()),MONTH({b}),DAY({b}))-TODAY(),"
+        f"DATE(YEAR(TODAY())+1,MONTH({b}),DAY({b}))-TODAY()))"
+    )
+
+
+def row_formula_bday_soon(r: int) -> str:
+    d = f"${col_letter('days_to_bday')}{r}"
+    return f'=IF({d}="","",IF({d}<=30,"YES",""))'
+
+
+def row_formula_ref_tier(r: int) -> str:
+    cl = f"${col_letter('is_client')}{r}"
+    rel = f"${col_letter('rel_sc')}{r}"
+    given = f"${col_letter('ref_given')}{r}"
+    return (
+        f'=IF({cl}="Yes","Champion",IF({given}>=2,"Advocate",IF({given}>=1,"Referrer",'
+        f'IF({rel}>=4,"High Potential",IF({rel}>=3,"Standard","New"))))))'
+    )
 
 
 def _fill(hex_color: str) -> PatternFill:
@@ -131,13 +272,20 @@ def build_guide(wb: Workbook) -> None:
         ("Quick start", ""),
         ("1", "Add a new person → open sheet 「➕ Add New Client」, fill the yellow form."),
         ("2", "Click 「Add to Client List」 area → copy the green row → paste into 「Clients」 first empty row."),
-        ("3", "Work daily from 「This Week」 or sort 「Clients」 by Score (column C)."),
-        ("4", "Policyholders are in 「Policies」 tab."),
+        ("3", "Work from 「This Week」, 「Referral System」, or 「Birthdays」 tabs."),
+        ("4", "Fill Birthday + Approach Status on 「Clients」 for automation."),
+        ("", ""),
+        ("Referral system", ""),
+        ("•", "「Referral System」 — champions, scripts, tracking."),
+        ("•", "Set Referral Asked? / Referrals Given on Clients sheet."),
+        ("", ""),
+        ("Birthdays", ""),
+        ("•", "Enter Birthday on Clients → Days to Birthday calculates automatically."),
+        ("•", "「Birthdays」 tab lists contacts with birthday within 30 days."),
         ("", ""),
         ("Tips", ""),
-        ("•", "Use dropdowns for Category, Stage, Gender — fewer typos."),
-        ("•", "Rows colour automatically: Hot = red tint, Client = green, Warm = orange."),
-        ("•", "Refresh data from Google: run upgrade_pipeline.py in client-base folder."),
+        ("•", "Approach Status dropdown tracks where each person is in your sales flow."),
+        ("•", "Refresh: python3 import_google_sheet.py in client-base folder."),
         ("", ""),
         ("Updated", datetime.now().strftime("%Y-%m-%d %H:%M")),
     ]
@@ -201,14 +349,30 @@ def build_dashboard(wb: Workbook, rows: list[list]) -> None:
             ws.cell(row=i, column=3, value=round(100 * cnt / len(rows), 1))
             ws.cell(row=i, column=3).number_format = '0.0"%"'
 
-    ws["A16"] = "Go to sheet →"
-    ws["B16"] = "Clients (full list)"
-    ws["B17"] = "➕ Add New Client"
-    ws["B18"] = "This Week"
+    ws["A15"] = "Referral & birthdays"
+    ws["A15"].font = _font(bold=True, size=12)
+    ws["A16"] = "Champions (live)"
+    ws["B16"] = '=COUNTIF(Clients!Z3:Z500,"Champion")'
+    ws["A17"] = "Birthdays ≤30 days"
+    ws["B17"] = '=COUNTIF(Clients!Y3:Y500,"YES")'
+    ws["A18"] = "Referral asked (Yes)"
+    ws["B18"] = '=COUNTIF(Clients!AA3:AA500,"Yes*")'
     for r in (16, 17, 18):
-        ws.cell(row=r, column=2).font = _font(bold=True, color=NAVY_LIGHT)
+        ws.cell(row=r, column=2).font = _font(size=11, color=NAVY_LIGHT)
 
-    set_col_widths(ws, {1: 18, 2: 14, 3: 10})
+    ws["A20"] = "Go to sheet →"
+    links = [
+        "Referral System",
+        "Birthdays",
+        "Approach Funnel",
+        "Clients",
+        "➕ Add New Client",
+        "This Week",
+    ]
+    for i, name in enumerate(links, 21):
+        ws.cell(row=i, column=2, value=name).font = _font(bold=True, color=NAVY_LIGHT)
+
+    set_col_widths(ws, {1: 22, 2: 42, 3: 10})
 
 
 def build_add_client(wb: Workbook) -> None:
@@ -245,7 +409,11 @@ def build_add_client(wb: Workbook) -> None:
         "Possibility (1-5)",
         "Category",
         "Stage",
+        "Approach Status",
         "Next Action",
+        "Next Touch Date",
+        "Birthday (yyyy-mm-dd)",
+        "Referral Asked?",
         "Job",
         "Area",
         "Income",
@@ -264,6 +432,8 @@ def build_add_client(wb: Workbook) -> None:
     add_list_validation(ws, "C7", "Male,Female,Other")
     add_list_validation(ws, "C12", "Hot,Warm,Nurture,Low,Client")
     add_list_validation(ws, "C13", "NEW,L0,L1,L2,L3")
+    add_list_validation(ws, "C14", APPROACH_OPTIONS)
+    add_list_validation(ws, "C18", REF_ASKED_OPTIONS)
 
     paste_hdr = first_in + len(labels) + 2
     ws.merge_cells(start_row=paste_hdr, start_column=2, end_row=paste_hdr, end_column=6)
@@ -277,53 +447,60 @@ def build_add_client(wb: Workbook) -> None:
         ws.cell(row=hdr_row, column=c, value=h)
     style_header_row(ws, hdr_row, len(CLIENT_HEADERS))
 
-    # C4..C19 map to form fields
     fr = first_in
-    formulas = [
-        "",
-        f"$C${fr + 8}",  # Category
-        f'=IF($C${fr + 6}="","",$C${fr + 6}+$C${fr + 7})',  # Score
-        f"$C${fr + 10}",  # Next action
-        f"$C${fr + 9}",  # Stage
-        "",
-        f"$C${fr}",
-        f"$C${fr + 1}",
-        f"$C${fr + 2}",
-        f"$C${fr + 3}",
-        f"$C${fr + 4}",
-        f"$C${fr + 5}",
-        f"$C${fr + 6}",
-        f"$C${fr + 7}",
-        f"$C${fr + 11}",
-        f"$C${fr + 12}",
-        f"$C${fr + 13}",
-        f"$C${fr + 14}",
-        f"$C${fr + 15}",
-        "",
-        "",
-        "",
-        "",
-    ]
+    # Form rows: name..remarks at fr..fr+19
+    formulas = [""] * len(CLIENT_HEADERS)
+    formulas[C["category"] - 1] = f"$C${fr + 8}"
+    formulas[C["score"] - 1] = f'=IF($C${fr + 6}="","",$C${fr + 6}+$C${fr + 7})'
+    formulas[C["action"] - 1] = f"$C${fr + 11}"
+    formulas[C["stage"] - 1] = f"$C${fr + 9}"
+    formulas[C["name"] - 1] = f"$C${fr}"
+    formulas[C["nick"] - 1] = f"$C${fr + 1}"
+    formulas[C["phone"] - 1] = f"$C${fr + 2}"
+    formulas[C["gender"] - 1] = f"$C${fr + 3}"
+    formulas[C["age"] - 1] = f"$C${fr + 4}"
+    formulas[C["relationship"] - 1] = f"$C${fr + 5}"
+    formulas[C["rel_sc"] - 1] = f"$C${fr + 6}"
+    formulas[C["poss"] - 1] = f"$C${fr + 7}"
+    formulas[C["approach"] - 1] = f"$C${fr + 10}"
+    formulas[C["next_touch"] - 1] = f"$C${fr + 12}"
+    formulas[C["birthday"] - 1] = f"$C${fr + 13}"
+    formulas[C["ref_asked"] - 1] = f"$C${fr + 14}"
+    formulas[C["job"] - 1] = f"$C${fr + 15}"
+    formulas[C["area"] - 1] = f"$C${fr + 16}"
+    formulas[C["income"] - 1] = f"$C${fr + 17}"
+    formulas[C["product"] - 1] = f"$C${fr + 18}"
+    formulas[C["remarks"] - 1] = f"$C${fr + 19}"
     for c, fml in enumerate(formulas, 1):
         cell = ws.cell(row=paste_row, column=c)
         if fml:
-            cell.value = f"={fml}" if not fml.startswith("=") else fml
+            cell.value = fml if fml.startswith("=") else f"={fml}"
         cell.fill = _fill(ROW_NEW)
         cell.border = BORDER
         cell.font = _font(size=11)
+    apply_client_row_formulas(ws, paste_row)
 
     set_col_widths(ws, {2: 26, 3: 34})
     for c in range(1, len(CLIENT_HEADERS) + 1):
         ws.column_dimensions[get_column_letter(c)].width = 13
 
 
-def build_clients_sheet(wb: Workbook, rows: list[list]) -> int:
+def apply_client_row_formulas(ws, excel_row: int) -> None:
+    ws.cell(row=excel_row, column=C["days_to_bday"]).value = row_formula_days_to_birthday(excel_row)
+    ws.cell(row=excel_row, column=C["bday_soon"]).value = row_formula_bday_soon(excel_row)
+    ws.cell(row=excel_row, column=C["ref_tier"]).value = row_formula_ref_tier(excel_row)
+    ws.cell(row=excel_row, column=C["birthday"]).number_format = "yyyy-mm-dd"
+    ws.cell(row=excel_row, column=C["next_touch"]).number_format = "yyyy-mm-dd"
+    ws.cell(row=excel_row, column=C["ref_date"]).number_format = "yyyy-mm-dd"
+
+
+def build_clients_sheet(wb: Workbook, rows: list[list], champions: set[str]) -> tuple:
     ws = wb.create_sheet("Clients")
     ws.sheet_properties.tabColor = NAVY
 
     ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=len(CLIENT_HEADERS))
     banner = ws["A1"]
-    banner.value = "Client Pipeline  |  徐語希管理組 · 龍浩賢"
+    banner.value = "Client Pipeline  |  徐語希管理組 · 龍浩賢  |  Referral + Birthday enabled"
     banner.font = _font(bold=True, size=14, color=WHITE)
     banner.fill = _fill(NAVY)
     banner.alignment = Alignment(horizontal="center", vertical="center")
@@ -334,25 +511,28 @@ def build_clients_sheet(wb: Workbook, rows: list[list]) -> int:
         ws.cell(row=header_row, column=c, value=h)
     style_header_row(ws, header_row, len(CLIENT_HEADERS))
 
-    slim = [slim_row(r) for r in rows]
+    slim = [slim_row(r, champions) for r in rows]
     data_start = 3
     for ri, row in enumerate(slim):
         excel_row = data_start + ri
         bg = ROW_ALT if ri % 2 else WHITE
         for c, val in enumerate(row, 1):
+            if val is None:
+                continue
             cell = ws.cell(row=excel_row, column=c, value=val if val != "" else None)
             cell.font = _font(size=11)
             cell.border = BORDER
             cell.fill = _fill(bg)
-            if c == 9:  # Phone as text
+            if c == C["phone"]:
                 cell.number_format = "@"
-            if c in (3, 11, 13, 14):  # numbers
+            if c in (C["score"], C["age"], C["rel_sc"], C["poss"], C["ref_given"]):
                 try:
                     if val != "":
                         cell.value = int(val)
                 except (TypeError, ValueError):
                     pass
-        for c in (4, 18, 19):
+        apply_client_row_formulas(ws, excel_row)
+        for c in (C["action"], C["product"], C["remarks"], C["ref_notes"]):
             ws.cell(row=excel_row, column=c).alignment = Alignment(wrap_text=True, vertical="top")
 
     last_data = data_start + len(slim) - 1
@@ -368,8 +548,11 @@ def build_clients_sheet(wb: Workbook, rows: list[list]) -> int:
             cell.fill = _fill(ROW_NEW)
             cell.border = BORDER
             cell.font = _font(size=11, color="2D3748")
-            if c == 9:
+            if c == C["phone"]:
                 cell.number_format = "@"
+        apply_client_row_formulas(ws, r)
+        ws.cell(row=r, column=C["ref_asked"], value="No")
+        ws.cell(row=r, column=C["approach"], value="Not contacted")
 
     table_end = new_start + new_rows - 1
     ws.freeze_panes = "A3"
@@ -389,12 +572,13 @@ def build_clients_sheet(wb: Workbook, rows: list[list]) -> int:
     )
     ws.add_table(tab)
 
-    # Validations on new + existing rows
+    # Validations
     add_list_validation(ws, f"B{data_start}:B{table_end}", "Hot,Warm,Nurture,Low,Client")
     add_list_validation(ws, f"E{data_start}:E{table_end}", "NEW,L0,L1,L2,L3")
     add_list_validation(ws, f"J{data_start}:J{table_end}", "Male,Female,Other")
+    add_list_validation(ws, f"U{data_start}:U{table_end}", APPROACH_OPTIONS)
+    add_list_validation(ws, f"AA{data_start}:AA{table_end}", REF_ASKED_OPTIONS)
 
-    # Conditional formatting on Category column B
     col_b = f"B{data_start}:B{table_end}"
     ws.conditional_formatting.add(
         col_b, FormulaRule(formula=[f'$B{data_start}="Hot"'], fill=_fill(HOT_BG))
@@ -405,12 +589,22 @@ def build_clients_sheet(wb: Workbook, rows: list[list]) -> int:
     ws.conditional_formatting.add(
         col_b, FormulaRule(formula=[f'$B{data_start}="Warm"'], fill=_fill(WARM_BG))
     )
+    col_y = f"Y{data_start}:Y{table_end}"
+    ws.conditional_formatting.add(
+        col_y,
+        FormulaRule(formula=[f'$Y{data_start}="YES"'], fill=_fill("FAF089")),
+    )
+    col_z = f"Z{data_start}:Z{table_end}"
+    ws.conditional_formatting.add(
+        col_z,
+        FormulaRule(formula=[f'$Z{data_start}="Champion"'], fill=_fill("B2F5EA")),
+    )
 
     widths = {
         1: 6,
         2: 10,
         3: 7,
-        4: 32,
+        4: 28,
         5: 8,
         6: 8,
         7: 18,
@@ -421,14 +615,23 @@ def build_clients_sheet(wb: Workbook, rows: list[list]) -> int:
         12: 14,
         13: 6,
         14: 6,
-        15: 16,
-        16: 14,
-        18: 18,
-        19: 28,
+        15: 14,
+        16: 12,
+        18: 16,
+        19: 24,
+        21: 16,
+        22: 14,
+        23: 12,
+        24: 10,
+        25: 10,
+        26: 14,
+        27: 14,
+        28: 8,
+        31: 20,
     }
     set_col_widths(ws, widths)
-    ws.row_dimensions[header_row].height = 28
-    return table_end
+    ws.row_dimensions[header_row].height = 36
+    return ws, data_start, table_end, slim
 
 
 def build_this_week(wb: Workbook, rows: list[list]) -> None:
@@ -510,6 +713,203 @@ def build_policies(wb: Workbook, policy_rows: list[list]) -> None:
     set_col_widths(ws, {5: 14, 6: 42, 7: 12, 8: 12})
 
 
+def build_referral_system(wb: Workbook, slim: list[list], champions: set[str]) -> None:
+    ws = wb.create_sheet("Referral System")
+    ws.sheet_properties.tabColor = "D69E2E"
+
+    ws.merge_cells("A1:H1")
+    ws["A1"].value = "Referral System — Build your introduction pipeline"
+    ws["A1"].font = _font(bold=True, size=16, color=WHITE)
+    ws["A1"].fill = _fill(GOLD)
+    ws["A1"].alignment = Alignment(horizontal="center", vertical="center")
+    ws.row_dimensions[1].height = 36
+
+    ws["A3"] = "How to use"
+    ws["A3"].font = _font(bold=True, size=12)
+    steps = [
+        "1. Ask 「Champion」 clients (green on Clients sheet) after every good service call.",
+        "2. Set Referral Asked? → Yes - will refer / Yes - referred someone.",
+        "3. Log name in Referred By on new prospect row + Last Referral Date.",
+        "4. Thank referrer within 24 hours (message template below).",
+    ]
+    for i, s in enumerate(steps, 4):
+        ws.merge_cells(start_row=i, start_column=1, end_row=i, end_column=8)
+        ws.cell(row=i, column=1, value=s)
+
+    ws["A9"] = "Referral champions (auto from Clients)"
+    ws["A9"].font = _font(bold=True, size=12)
+    ch_headers = ["Name", "Phone", "Rel Score", "Referral Tier", "Referral Asked?", "Referrals Given", "Next Action"]
+    for c, h in enumerate(ch_headers, 1):
+        ws.cell(row=10, column=c, value=h)
+    style_header_row(ws, 10, len(ch_headers))
+
+    def _is_champion(row: list) -> bool:
+        if str(row[C["is_client"] - 1]) == "Yes":
+            return True
+        if str(row[C["ref_tier"] - 1]) == "Champion":
+            return True
+        rel = str(row[C["rel_sc"] - 1])
+        return rel in ("4", "5") and rel != ""
+
+    champ_rows = [row for row in slim if _is_champion(row)]
+    champ_rows = sorted(
+        champ_rows,
+        key=lambda x: (-int(x[C["rel_sc"] - 1] or 0), str(x[C["name"] - 1])),
+    )[:25]
+
+    for ri, row in enumerate(champ_rows, 11):
+        ws.cell(row=ri, column=1, value=row[C["name"] - 1])
+        ws.cell(row=ri, column=2, value=row[C["phone"] - 1])
+        ws.cell(row=ri, column=3, value=row[C["rel_sc"] - 1])
+        ws.cell(row=ri, column=4, value=row[C["ref_tier"] - 1])
+        ws.cell(row=ri, column=5, value=row[C["ref_asked"] - 1])
+        ws.cell(row=ri, column=6, value=row[C["ref_given"] - 1])
+        ws.cell(row=ri, column=7, value=row[C["action"] - 1])
+        for c in range(1, 8):
+            ws.cell(row=ri, column=c).border = BORDER
+
+    script_row = 11 + len(champ_rows) + 2
+    ws.cell(row=script_row, column=1, value="WhatsApp scripts (copy & edit)").font = _font(
+        bold=True, size=12
+    )
+    scripts = [
+        (
+            "Ask referral",
+            "多謝你信任我。想幫多啲家庭做保障——如果你朋友最近買樓、生BB或轉工，"
+            "肯唔肯介紹我同佢傾15分鐘？我保證唔硬銷，你朋友唔使買都得。",
+        ),
+        (
+            "Thank referrer",
+            "多謝你介紹XX俾我！我已經聯絡咗，會好好跟進。有你介紹真係幫到我好多。",
+        ),
+        (
+            "Birthday + referral",
+            "生日快乐/生日快樂！🎂 希望新一年身體健健康康。"
+            "如果身边有朋友想了解保险，随时话我知，我会照顾好你的朋友。",
+        ),
+    ]
+    for i, (title, text) in enumerate(scripts, script_row + 1):
+        ws.cell(row=i, column=1, value=title).font = _font(bold=True)
+        ws.merge_cells(start_row=i, start_column=2, end_row=i, end_column=8)
+        ws.cell(row=i, column=2, value=text).alignment = Alignment(wrap_text=True)
+        ws.row_dimensions[i].height = 48
+
+    ws["A" + str(script_row + 6)] = "Referral log (write each new intro)"
+    ws["A" + str(script_row + 6)].font = _font(bold=True, size=12)
+    log_hdr = ["Date", "Referrer", "New prospect", "Phone", "Status", "Notes"]
+    log_r = script_row + 7
+    for c, h in enumerate(log_hdr, 1):
+        ws.cell(row=log_r, column=c, value=h)
+    style_header_row(ws, log_r, len(log_hdr))
+    for extra in range(15):
+        r = log_r + 1 + extra
+        for c in range(1, 7):
+            cell = ws.cell(row=r, column=c)
+            cell.fill = _fill(ROW_NEW)
+            cell.border = BORDER
+        ws.cell(row=r, column=1).number_format = "yyyy-mm-dd"
+
+    set_col_widths(ws, {1: 14, 2: 14, 4: 14, 7: 32, 2: 50})
+
+
+def build_birthdays(wb: Workbook, data_start: int, table_end: int) -> None:
+    ws = wb.create_sheet("Birthdays")
+    ws.sheet_properties.tabColor = "ED64A6"
+
+    ws.merge_cells("A1:I1")
+    ws["A1"].value = "Birthdays — next 30 days (auto from Clients sheet)"
+    ws["A1"].font = _font(bold=True, size=16, color=WHITE)
+    ws["A1"].fill = _fill("B83280")
+    ws["A1"].alignment = Alignment(horizontal="center", vertical="center")
+    ws.row_dimensions[1].height = 34
+
+    ws["A2"] = "Tip: Enter Birthday on Clients tab (column W). Days to Birthday updates automatically."
+    ws.merge_cells("A2:I2")
+
+    headers = [
+        "Name",
+        "Nickname",
+        "Phone",
+        "Birthday",
+        "Days Left",
+        "Category",
+        "Referral Tier",
+        "Suggested Action",
+    ]
+    hdr_row = 3
+    for c, h in enumerate(headers, 1):
+        ws.cell(row=hdr_row, column=c, value=h)
+    style_header_row(ws, hdr_row, len(headers))
+
+    # Dynamic pull: nth contact where Birthdays ≤30d? = YES
+    clients = "Clients"
+    for n in range(1, 41):
+        r = hdr_row + n
+        k = n
+        name_f = (
+            f'=IFERROR(INDEX({clients}!$G${data_start}:$G${table_end},'
+            f"SMALL(IF({clients}!$Y${data_start}:$Y${table_end}=\"YES\","
+            f"ROW({clients}!$Y${data_start}:$Y${table_end})-ROW({clients}!$G${data_start})+1),{k})),\"\")"
+        )
+        ws.cell(row=r, column=1, value=name_f)
+        ws.cell(row=r, column=2, value=f'=IF($A{r}="","",INDEX({clients}!$H${data_start}:$H${table_end},MATCH($A{r},{clients}!$G${data_start}:$G${table_end},0)))')
+        ws.cell(row=r, column=3, value=f'=IF($A{r}="","",INDEX({clients}!$I${data_start}:$I${table_end},MATCH($A{r},{clients}!$G${data_start}:$G${table_end},0)))')
+        ws.cell(row=r, column=4, value=f'=IF($A{r}="","",INDEX({clients}!$W${data_start}:$W${table_end},MATCH($A{r},{clients}!$G${data_start}:$G${table_end},0)))')
+        ws.cell(row=r, column=5, value=f'=IF($A{r}="","",INDEX({clients}!$X${data_start}:$X${table_end},MATCH($A{r},{clients}!$G${data_start}:$G${table_end},0)))')
+        ws.cell(row=r, column=6, value=f'=IF($A{r}="","",INDEX({clients}!$B${data_start}:$B${table_end},MATCH($A{r},{clients}!$G${data_start}:$G${table_end},0)))')
+        ws.cell(row=r, column=7, value=f'=IF($A{r}="","",INDEX({clients}!$Z${data_start}:$Z${table_end},MATCH($A{r},{clients}!$G${data_start}:$G${table_end},0)))')
+        ws.cell(
+            row=r,
+            column=8,
+            value=f'=IF($A{r}="","",IF($G{r}="Champion","Birthday WhatsApp + referral ask","Birthday WhatsApp only"))',
+        )
+        for c in range(1, 9):
+            ws.cell(row=r, column=c).border = BORDER
+        ws.cell(row=r, column=4).number_format = "yyyy-mm-dd"
+
+    set_col_widths(ws, {1: 18, 3: 12, 4: 12, 8: 28})
+
+
+def build_approach_funnel(wb: Workbook, data_start: int, table_end: int) -> None:
+    ws = wb.create_sheet("Approach Funnel")
+    ws.sheet_properties.tabColor = "3182CE"
+
+    ws.merge_cells("A1:E1")
+    ws["A1"].value = "Client Approach Status — pipeline counts"
+    ws["A1"].font = _font(bold=True, size=16, color=WHITE)
+    ws["A1"].fill = _fill("2B6CB0")
+    ws["A1"].alignment = Alignment(horizontal="center", vertical="center")
+
+    ws["A3"] = "Status"
+    ws["B3"] = "Count"
+    ws["C3"] = "% of total"
+    style_header_row(ws, 3, 3)
+
+    statuses = APPROACH_OPTIONS.split(",")
+    for i, status in enumerate(statuses, 4):
+        ws.cell(row=i, column=1, value=status)
+        ws.cell(
+            row=i,
+            column=2,
+            value=f'=COUNTIF(Clients!$U${data_start}:$U${table_end},A{i})',
+        )
+        ws.cell(
+            row=i,
+            column=3,
+            value=f'=IF(B4=0,"",B{i}/COUNTA(Clients!$G${data_start}:$G${table_end}))',
+        )
+        ws.cell(row=i, column=3).number_format = "0.0%"
+
+    ws.cell(row=4 + len(statuses), column=1, value="TOTAL with name").font = _font(bold=True)
+    ws.cell(
+        row=4 + len(statuses),
+        column=2,
+        value=f"=COUNTA(Clients!$G${data_start}:$G${table_end})",
+    ).font = _font(bold=True)
+
+    set_col_widths(ws, {1: 22, 2: 10, 3: 10})
+
+
 def build_lookup(wb: Workbook) -> None:
     ws = wb.create_sheet("Lookup")
     ws.sheet_properties.tabColor = "A0AEC0"
@@ -528,6 +928,13 @@ def build_lookup(wb: Workbook) -> None:
         ("Client", "Service + referral"),
         ("Nurture", "Monthly touch"),
         ("Low", "Batch only"),
+        ("", ""),
+        ("Referral Tier", "Who to ask"),
+        ("Champion", "Client / 2+ policies — ask every quarter"),
+        ("Advocate", "Gave 2+ referrals"),
+        ("High Potential", "Rel score 4-5"),
+        ("Standard", "Rel score 3"),
+        ("New", "Build relationship first"),
     ]
     for r, row in enumerate(data, 1):
         for c, v in enumerate(row, 1):
@@ -537,10 +944,15 @@ def build_lookup(wb: Workbook) -> None:
 def build_workbook(rows: list[list], policy_rows: list[list], output_path) -> None:
     wb = Workbook()
     wb.remove(wb.active)
+    champions = policy_champion_set(policy_rows)
+
     build_guide(wb)
     build_dashboard(wb, rows)
     build_add_client(wb)
-    build_clients_sheet(wb, rows)
+    _ws, data_start, table_end, slim = build_clients_sheet(wb, rows, champions)
+    build_referral_system(wb, slim, champions)
+    build_birthdays(wb, data_start, table_end)
+    build_approach_funnel(wb, data_start, table_end)
     build_this_week(wb, rows)
     build_policies(wb, policy_rows)
     build_lookup(wb)
