@@ -2,11 +2,13 @@
 
 | File | Purpose |
 |------|---------|
-| **`client_base.xlsx`** | **Main Excel workbook** — open in Excel / Google Sheets |
-| `build_excel.py` | Regenerate Excel after editing CSVs: `python3 build_excel.py` |
-| `ACTION_PLAN.md` | **Start here** — who to call, referrals, prospects |
-| `policies_register.csv` | All policies from your book screenshots |
-| `clients_inforce.csv` | One row per client with priority tier |
-| `prospects_network_full.csv` | All 65 prospects from PDF (in Excel) |
-| `template_clients.csv` | Template for WhatsApp / extra fields |
-| `WHATSAPP_TO_CLIENT_BASE.md` | Export chats → fill template |
+| **`client_base.xlsx`** | Excel workbook — **policy screenshot data only** |
+| `policies_register.csv` | Source data from your policy book screenshots |
+| `build_excel.py` | Regenerate: `python3 build_excel.py` |
+
+## Excel sheets
+
+1. **Policies** — matches your screenshots (銷售團隊, 代理人, 權益人, 保單號碼, 基本計劃, etc.)
+2. **Clients Summary** — grouped view (inforce count per client) derived from Policies only
+
+Prospect/network PDF data has been **removed** from the workbook.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build client_base.xlsx from CSV data."""
+"""Build client_base.xlsx — policy book screenshot data only."""
 
 import csv
 from pathlib import Path
@@ -14,6 +14,22 @@ OUTPUT = BASE / "client_base.xlsx"
 HEADER_FILL = PatternFill(start_color="1F4E79", end_color="1F4E79", fill_type="solid")
 HEADER_FONT = Font(bold=True, color="FFFFFF", size=11)
 TITLE_FONT = Font(bold=True, size=14)
+
+# Bilingual headers matching your screenshots
+POLICY_HEADERS = [
+    "銷售團隊名稱\nSales Team",
+    "代理人\nAgent",
+    "權益人\nPolicyowner",
+    "受保人\nInsured",
+    "保單號碼\nPolicy Number",
+    "基本計劃\nBasic Plan",
+    "投保日期\nApplication Date",
+    "簽發日期\nIssue Date",
+    "保單狀態\nPolicy Status",
+    "供款年期\nPremium Term (Years)",
+    "保單到期日\nPolicy Expiry Date",
+    "運單號碼\nTracking Number",
+]
 
 
 def read_csv(name: str) -> tuple[list[str], list[list]]:
@@ -33,12 +49,13 @@ def style_sheet(ws, ncols: int, nrows: int) -> None:
     ws.auto_filter.ref = f"A1:{get_column_letter(ncols)}{max(nrows, 1)}"
     for col in range(1, ncols + 1):
         letter = get_column_letter(col)
-        max_len = 12
+        max_len = 14
         for row in range(1, min(nrows + 1, 200)):
             val = ws.cell(row=row, column=col).value
             if val is not None:
-                max_len = max(max_len, min(len(str(val)) + 2, 50))
+                max_len = max(max_len, min(len(str(val)) + 2, 55))
         ws.column_dimensions[letter].width = max_len
+    ws.row_dimensions[1].height = 36
 
 
 def write_table(ws, headers: list[str], data: list[list], start_row: int = 1) -> int:
@@ -46,154 +63,75 @@ def write_table(ws, headers: list[str], data: list[list], start_row: int = 1) ->
         ws.cell(row=start_row, column=c, value=h)
     for r, row in enumerate(data, start_row + 1):
         for c, val in enumerate(row, 1):
-            ws.cell(row=r, column=c, value=val or "")
+            ws.cell(row=r, column=c, value=val if val != "" else None)
     return start_row + len(data)
 
 
-def build_clients_master(wb: Workbook) -> None:
-    ws = wb.active
-    ws.title = "Clients Master"
-
-    headers = [
-        "Policyowner (EN)",
-        "中文名",
-        "Phone / WhatsApp",
-        "Email",
-        "Policies Inforce",
-        "Product Summary",
-        "Referral Tier",
-        "Priority (1=urgent)",
-        "Next Action",
-        "Last Contact Date",
-        "Next Follow-up Date",
-        "Referral Asked (Y/N)",
-        "Referrals Given",
-        "Cross-sell: Medical",
-        "Cross-sell: Other",
-        "Notes",
-    ]
-
-    _, client_rows = read_csv("clients_inforce.csv")
-    data = []
-    for row in client_rows:
-        data.append(
-            [
-                row[0],  # name
-                "",  # chinese
-                "",  # phone
-                "",  # email
-                row[1],
-                row[2],
-                row[3],
-                row[4],
-                row[5],
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-            ]
-        )
-
-    nrows = write_table(ws, headers, data)
-    style_sheet(ws, len(headers), nrows)
-
-
 def build_policies(wb: Workbook) -> None:
-    ws = wb.create_sheet("Policies")
-    headers, data = read_csv("policies_register.csv")
-    extra = ["Agent", "Sales Team", "Tracking No"]
-    headers = headers + extra
-    data = [row + ["龍浩賢", "徐語希管理組", ""] for row in data]
-    nrows = write_table(ws, headers, data)
-    style_sheet(ws, len(headers), nrows)
+    ws = wb.active
+    ws.title = "Policies"
+    _, data = read_csv("policies_register.csv")
+    nrows = write_table(ws, POLICY_HEADERS, data)
+    style_sheet(ws, len(POLICY_HEADERS), nrows)
 
 
-def build_prospects(wb: Workbook) -> None:
-    ws = wb.create_sheet("Prospects Network")
-    csv_name = (
-        "prospects_network_full.csv"
-        if (BASE / "prospects_network_full.csv").exists()
-        else "prospects_network_top.csv"
-    )
-    headers, data = read_csv(csv_name)
-    nrows = write_table(ws, headers, data)
-    style_sheet(ws, len(headers), nrows)
-
-    # Summary by priority on same sheet (right side) — optional small stats
-    ws.cell(row=1, column=len(headers) + 2, value="Count by score")
-    scores: dict[str, int] = {}
-    score_idx = headers.index("relationship_score_5") if "relationship_score_5" in headers else -1
-    if score_idx >= 0:
-        for row in data:
-            s = row[score_idx] if score_idx < len(row) else "?"
-            scores[s] = scores.get(s, 0) + 1
-        r = 2
-        for s in sorted(scores.keys(), reverse=True):
-            ws.cell(row=r, column=len(headers) + 2, value=f"Score {s}")
-            ws.cell(row=r, column=len(headers) + 3, value=scores[s])
-            r += 1
-
-
-def build_weekly_actions(wb: Workbook) -> None:
-    ws = wb.create_sheet("This Week Actions")
-    ws["A1"] = "This Week — Priority Actions"
-    ws["A1"].font = TITLE_FONT
-
-    headers = ["Priority", "Name", "Type", "Action", "Due Date", "Done (Y/N)"]
-    actions = [
-        ["1", "CHEUNG TAK SIN", "Client", "Close pending INCOMEJOY policy", "", ""],
-        ["1", "LUNG ON KI", "Client", "Annual review + referral ask", "", ""],
-        ["1", "LUNG HO YIN", "Client", "EASY-PLUG review + referral ask", "", ""],
-        ["1", "CHENG HONG WAI", "Client", "Thank-you + referral ask (3 policies)", "", ""],
-        ["2", "KWOK WAI LING", "Client", "Win-back / clarify withdrawn vs inforce", "", ""],
-        ["2", "LEUNG WAI KI", "Client", "Service call + referral", "", ""],
-        ["2", "YU CHUN KIN", "Client", "6-month check-in + referral", "", ""],
-        ["1", "鄒學蘭 Chau Hok Lan", "Prospect", "Family approach — 93380839", "", ""],
-        ["1", "區家駒 Au Ka Kai", "Prospect", "Retirement/medical — 66299989", "", ""],
-        ["2", "張文浩 Jackie", "Prospect", "WhatsApp protection review — 63793889", "", ""],
+def build_clients_summary(wb: Workbook) -> None:
+    """One row per unique policyowner — counts only, from screenshot data."""
+    ws = wb.create_sheet("Clients Summary")
+    headers = [
+        "權益人\nPolicyowner",
+        "受保人\nInsured",
+        "Inforce Policies",
+        "Plans (from screenshots)",
     ]
-    nrows = write_table(ws, headers, actions, start_row=3)
+    _, rows = read_csv("policies_register.csv")
+    # columns: policyowner idx 2, insured 3, status 8, plan 5
+    clients: dict[str, dict] = {}
+    for row in rows:
+        owner = row[2]
+        if not owner:
+            continue
+        if owner not in clients:
+            clients[owner] = {"insured": row[3], "inforce": 0, "plans": []}
+        if row[8] == "Inforce":
+            clients[owner]["inforce"] += 1
+            clients[owner]["plans"].append(row[5])
+    data = [
+        [owner, info["insured"], str(info["inforce"]), "; ".join(info["plans"])]
+        for owner, info in sorted(clients.items())
+    ]
+    nrows = write_table(ws, headers, data)
     style_sheet(ws, len(headers), nrows)
 
 
 def build_readme(wb: Workbook) -> None:
     ws = wb.create_sheet("How to Use", 0)
     lines = [
-        ("Client Base — 龍浩賢 / 徐語希管理組", ""),
+        ("Client Base — Policy Book (Screenshots Only)", ""),
         ("", ""),
-        ("Sheet guide:", ""),
-        ("Clients Master", "One row per client — add 中文名, phone, follow-up dates"),
-        ("Policies", "All policies from your book — one row per policy"),
-        ("Prospects Network", "Warm contacts from network list — track L0→L2"),
-        ("This Week Actions", "Checklist — mark Done when complete"),
+        ("Data source:", "Your policy book screenshots only"),
+        ("", "No prospect/network list included"),
         ("", ""),
-        ("Updated:", "From policy book screenshots + prospect PDF"),
+        ("Policies", "Same columns as your screenshots — one row per policy"),
+        ("Clients Summary", "Auto-grouped from Policies (inforce count + plans)"),
         ("", ""),
-        ("Tips:", ""),
-        ("", "Sort Clients Master by Priority for daily calls"),
-        ("", "Filter Policies by policyowner to prep for reviews"),
-        ("", "Do not commit real phone numbers to public repos"),
+        ("Regenerate:", "python3 build_excel.py"),
     ]
     for i, (a, b) in enumerate(lines, 1):
         ws.cell(row=i, column=1, value=a)
         ws.cell(row=i, column=2, value=b)
-    ws.column_dimensions["A"].width = 22
-    ws.column_dimensions["B"].width = 55
+    ws.column_dimensions["A"].width = 28
+    ws.column_dimensions["B"].width = 50
     ws["A1"].font = TITLE_FONT
 
 
 def main() -> None:
     wb = Workbook()
     build_readme(wb)
-    build_clients_master(wb)
     build_policies(wb)
-    build_prospects(wb)
-    build_weekly_actions(wb)
+    build_clients_summary(wb)
     wb.save(OUTPUT)
-    print(f"Created {OUTPUT}")
+    print(f"Created {OUTPUT} (screenshot data only)")
 
 
 if __name__ == "__main__":
