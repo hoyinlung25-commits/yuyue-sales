@@ -18,6 +18,29 @@ WHITE = RGBColor(0xFF, 0xFF, 0xFF)
 GRAY = RGBColor(0x4A, 0x55, 0x68)
 MUTED = RGBColor(0x71, 0x85, 0x90)
 
+TOTAL_PREMIUM = 161_022
+
+# From BOC proposal 說明摘要 (insured age 9 at issue)
+LIFE_STAGES = [
+    ("供款完成 · 中學", "14", "5", 67_264, "保費已繳清，保單靜靜為她滾存"),
+    ("升學進修（DSE／大專）", "19", "10", 200_527, "進修、海外交流或生活開支補助"),
+    ("大學畢業 · 初入職場", "24", "15", 286_059, "畢業旅行、進修或創業起步資金"),
+    ("事業穩定 · 置業首期", "29", "20", 434_249, "買樓首期、進修專業資格"),
+    ("結婚成家", "34", "25", 606_259, "婚禮、蜜月或新婚置業"),
+    ("育兒 · 家庭責任", "39", "30", 825_491, "子女教育、家庭醫療或生活儲備"),
+    ("事業發展 · 創業支援", "44", "35", 1_104_542, "創業資金、生意周轉（需按保單條款提取）"),
+    ("退休規劃參考", "65", "56", 3_752_770, "長線退休或傳承下一代"),
+]
+
+
+def fmt_hkd(n: int) -> str:
+    return f"{n:,}"
+
+
+def return_multiple(cash: int) -> str:
+    mult = cash / TOTAL_PREMIUM
+    return f"{mult:.2f} 倍"
+
 
 def set_bg(slide, color: RGBColor) -> None:
     fill = slide.background.fill
@@ -57,7 +80,7 @@ def add_title_slide(prs, title, subtitle=""):
     add_textbox(
         slide,
         Inches(0.6),
-        Inches(2.2),
+        Inches(2.0),
         Inches(8.8),
         Inches(1.2),
         title,
@@ -70,9 +93,9 @@ def add_title_slide(prs, title, subtitle=""):
         add_textbox(
             slide,
             Inches(0.8),
-            Inches(3.5),
+            Inches(3.3),
             Inches(8.4),
-            Inches(1.5),
+            Inches(1.6),
             subtitle,
             size=20,
             color=RGBColor(0xD1, 0xFA, 0xE5),
@@ -99,22 +122,22 @@ def add_section_header(slide, title, subtitle=""):
     bar.line.fill.background()
     add_textbox(slide, Inches(0.6), Inches(0.45), Inches(8.8), Inches(0.7), title, size=32, bold=True, color=NAVY)
     if subtitle:
-        add_textbox(slide, Inches(0.6), Inches(1.15), Inches(8.8), Inches(0.5), subtitle, size=16, color=MUTED)
+        add_textbox(slide, Inches(0.6), Inches(1.15), Inches(8.8), Inches(0.55), subtitle, size=16, color=MUTED)
 
 
 def add_bullets(slide, items, top=Inches(1.9), size=20, color=GRAY):
     y = top
     for item in items:
-        add_textbox(slide, Inches(0.75), y, Inches(8.5), Inches(0.65), f"• {item}", size=size, color=color)
-        y += Inches(0.72)
+        add_textbox(slide, Inches(0.75), y, Inches(8.5), Inches(0.7), f"• {item}", size=size, color=color)
+        y += Inches(0.68)
 
 
-def add_table_slide(prs, title, headers, rows, subtitle=""):
+def add_table_slide(prs, title, headers, rows, subtitle="", table_top=Inches(1.85), table_height=Inches(4.9)):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     add_section_header(slide, title, subtitle)
     rows_n = len(rows) + 1
     cols_n = len(headers)
-    tbl = slide.shapes.add_table(rows_n, cols_n, Inches(0.5), Inches(1.85), Inches(9), Inches(4.8)).table
+    tbl = slide.shapes.add_table(rows_n, cols_n, Inches(0.35), table_top, Inches(9.3), table_height).table
 
     for c, h in enumerate(headers):
         cell = tbl.cell(0, c)
@@ -123,7 +146,7 @@ def add_table_slide(prs, title, headers, rows, subtitle=""):
         cell.fill.fore_color.rgb = NAVY
         for p in cell.text_frame.paragraphs:
             p.font.bold = True
-            p.font.size = Pt(13)
+            p.font.size = Pt(11)
             p.font.color.rgb = WHITE
             p.font.name = "Microsoft JhengHei"
             p.alignment = PP_ALIGN.CENTER
@@ -136,7 +159,7 @@ def add_table_slide(prs, title, headers, rows, subtitle=""):
                 cell.fill.solid()
                 cell.fill.fore_color.rgb = WHITE
             for p in cell.text_frame.paragraphs:
-                p.font.size = Pt(12)
+                p.font.size = Pt(10)
                 p.font.name = "Microsoft JhengHei"
                 p.alignment = PP_ALIGN.CENTER
 
@@ -146,186 +169,228 @@ def main():
     prs.slide_width = Inches(10)
     prs.slide_height = Inches(7.5)
 
-    # 1 Title
     add_title_slide(
         prs,
-        "為孫女準備的一份長遠心意",
-        "寰御安心環球終身保險計劃｜一次性預繳 HK$150,000\n建議書日期：2026年6月4日",
+        "爺爺為 9 歲孫女\n準備的長遠儲蓄心意",
+        "寰御安心環球終身保險計劃｜一次性預繳約 HK$150,000\n"
+        "按孫女人生階段，看保單如何為她累積資金",
     )
 
-    # 2 Grandfather story
+    # Why 寰御安心 for granddaughter savings
     slide = prs.slides.add_slide(prs.slide_layouts[6])
-    add_section_header(slide, "爺爺的心意：為孫女鋪路未來", "Male client 60+ · 希望為 9 歲孫女建立儲蓄與保障")
+    add_section_header(
+        slide,
+        "為什麼為孫女選擇「寰御安心環球終身」？",
+        "儲蓄 + 終身保障 + 跨代傳承，一次過預繳完成責任",
+    )
     add_bullets(
         slide,
         [
-            "您希望以一次過資金，為孫女建立長線儲蓄，減輕日後供款壓力",
-            "孫女現年 9 歲，保障年期長，時間複利可發揮更大作用",
-            "即使爺爺不在身邊，保單仍可延續保障與財富傳承安排",
-            "預繳保費後，5 年內無需再操心每年繳費",
+            "孫女儲蓄：以受保人身份投保，紅利在長年期內滾存，配合她由升學到置業的人生節奏",
+            "爺爺一次過預繳約 HK$150,000，5 年保費責任完結，無需年年操心繳費",
+            "兼備人壽保障：即使爺爺或孫女遇上人生變故，保單仍可延續安排",
+            "可更改受保人／後備受保人：日後可把保單傳給她的子女，財富跨代延續",
+            "週年紅利 + 終期紅利（非保證）：為日後提取、退保或傳承提供彈性",
+        ],
+        top=Inches(1.95),
+        size=18,
+    )
+
+    slide = prs.slides.add_slide(prs.slide_layouts[6])
+    add_section_header(slide, "爺爺的心意", "60+ 男客 · 為 9 歲孫女建立專屬儲蓄保單")
+    add_bullets(
+        slide,
+        [
+            "您現時有能力，希望趁孫女尚小，為她預留一筆會隨時間增長的資產",
+            "保單以孫女為受保人，權益人為您；日後可按需要調整受益人及傳承安排",
+            "重點不是短期回報，而是覆蓋她畢業、工作、結婚、育兒、買樓、創業等人生階段",
+            "預繳完成後，這份保單會一直陪伴她成長，成為爺孫之間的一份具體心意",
         ],
         top=Inches(2.0),
         size=19,
     )
 
-    # 3 Plan overview
-    slide = prs.slides.add_slide(prs.slide_layouts[6])
-    add_section_header(slide, "方案概覽", "中銀集團人壽保險有限公司")
-    add_bullets(
-        slide,
-        [
-            "基本計劃：寰御安心環球終身保險計劃（港元）",
-            "兼備人壽保障、儲蓄增值與財富傳承功能",
-            "週年紅利（非保證）＋終期紅利（非保證）",
-            "保費繳費年期：5 年｜保障年期：終身",
-        ],
-        top=Inches(2.0),
-    )
-
-    # 4 Insured
     add_table_slide(
         prs,
-        "受保人資料（建議書）",
+        "供款安排（建議書）",
         ["項目", "內容"],
         [
-            ["與您的關係", "孫女（擬受保人）"],
-            ["年齡 / 性別", "9 歲 / 女（非吸煙者）"],
-            ["保障年期", "終身"],
-            ["保單貨幣", "港元（HKD）"],
-            ["名義金額", "161,022"],
+            ["受保人", "孫女 · 9 歲 · 女（非吸煙）"],
+            ["保費繳費年期", "5 年（已繳總保費 HK$161,022）"],
+            ["爺爺一次過預繳", "約 HK$150,000.10（含徵費）"],
+            ["預繳戶口保證年利率", "3.50%"],
         ],
-        "保單權益人：Vip 先生｜申請人",
+        table_height=Inches(3.2),
     )
 
-    # 5 Premium / prepaid
+    # Life stage roadmap - main table
+    stage_rows = []
+    for stage, age, year, cash, use in LIFE_STAGES:
+        stage_rows.append(
+            [
+                stage,
+                f"{age} 歲",
+                f"第 {year} 年",
+                f"HK$ {fmt_hkd(cash)}",
+                return_multiple(cash),
+            ]
+        )
+
     add_table_slide(
         prs,
-        "供款安排：一次性預繳 HK$150,000",
-        ["項目", "金額（港元）"],
-        [
-            ["每年保費（標準）", "32,204.40"],
-            ["5 年總保費（已繳總保費）", "161,022"],
-            ["優惠後預繳保費總額", "149,849.62"],
-            ["優惠後預繳保費總額及徵費", "150,000.10"],
-            ["預繳保費戶口保證年利率", "3.50%"],
-        ],
-        "推廣：寰御安心環球終身保險計劃保費折扣（至 2026-06-30）",
+        "孫女人生階段 × 保單回報參考",
+        ["人生階段", "孫女年齡", "保單年度", "預期現金價值總額*", "相對已繳保費"],
+        stage_rows,
+        "*非保證；含週年紅利及終期紅利。第 15 保單年度預期現金價值 HK$286,059（建議書）",
+        table_top=Inches(1.78),
+        table_height=Inches(5.0),
     )
 
-    # 6 Why age 9
+    # Detailed life stage uses
     slide = prs.slides.add_slide(prs.slide_layouts[6])
-    add_section_header(slide, "為什麼 9 歲開始特別合適？", "長線規劃角度")
+    add_section_header(
+        slide,
+        "各人生階段，這筆資金可以支援什麼？",
+        "數字來自建議書「說明摘要」；實際提取須符合保單條款",
+    )
     add_bullets(
         slide,
         [
-            "供款期僅 5 年，爺爺在退休前後可一次過完成責任",
-            "孫女仍有很長人生路，非保證紅利有較長時間滾存",
-            "可預留「更改受保人」「後備受保人」作日後傳承",
-            "日後孫女長大，可按需要作保單分拆或貨幣轉換（如適用）",
+            "19 歲（第 10 年）約 HK$200,527：DSE 後升學、大專生活費或進修",
+            "24 歲（第 15 年）約 HK$286,059：大學畢業、初入職或小型創業起步",
+            "29 歲（第 20 年）約 HK$434,249：事業穩定、買樓首期或進修專業資格",
+            "34 歲（第 25 年）約 HK$606,259：結婚、新婚置業或家庭開支",
+            "39 歲（第 30 年）約 HK$825,491：育兒、子女教育或家庭醫療儲備",
+            "44 歲（第 35 年）約 HK$1,106,259：事業擴張、創業周轉或進一步置業",
         ],
-        top=Inches(2.0),
+        top=Inches(1.88),
+        size=17,
     )
 
-    # 7 Highlights
+    # Highlight year 15 correction
     slide = prs.slides.add_slide(prs.slide_layouts[6])
-    add_section_header(slide, "計劃重點（與儲蓄＋傳承相關）", "")
+    add_section_header(slide, "重點參考：第 15 保單年度", "孫女約 24 歲 · 大學畢業／初入職場")
+    add_textbox(
+        slide,
+        Inches(0.65),
+        Inches(1.85),
+        Inches(8.7),
+        Inches(1.4),
+        "預期現金價值總額\nHK$ 286,059",
+        size=36,
+        bold=True,
+        color=GREEN,
+        align=PP_ALIGN.CENTER,
+    )
+    add_textbox(
+        slide,
+        Inches(0.65),
+        Inches(3.35),
+        Inches(8.7),
+        Inches(2.8),
+        "建議書顯示：第 15 個保單年度（非第 5 年）現金價值總額約 HK$286,059。\n"
+        f"已繳總保費 HK$161,022，約為 {return_multiple(286_059)}。\n\n"
+        "此階段正值畢業與踏入社會，可作進修、創業或生活儲備的參考金額。\n"
+        "紅利非保證，實際金額可升可跌。",
+        size=17,
+        color=GRAY,
+        align=PP_ALIGN.CENTER,
+    )
+
+    # Buy house / business focus
+    slide = prs.slides.add_slide(prs.slide_layouts[6])
+    add_section_header(slide, "買樓 · 創業 · 成家 — 回報對照", "保單年度與預期現金價值總額（建議書）")
     add_bullets(
         slide,
         [
-            "週年紅利（非保證）：可積存生息或提取",
-            "終期紅利（非保證）：退保或身故時可獲派",
-            "更改受保人：可把保障延續予下一代",
-            "後備受保人：現受保人身故後，可指定後備受保人承接",
-            "「智富長傳」預設保單指示：可預設身故賠償如何分配予受益人",
-            "保費延繳保障、安心2gether 精神上無行為能力保障",
+            "買樓首期參考：第 20 年（29 歲）約 HK$434,249 · 約 2.7 倍已繳保費",
+            "結婚成家參考：第 25 年（34 歲）約 HK$606,259 · 約 3.8 倍",
+            "育兒家庭參考：第 30 年（39 歲）約 HK$825,491 · 約 5.1 倍",
+            "創業／生意周轉參考：第 35 年（44 歲）約 HK$1,104,542 · 約 6.9 倍",
+            "提取方式：部分退保、紅利提取或保單貸款等，須按條款及當時保單價值",
+        ],
+        top=Inches(1.95),
+        size=18,
+    )
+
+    slide = prs.slides.add_slide(prs.slide_layouts[6])
+    add_section_header(slide, "計劃功能（配合孫女長線儲蓄）", "")
+    add_bullets(
+        slide,
+        [
+            "週年紅利（非保證）：可積存生息，日後按人生需要提取",
+            "終期紅利（非保證）：退保或身故時派發，長線增值主力",
+            "更改受保人：孫女長大後可傳予下一代，保單繼續生效",
+            "保單分拆、貨幣轉換（如適用）：配合移民、置業或多元配置",
+            "「智富長傳」：可預設身故賠償分期給受益人，避免一次過揮霍",
         ],
         top=Inches(1.95),
         size=17,
     )
 
-    # 8 Cash value milestones for granddaughter
-    add_table_slide(
-        prs,
-        "孫女成長里程碑｜預期現金價值總額（說明摘要）",
-        ["孫女年齡", "保單年度", "已繳總保費", "預期現金價值總額*"],
-        [
-            ["14 歲", "5", "161,022", "286,059"],
-            ["19 歲", "10", "161,022", "434,249"],
-            ["24 歲", "15", "161,022", "606,259"],
-            ["29 歲", "20", "161,022", "825,491"],
-            ["34 歲", "25", "161,022", "1,106,259"],
-            ["65 歲", "56", "161,022", "3,752,770"],
-        ],
-        "*含非保證週年紅利及終期紅利；實際或較高或較低",
-    )
-
-    # 9 At age 65 illustration from PDF
     slide = prs.slides.add_slide(prs.slide_layouts[6])
-    add_section_header(slide, "長遠參考：受保人 65 歲保單週年日", "非保證；僅作說明摘要演示")
+    add_section_header(slide, "長遠參考：孫女 65 歲", "第 56 保單年度 · 非保證演示")
     add_textbox(
         slide,
         Inches(0.7),
         Inches(1.9),
         Inches(8.6),
-        Inches(1.2),
-        "預期現金價值總額約 HK$3,752,770（已繳總保費 HK$161,022）\n"
+        Inches(1.3),
+        "預期現金價值總額約 HK$3,752,770\n"
         "約為已繳總保費的 23.3 倍*",
-        size=22,
+        size=24,
         bold=True,
         color=GREEN,
+        align=PP_ALIGN.CENTER,
     )
     add_textbox(
         slide,
         Inches(0.7),
-        Inches(3.3),
+        Inches(3.4),
         Inches(8.6),
-        Inches(2.5),
-        "此數字包含保證現金價值、累積週年紅利（非保證）及終期紅利（非保證）。"
-        "紅利並非保證，可升可跌，過往表現不代表將來。",
+        Inches(2.4),
+        "可作退休或再傳承予第三代之長線參考。\n"
+        "過往演示不代表將來；紅利可為零或調整。",
         size=16,
         color=MUTED,
+        align=PP_ALIGN.CENTER,
     )
 
-    # 10 Prepaid account
     slide = prs.slides.add_slide(prs.slide_layouts[6])
-    add_section_header(slide, "預繳保費戶口（配合您的一次過供款）", "")
+    add_section_header(slide, "預繳保費戶口", "配合爺爺一次過 HK$150,000")
     add_bullets(
         slide,
         [
-            "您打算一次過預繳約 HK$150,000（含徵費後約 HK$150,000.10）",
-            "每年保費及徵費於保單週年日從預繳戶口自動扣除",
-            "基本計劃預繳餘額以保證年利率 3.50% 積存生息",
-            "第 5 個保單年度後預繳戶口餘額為 0，之後無需再繳費",
-            "提早退保或提取預繳餘額可能須付預繳保費退回費用（現行 6%）",
+            "預繳約 HK$150,000.10 後，每年保費於保單週年日自動扣除",
+            "預繳餘額以保證年利率 3.50% 積存，直至第 5 保單年度",
+            "第 5 年後無需再繳費，保單繼續為孫女滾存",
+            "提早退保或提取預繳餘額可能須付退回費用（現行 6%）",
         ],
         top=Inches(2.0),
         size=18,
     )
 
-    # 11 Warnings
     slide = prs.slides.add_slide(prs.slide_layouts[6])
-    add_section_header(slide, "重要提示", "請與爺爺充分溝通風險")
+    add_section_header(slide, "重要提示", "")
     add_bullets(
         slide,
         [
             "除非有意就全期 5 年繳清保費，否則不應投保",
-            "提早退保或停止供款可能蒙受重大損失",
-            "非保證利益（週年紅利、終期紅利）可為零或調整",
+            "提早退保可能蒙受重大損失；非保證紅利可升可跌",
+            "人生階段金額僅為建議書演示，不等同保證可取回金額",
             "建議書有效期 30 日（2026年6月4日起）",
-            "此簡報僅供說明，以保單條款及正式建議書為準",
         ],
         top=Inches(2.0),
         size=17,
         color=RGBColor(0x9B, 0x2C, 0x2C),
     )
 
-    # 12 Next steps
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     set_bg(slide, NAVY)
     add_textbox(
         slide,
         Inches(0.6),
-        Inches(1.8),
+        Inches(1.6),
         Inches(8.8),
         Inches(1),
         "建議下一步",
@@ -337,12 +402,12 @@ def main():
     add_bullets(
         slide,
         [
-            "確認孫女為受保人、您為保單權益人及受益人安排",
-            "確認一次過預繳金額及5年供款意願",
-            "完成投保申請及健康告知",
-            "保單生效後，定期檢視週年紅利與保單價值",
+            "確認以孫女為受保人、您為保單權益人",
+            "確認一次過預繳及 5 年供款意願",
+            "討論各人生階段資金用途（升學、置業、成家、創業）",
+            "完成投保申請；保單生效後定期檢視紅利與保單價值",
         ],
-        top=Inches(3.2),
+        top=Inches(2.9),
         size=19,
         color=RGBColor(0xE2, 0xE8, 0xF0),
     )
@@ -353,7 +418,7 @@ def main():
         Inches(8.8),
         Inches(1.2),
         "保險中介人：龍浩賢｜徐語希管理組\n"
-        "建議書編號：131HK0520260604094001（中銀人壽正式建議書）",
+        "建議書編號：131HK0520260604094001",
         size=16,
         color=GOLD,
         align=PP_ALIGN.CENTER,
