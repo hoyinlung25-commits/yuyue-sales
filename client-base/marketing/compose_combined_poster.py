@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Combine gift + plant mockup posters; add QR placeholder & Quick Come Quick Serve."""
+"""
+Combined poster:
+  1) Original gift poster (full)
+  2) Plant mock-up strip only (3 varieties) at the end
+  3) Footer: 掃碼登記 + QR placeholder (no Quick Come Quick Serve)
+"""
 
 from pathlib import Path
 
@@ -10,8 +15,11 @@ GIFT = BASE / "plant-gift-poster-v2.png"
 MOCKUP = BASE / "plant-mockup-poster.png"
 OUTPUT = BASE / "plant-combined-poster.png"
 W = 1080
-FOOTER_H = 420
-QR_SIZE = 280
+FOOTER_H = 360
+QR_SIZE = 260
+# Crop mock-up image to the three-plant row only (tune if needed)
+MOCK_CROP_TOP_RATIO = 0.36
+MOCK_CROP_BOTTOM_RATIO = 0.94
 
 
 def font(size: int, bold: bool = False):
@@ -30,6 +38,13 @@ def fit_width(img: Image.Image, width: int) -> Image.Image:
     return img.resize((width, h), Image.Resampling.LANCZOS)
 
 
+def extract_plant_mockup_strip(mock: Image.Image) -> Image.Image:
+    w, h = mock.size
+    y0 = int(h * MOCK_CROP_TOP_RATIO)
+    y1 = int(h * MOCK_CROP_BOTTOM_RATIO)
+    return mock.crop((0, y0, w, y1))
+
+
 def draw_dashed_rect(draw, box, color=(16, 185, 129), width=3, dash=12):
     x0, y0, x1, y1 = box
     for x in range(x0, x1, dash * 2):
@@ -41,78 +56,83 @@ def draw_dashed_rect(draw, box, color=(16, 185, 129), width=3, dash=12):
 
 
 def build_footer(height: int) -> Image.Image:
-    foot = Image.new("RGB", (W, height), (236, 253, 245))
+    foot = Image.new("RGB", (W, height), (248, 250, 252))
     draw = ImageDraw.Draw(foot)
 
-    # Quick Come Quick Serve banner
-    draw.rounded_rectangle((40, 24, W - 40, 118), radius=20, fill=(4, 120, 87))
-    draw.text((W // 2, 52), "Quick Come · Quick Serve", fill=(255, 255, 255), font=font(36, True), anchor="mm")
-    draw.text((W // 2, 92), "快捷服務 · 快來快約 · 盡快為您安排", fill=(209, 250, 229), font=font(26), anchor="mm")
+    # Title centred
+    draw.text((W // 2, 42), "掃碼登記", fill=(6, 78, 59), font=font(48, True), anchor="mm")
+    draw.text((W // 2, 88), "SCAN TO REGISTER", fill=(5, 150, 105), font=font(22), anchor="mm")
 
-    # QR zone (right side)
-    qr_x = W - QR_SIZE - 56
-    qr_y = 130
+    qr_x = (W - QR_SIZE) // 2
+    qr_y = 118
     draw.rounded_rectangle(
-        (qr_x - 12, qr_y - 12, qr_x + QR_SIZE + 12, qr_y + QR_SIZE + 12),
-        radius=16,
+        (qr_x - 14, qr_y - 14, qr_x + QR_SIZE + 14, qr_y + QR_SIZE + 14),
+        radius=18,
         fill=(255, 255, 255),
+        outline=(167, 243, 208),
+        width=2,
     )
     draw.rectangle((qr_x, qr_y, qr_x + QR_SIZE, qr_y + QR_SIZE), fill=(255, 255, 255))
     draw_dashed_rect(draw, (qr_x, qr_y, qr_x + QR_SIZE, qr_y + QR_SIZE))
 
     draw.text(
-        (qr_x + QR_SIZE // 2, qr_y + QR_SIZE // 2 - 18),
+        (W // 2, qr_y + QR_SIZE // 2 - 12),
         "QR CODE",
         fill=(156, 163, 175),
-        font=font(22, True),
+        font=font(20, True),
         anchor="mm",
     )
     draw.text(
-        (qr_x + QR_SIZE // 2, qr_y + QR_SIZE // 2 + 18),
-        "貼上登記二維碼",
+        (W // 2, qr_y + QR_SIZE // 2 + 16),
+        "請於 Canva 貼上登記二維碼",
         fill=(107, 114, 128),
         font=font(20),
         anchor="mm",
     )
 
-    # Scan / register text (left of QR)
-    lx = 48
-    draw.text((lx, 150), "掃描登記", fill=(6, 78, 59), font=font(40, True))
-    draw.text((lx, 200), "SCAN TO REGISTER", fill=(5, 150, 105), font=font(24, True))
-    draw.text(
-        (lx, 248),
-        "請於 Canva 貼上您的\n登記 QR Code 於右方方框",
-        fill=(75, 85, 99),
-        font=font(22),
-    )
-    draw.text(
-        (lx, 330),
-        "🌱 特選客戶免費獲贈小盆栽",
-        fill=(4, 120, 87),
-        font=font(24, True),
-    )
-
     return foot
+
+
+def build_mockup_section(mock: Image.Image) -> Image.Image:
+    """Plant strip + small heading bar."""
+    strip = extract_plant_mockup_strip(mock)
+    strip_r = fit_width(strip, W)
+    bar_h = 56
+    section = Image.new("RGB", (W, bar_h + strip_r.height), (240, 253, 244))
+    draw = ImageDraw.Draw(section)
+    draw.rectangle((0, 0, W, bar_h), fill=(209, 250, 229))
+    draw.text(
+        (W // 2, bar_h // 2),
+        "精選小盆栽 · 碰碰香 ／ 碧玉 ／ 金魚花",
+        fill=(6, 95, 70),
+        font=font(28, True),
+        anchor="mm",
+    )
+    section.paste(strip_r, (0, bar_h))
+    return section
 
 
 def main():
     gift = Image.open(GIFT).convert("RGB")
     mock = Image.open(MOCKUP).convert("RGB")
+
     gift_r = fit_width(gift, W)
-    mock_r = fit_width(mock, W)
+    mock_section = build_mockup_section(mock)
     footer = build_footer(FOOTER_H)
 
-    total_h = gift_r.height + mock_r.height + FOOTER_H
+    total_h = gift_r.height + mock_section.height + FOOTER_H
     canvas = Image.new("RGB", (W, total_h), (255, 255, 255))
     y = 0
     canvas.paste(gift_r, (0, y))
     y += gift_r.height
-    # thin divider
+
     draw = ImageDraw.Draw(canvas)
-    draw.rectangle((0, y, W, y + 6), fill=(167, 243, 208))
-    y += 6
-    canvas.paste(mock_r, (0, y))
-    y += mock_r.height
+    draw.rectangle((0, y, W, y + 8), fill=(167, 243, 208))
+    y += 8
+
+    canvas.paste(mock_section, (0, y))
+    y += mock_section.height
+
     canvas.paste(footer, (0, y))
 
     canvas.save(OUTPUT, quality=95)
