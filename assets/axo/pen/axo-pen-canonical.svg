@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- OFFICIAL 標準立姿: pen on paper, centered, LOCKED FACE, NO thought cloud -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520" role="img" aria-label="Axo canonical standing">
+  <title>Axo — 標準立姿 (official)</title>
+  <defs>
+    <filter id="paperGrain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.96  0 0 0 0 0.93  0 0 0 0 0.86  0 0 0 0.04 0" in="noise" result="grain"/>
+      <feBlend in="SourceGraphic" in2="grain" mode="multiply"/>
+    </filter>
+    <style>
+      .paper { fill: #F2EBD9; }
+      .wash { fill: #E8D8E8; opacity: 0.55; }
+      .ink { fill: none; stroke: #2A2420; stroke-linecap: round; stroke-linejoin: round; }
+      .ink-main { stroke-width: 2.8; }
+      .ink-light { stroke-width: 1.6; opacity: 0.85; }
+      .eye { fill: #2A2420; }
+    </style>
+  </defs>
+
+  <g filter="url(#paperGrain)">
+    <rect class="paper" width="400" height="520"/>
+
+    <path class="wash ink ink-main" d="M 252 338 C 298 352, 318 398, 292 438 C 278 454, 252 458, 238 442 C 224 426, 232 402, 250 382 Z"/>
+    <ellipse class="wash" cx="200" cy="318" rx="86" ry="100"/>
+    <ellipse class="ink ink-main" cx="200" cy="318" rx="86" ry="100"/>
+    <ellipse class="wash" cx="200" cy="175" rx="100" ry="90"/>
+    <ellipse class="ink ink-main" cx="200" cy="175" rx="100" ry="90"/>
+
+    <path class="ink ink-main" d="M 112 150 C 88 138, 72 158, 78 178"/>
+    <path class="ink ink-light" d="M 106 172 C 82 168, 70 188, 76 206"/>
+    <path class="ink ink-light" d="M 112 194 C 90 200, 82 220, 90 238"/>
+    <path class="ink ink-main" d="M 288 150 C 312 138, 328 158, 322 178"/>
+    <path class="ink ink-light" d="M 294 172 C 318 168, 330 188, 324 206"/>
+    <path class="ink ink-light" d="M 288 194 C 310 200, 318 220, 310 238"/>
+
+    <path class="wash ink ink-main" d="M 160 398 L 150 456 Q 148 470 162 470 Q 176 470 174 454 L 172 398 Z"/>
+    <path class="wash ink ink-main" d="M 240 398 L 250 456 Q 252 470 238 470 Q 224 470 226 454 L 228 398 Z"/>
+    <path class="wash ink ink-main" d="M 114 286 L 90 328 Q 82 340 90 348 Q 98 356 108 344 L 122 302 Z"/>
+    <path class="wash ink ink-main" d="M 286 286 L 310 328 Q 318 340 310 348 Q 302 356 292 344 L 278 302 Z"/>
+
+    <!-- LOCKED FACE — docs/axo-face-locked-zh-TW.md -->
+    <circle class="eye" cx="170" cy="168" r="2.5"/>
+    <circle class="eye" cx="230" cy="168" r="2.5"/>
+    <path class="ink ink-main" stroke-width="1.8" d="M 192 204 L 208 204"/>
+  </g>
+</svg>

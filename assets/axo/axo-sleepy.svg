@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520" role="img" aria-label="Axo sleepy">
+  <title>Axo — sleepy (v2)</title>
+  <defs>
+    <style>
+      .axo-fill { fill: #E4D4EA; }
+      .axo-stroke { fill: none; stroke: #1A1A1A; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .axo-eye { fill: #1A1A1A; }
+      .blanket { fill: #E8E4F0; }
+    </style>
+  </defs>
+
+  <path class="blanket axo-stroke" d="M 70 360 Q 200 300 330 360 L 330 480 Q 200 510 70 480 Z"/>
+
+  <path class="axo-fill axo-stroke" d="M 248 340 C 300 355, 315 400, 285 440 C 270 458, 248 462, 235 445 C 222 428, 230 405, 248 385 Z"/>
+  <ellipse class="axo-fill axo-stroke" cx="200" cy="300" rx="86" ry="96"/>
+  <ellipse class="axo-fill axo-stroke" cx="200" cy="172" rx="102" ry="92"/>
+
+  <path class="axo-stroke" d="M 110 152 C 76 142, 62 162, 66 182"/>
+  <path class="axo-stroke" d="M 104 172 C 70 168, 56 188, 62 208"/>
+  <path class="axo-stroke" d="M 110 195 C 76 202, 66 224, 74 244"/>
+  <path class="axo-stroke" d="M 290 152 C 324 142, 338 162, 334 182"/>
+  <path class="axo-stroke" d="M 296 172 C 330 168, 344 188, 338 208"/>
+  <path class="axo-stroke" d="M 290 195 C 324 202, 334 224, 326 244"/>
+
+  <path class="axo-fill axo-stroke" d="M 155 370 Q 140 420 155 445 Q 170 455 185 440 L 195 375 Z"/>
+  <path class="axo-fill axo-stroke" d="M 245 370 Q 260 420 245 445 Q 230 455 215 440 L 205 375 Z"/>
+
+  <path class="axo-fill axo-stroke" d="M 115 290 L 95 315 Q 88 325 95 332 Q 102 339 112 328 L 125 298 Z"/>
+  <path class="axo-fill axo-stroke" d="M 285 290 L 305 315 Q 312 325 305 332 Q 298 339 288 328 L 275 298 Z"/>
+
+  <circle class="axo-eye" cx="172" cy="166" r="4.5"/>
+  <circle class="axo-eye" cx="228" cy="166" r="4.5"/>
+  <path class="axo-stroke" stroke-width="3.5" d="M 188 202 L 212 202"/>
+
+  <text x="300" y="120" font-family="PingFang TC, sans-serif" font-size="24" font-weight="bold" fill="#1A1A1A">z</text>
+  <text x="318" y="98" font-family="PingFang TC, sans-serif" font-size="18" font-weight="bold" fill="#1A1A1A">z</text>
+  <text x="332" y="80" font-family="PingFang TC, sans-serif" font-size="14" font-weight="bold" fill="#1A1A1A">z</text>
+</svg>

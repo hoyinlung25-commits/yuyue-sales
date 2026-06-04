@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520" role="img" aria-label="Axo waving">
+  <title>Axo — wave (v2)</title>
+  <defs>
+    <style>
+      .axo-fill { fill: #E4D4EA; }
+      .axo-stroke { fill: none; stroke: #1A1A1A; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .axo-eye { fill: #1A1A1A; }
+    </style>
+  </defs>
+
+  <path class="axo-fill axo-stroke" d="M 248 340 C 310 360, 330 420, 300 470 C 285 495, 255 500, 235 478 C 218 460, 225 430, 248 400 Z"/>
+  <ellipse class="axo-fill axo-stroke" cx="200" cy="318" rx="88" ry="102"/>
+  <ellipse class="axo-fill axo-stroke" cx="200" cy="172" rx="102" ry="92"/>
+
+  <path class="axo-stroke" d="M 110 152 C 76 142, 62 162, 66 182"/>
+  <path class="axo-stroke" d="M 104 172 C 70 168, 56 188, 62 208"/>
+  <path class="axo-stroke" d="M 110 195 C 76 202, 66 224, 74 244"/>
+  <path class="axo-stroke" d="M 290 152 C 324 142, 338 162, 334 182"/>
+  <path class="axo-stroke" d="M 296 172 C 330 168, 344 188, 338 208"/>
+  <path class="axo-stroke" d="M 290 195 C 324 202, 334 224, 326 244"/>
+
+  <path class="axo-fill axo-stroke" d="M 158 398 L 148 458 Q 146 474 160 474 Q 174 474 172 458 L 170 398 Z"/>
+  <path class="axo-fill axo-stroke" d="M 242 398 L 252 458 Q 254 474 240 474 Q 226 474 228 458 L 230 398 Z"/>
+
+  <path class="axo-fill axo-stroke" d="M 112 288 L 82 322 Q 72 334 80 343 Q 88 352 100 340 L 118 302 Z"/>
+  <path class="axo-fill axo-stroke" d="M 288 275 L 328 228 Q 338 214 328 206 Q 318 198 308 212 L 282 268 Z"/>
+
+  <circle class="axo-eye" cx="172" cy="166" r="4.5"/>
+  <circle class="axo-eye" cx="228" cy="166" r="4.5"/>
+  <path class="axo-stroke" stroke-width="3.5" d="M 184 196 Q 189 202 194 196 Q 199 202 204 196 Q 209 202 214 196"/>
+</svg>

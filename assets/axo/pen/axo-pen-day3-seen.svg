@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Day 3: FLAT 2D pen + colored pencil. NO 3D volume. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 640" width="1080" height="1350" role="img" aria-label="Axo Day 3 flat sketch">
+  <title>Axo Day 3 Seen</title>
+  <defs>
+    <filter id="paperGrain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.95  0 0 0 0 0.92  0 0 0 0 0.85  0 0 0 0.06 0" in="noise" result="grain"/>
+      <feBlend in="SourceGraphic" in2="grain" mode="multiply"/>
+    </filter>
+    <pattern id="pencilFill" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(-18)">
+      <line x1="0" y1="6" x2="6" y2="0" stroke="#D4BEE0" stroke-width="0.9" opacity="0.55"/>
+    </pattern>
+    <pattern id="pencilFill2" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(24)">
+      <line x1="0" y1="7" x2="7" y2="0" stroke="#C8B0D8" stroke-width="0.7" opacity="0.35"/>
+    </pattern>
+    <style>
+      .paper { fill: #F2EBD9; }
+      .ink { fill: none; stroke: #2A2420; stroke-linecap: round; stroke-linejoin: round; }
+      .ink-main { stroke-width: 2.4; }
+      .ink-light { stroke-width: 1.4; }
+      .eye { fill: #2A2420; }
+      .pencil { fill: url(#pencilFill); stroke: #2A2420; stroke-width: 2.4; stroke-linejoin: round; }
+      .pencil2 { fill: url(#pencilFill2); stroke: #2A2420; stroke-width: 2.4; }
+      .rain { stroke: #6B7A8C; stroke-width: 1.2; opacity: 0.5; }
+    </style>
+  </defs>
+
+  <g filter="url(#paperGrain)">
+    <rect class="paper" width="400" height="640"/>
+
+    <text x="200" y="76" text-anchor="middle" font-family="cursive" font-size="26" font-weight="600" fill="#2A2420">Seen. Soul offline.</text>
+
+    <g transform="translate(244, 108)" class="ink ink-light" fill="none">
+      <rect x="0" y="0" width="118" height="96" rx="3" stroke-width="2.2"/>
+      <line x1="59" y1="2" x2="59" y2="94"/>
+      <line x1="2" y1="50" x2="116" y2="50"/>
+      <line class="rain" x1="14" y1="6" x2="8" y2="26"/>
+      <line class="rain" x1="34" y1="2" x2="28" y2="22"/>
+      <line class="rain" x1="54" y1="8" x2="48" y2="28"/>
+      <line class="rain" x1="74" y1="4" x2="68" y2="24"/>
+      <line class="rain" x1="94" y1="10" x2="88" y2="30"/>
+      <line class="rain" x1="24" y1="34" x2="18" y2="54"/>
+      <line class="rain" x1="48" y1="30" x2="42" y2="50"/>
+      <line class="rain" x1="72" y1="36" x2="66" y2="56"/>
+      <line class="rain" x1="18" y1="62" x2="12" y2="82"/>
+      <line class="rain" x1="52" y1="66" x2="46" y2="86"/>
+      <line class="rain" x1="86" y1="60" x2="80" y2="80"/>
+    </g>
+
+    <g class="ink ink-light" opacity="0.35" fill="none">
+      <line x1="128" y1="548" x2="148" y2="538"/>
+      <line x1="168" y1="548" x2="188" y2="538"/>
+      <line x1="208" y1="548" x2="228" y2="538"/>
+      <line x1="248" y1="548" x2="268" y2="538"/>
+    </g>
+
+    <g transform="translate(52, 268)">
+      <!-- Knees + body (one flat shape) -->
+      <path class="pencil" d="M 152 98
+        C 210 92, 248 128, 246 172
+        C 244 208, 210 238, 168 242
+        C 118 246, 68 218, 62 172
+        C 56 132, 92 98, 140 94
+        C 146 94, 150 96, 152 98 Z"/>
+
+      <!-- Head -->
+      <ellipse class="pencil2" cx="152" cy="52" rx="74" ry="66"/>
+
+      <!-- 6 gills -->
+      <g class="ink ink-light" fill="none">
+        <path d="M 84 36 C 72 50, 66 66, 68 84"/>
+        <path d="M 92 32 C 82 48, 76 64, 78 86"/>
+        <path d="M 100 30 C 92 46, 88 64, 90 88"/>
+        <path d="M 220 36 C 232 50, 238 66, 236 84"/>
+        <path d="M 212 32 C 222 48, 228 64, 226 86"/>
+        <path d="M 204 30 C 212 46, 216 64, 214 88"/>
+      </g>
+
+      <!-- Arms -->
+      <path class="ink ink-main" d="M 76 128 C 60 148, 56 168, 68 180 C 82 188, 100 174, 112 154"/>
+      <path class="ink ink-main" d="M 228 128 C 244 148, 248 168, 236 180 C 222 188, 204 174, 192 154"/>
+
+      <path class="ink ink-light" d="M 122 228 L 114 240 M 116 240 L 112 242"/>
+      <path class="ink ink-light" d="M 182 228 L 190 240 M 186 240 L 190 242"/>
+
+      <!-- Phone -->
+      <g transform="translate(114, 118)">
+        <rect x="0" y="0" width="60" height="90" rx="5" fill="#FAF6EE" stroke="#2A2420" stroke-width="2.4"/>
+        <rect x="8" y="12" width="44" height="56" rx="2" fill="#F2EBD9" stroke="#2A2420" stroke-width="1.2"/>
+      </g>
+
+      <circle class="eye" cx="136" cy="48" r="2.5"/>
+      <circle class="eye" cx="168" cy="48" r="2.5"/>
+      <path class="ink ink-main" stroke-width="1.6" d="M 146 62 L 158 62"/>
+    </g>
+  </g>
+</svg>
