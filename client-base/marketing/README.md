@@ -1,26 +1,30 @@
-# Plant gift — WhatsApp poster (AI generated)
+# WhatsApp posters
 
-## Main file
+## Combined poster (use this)
 
-| File | Use |
-|------|-----|
-| **`plant-appointment-poster.png`** | Send on WhatsApp (AI-generated poster) |
-| `WHATSAPP_CAPTION.txt` | Message to paste with the image |
+| File | Description |
+|------|-------------|
+| **`plant-combined-poster.png`** | **Poster 1 + Poster 2 merged** + QR box + Quick Come Quick Serve |
+| `plant-combined-poster-ai.png` | AI redrawn single layout (optional) |
 
-## Poster content
+## QR code in Canva
 
-- 預約見面 · 送您療癒小盆栽  
-- No **PP** branding · No **prices**  
-- Plants: 碰碰香 / 碧玉 / 金魚花 (花語 only)  
-- CTA: WhatsApp 回覆「預約」  
-- 龍浩賢 · 保險策劃  
+1. Open `plant-combined-poster.png` in Canva  
+2. Find the **dashed white square** (bottom right)  
+3. Upload your registration QR → place inside the box  
+4. Export as PNG → send on WhatsApp  
 
-## Regenerate (image tool)
+## Rebuild combined poster
 
-Ask the agent to regenerate with changes, e.g.:
+```bash
+cd client-base/marketing
+python3 compose_combined_poster.py
+```
 
-- Add your phone number  
-- English + Chinese  
-- Different CTA keyword  
+Requires: `plant-gift-poster-v2.png` + `plant-mockup-poster.png`
 
-The poster is created with the **image generation** function, not HTML/code.
+## Quick Come · Quick Serve
+
+Shown on bottom banner:
+- **Quick Come · Quick Serve**
+- 快捷服務 · 快來快約 · 盡快為您安排
