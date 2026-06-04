@@ -1,31 +1,26 @@
-# Plant gift — WhatsApp poster
+# Plant gift — WhatsApp poster (AI generated)
 
-## Files
+## Main file
 
 | File | Use |
 |------|-----|
-| **`plant-appointment-poster.png`** | Send this image on WhatsApp |
-| `plant-appointment-poster.html` | Edit text/design, then re-export |
-| `WHATSAPP_CAPTION.txt` | Copy-paste message with the image |
+| **`plant-appointment-poster.png`** | Send on WhatsApp (AI-generated poster) |
+| `WHATSAPP_CAPTION.txt` | Message to paste with the image |
 
-## What was removed (per your request)
+## Poster content
 
-- All **PP** branding and logos  
-- All **prices** and MUJI comparisons  
-- QR “scan to buy” — replaced with **WhatsApp「預約」** CTA  
+- 預約見面 · 送您療癒小盆栽  
+- No **PP** branding · No **prices**  
+- Plants: 碰碰香 / 碧玉 / 金魚花 (花語 only)  
+- CTA: WhatsApp 回覆「預約」  
+- 龍浩賢 · 保險策劃  
 
-## Re-export PNG after editing HTML
+## Regenerate (image tool)
 
-```bash
-google-chrome --headless=new --disable-gpu --window-size=1080,1920 \
-  --screenshot=plant-appointment-poster.png \
-  "file://$(pwd)/plant-appointment-poster.html"
-```
+Ask the agent to regenerate with changes, e.g.:
 
-## Customise
+- Add your phone number  
+- English + Chinese  
+- Different CTA keyword  
 
-Open `plant-appointment-poster.html` in a browser to preview. Change:
-
-- Your name / team in footer  
-- CTA keyword (`預約` → `植物` etc.)  
-- Plant list or features  
+The poster is created with the **image generation** function, not HTML/code.
