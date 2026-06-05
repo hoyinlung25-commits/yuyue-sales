@@ -3,7 +3,9 @@
 
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
+
+from poster_fonts import poster_font
 
 OUT = Path(__file__).parent / "bupa-vtop-poster.png"
 W, H = 1080, 1920
@@ -19,14 +21,7 @@ MUTED = (71, 85, 105)
 
 
 def font(size: int, bold: bool = False):
-    paths = [
-        "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc" if bold else "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
-        "/usr/share/fonts/truetype/noto/NotoSansCJK-Bold.ttc" if bold else "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc",
-    ]
-    for p in paths:
-        if Path(p).exists():
-            return ImageFont.truetype(p, size)
-    return ImageFont.load_default()
+    return poster_font(size, bold)
 
 
 def rounded_rect(draw, box, fill, radius=24):
@@ -76,7 +71,9 @@ def build():
     draw.text((W // 2, 72), "新資訊 · 保柏團體醫保會員必讀", fill=GOLD, font=font(28, True), anchor="mm")
     draw.text((W // 2, 145), "保柏易增值", fill=WHITE, font=font(72, True), anchor="mm")
     draw.text((W // 2, 230), "VTop 醫療保障", fill=TEAL_LIGHT, font=font(40, True), anchor="mm")
-    draw.text((W // 2, 310), "離職 · 退休 · 轉工\n醫療保障都可以延續", fill=WHITE, font=font(34, True), anchor="mm")
+    sub = font(34, True)
+    draw.text((W // 2, 288), "離職 · 退休 · 轉工", fill=WHITE, font=sub, anchor="mm")
+    draw.text((W // 2, 332), "醫療保障都可以延續", fill=WHITE, font=sub, anchor="mm")
 
     # Promo ribbon
     ribbon_y = 480
