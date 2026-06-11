@@ -16,6 +16,7 @@ OUT = Path(__file__).parent / "output"
 OUT.mkdir(exist_ok=True)
 
 NAVY, GOLD_HEX, MUTED, WHITE = "1E3A5F", "D4A843", "64748B", "FFFFFF"
+SUBTITLE = "所有工作表關鍵總數 · 自動連動更新"
 ALT, GREEN, RED, YELLOW, BLUE = "F8FAFC", "DCFCE7", "FEE2E2", "FEF3C7", "DBEAFE"
 ORANGE = "FFEDD5"
 
@@ -51,7 +52,7 @@ def rng(col: str) -> str:
 
 
 class SheetBuilder:
-    def __init__(self, ws, title: str, subtitle: str = "", merge_cols: int = 10):
+    def __init__(self, ws, title: str, subtitle: str = SUBTITLE, merge_cols: int = 10):
         self.ws = ws
         self.start = HDR_ROW
         self.merge_cols = merge_cols
@@ -141,7 +142,7 @@ def add_totals_block(ws, title: str, metrics: list[tuple[str, int, str, str]]):
 # ─── 總數一覽 ─────────────────────────────────────────────
 def sheet_totals_overview(wb: Workbook):
     ws = wb.create_sheet("總數一覽", 1)
-    b = SheetBuilder(ws, "各表總數一覽", "所有工作表關鍵總數 · 自動連動更新", merge_cols=6)
+    b = SheetBuilder(ws, "各表總數一覽", merge_cols=6)
     b.headers(["模組", "總數項目", "數值", "單位", "來源工作表", "更新方式"], [14, 22, 14, 8, 14, 18])
 
     items = [
@@ -194,7 +195,7 @@ def sheet_totals_overview(wb: Workbook):
 # ─── 儀表板 ───────────────────────────────────────────────
 def sheet_dashboard(wb: Workbook):
     ws = wb.create_sheet("儀表板", 0)
-    b = SheetBuilder(ws, "營運儀表板", "v3 · 即時 KPI 連動各表總數", merge_cols=12)
+    b = SheetBuilder(ws, "營運儀表板", merge_cols=12)
     ws.cell(4, 1, f"更新日期：{date.today().isoformat()}").font = F(size=9, color=MUTED)
 
     b.kpi_box(6, 1, "在讀學生", f'=COUNTIF(學生資料庫!{rng("R")},"在讀")', 12)
@@ -227,7 +228,7 @@ def sheet_dashboard(wb: Workbook):
 # ─── 學生資料庫 ───────────────────────────────────────────
 def sheet_students(wb: Workbook):
     ws = wb.create_sheet("學生資料庫")
-    b = SheetBuilder(ws, "學生資料庫", "★ 接手首週必完成 · 底部自動計算總數", merge_cols=18)
+    b = SheetBuilder(ws, "學生資料庫", merge_cols=18)
     hdrs = [
         "學號", "中文姓名", "英文姓名", "就讀學校", "年級", "報讀課程",
         "課程類別", "上課日", "月費", "付款狀態", "欠費金額",
@@ -270,7 +271,7 @@ def sheet_students(wb: Workbook):
 # ─── 收費記錄 ───────────────────────────────────────────────
 def sheet_fees(wb: Workbook):
     ws = wb.create_sheet("收費記錄")
-    b = SheetBuilder(ws, "收費記錄", "自動計算差額 · 底部總數統計", merge_cols=15)
+    b = SheetBuilder(ws, "收費記錄", merge_cols=15)
     hdrs = [
         "日期", "收據編號", "學號", "學生姓名", "月份", "課程",
         "應繳金額", "實收金額", "差額", "收款狀態", "付款方式",
@@ -316,7 +317,7 @@ def sheet_fees(wb: Workbook):
 # ─── 出席記錄 ───────────────────────────────────────────────
 def sheet_attendance(wb: Workbook):
     ws = wb.create_sheet("出席記錄")
-    b = SheetBuilder(ws, "出席記錄", "每日點名 · 底部出席總數統計", merge_cols=14)
+    b = SheetBuilder(ws, "出席記錄", merge_cols=14)
     hdrs = [
         "日期", "學號", "學生姓名", "課程", "應到時間", "實到時間",
         "遲到(分鐘)", "出席狀態", "離開時間", "功課完成", "導師", "家長已通知", "補課安排", "備註",
@@ -360,7 +361,7 @@ def sheet_attendance(wb: Workbook):
 # ─── 排課表 ───────────────────────────────────────────────
 def sheet_schedule(wb: Workbook):
     ws = wb.create_sheet("排課表")
-    b = SheetBuilder(ws, "每週排課表", "滿班率 · 預估營收 · 底部總數", merge_cols=15)
+    b = SheetBuilder(ws, "每週排課表", merge_cols=15)
     hdrs = [
         "星期", "時段", "課程名稱", "課程類別", "導師", "課室",
         "對象", "班額", "已報", "候補", "滿班率", "月費參考", "預估月營收", "狀態", "備註",
@@ -405,7 +406,7 @@ def sheet_schedule(wb: Workbook):
 # ─── 課室使用表 ───────────────────────────────────────────
 def sheet_rooms(wb: Workbook):
     ws = wb.create_sheet("課室使用表")
-    b = SheetBuilder(ws, "課室使用表", "空閒時段統計 · 每呎產值總數", merge_cols=11)
+    b = SheetBuilder(ws, "課室使用表", merge_cols=11)
     hdrs = [
         "星期", "時段", "課室A", "課室A狀態", "課室B", "課室B狀態",
         "VIP室", "VIP室狀態", "負責導師", "每呎產值", "備註",
@@ -444,7 +445,7 @@ def sheet_rooms(wb: Workbook):
 # ─── 財務月結 ───────────────────────────────────────────────
 def sheet_finance(wb: Workbook):
     ws = wb.create_sheet("財務月結")
-    b = SheetBuilder(ws, "財務月結表", "自動 P&L · 底部年度總數", merge_cols=16)
+    b = SheetBuilder(ws, "財務月結表", merge_cols=16)
     hdrs = [
         "月份", "學生數", "ARPU", "月營收", "租金", "全職導師",
         "兼職導師", "水電", "雜費", "推廣", "其他", "總成本",
@@ -487,7 +488,7 @@ def sheet_finance(wb: Workbook):
 # ─── 學習進度 ───────────────────────────────────────────────
 def sheet_progress(wb: Workbook):
     ws = wb.create_sheet("學習進度")
-    b = SheetBuilder(ws, "學習進度報告", "WhatsApp 訊息自動生成 · 底部總數", merge_cols=14)
+    b = SheetBuilder(ws, "學習進度報告", merge_cols=14)
     hdrs = [
         "月份", "學號", "學生姓名", "課程", "出席率", "功課完成率",
         "測驗分數", "上次分數", "進步幅度", "進步重點", "待改善",
@@ -526,7 +527,7 @@ def sheet_progress(wb: Workbook):
 # ─── 每日行政 ───────────────────────────────────────────────
 def sheet_daily(wb: Workbook):
     ws = wb.create_sheet("每日行政")
-    b = SheetBuilder(ws, "每日行政檢查表", "完成率自動計算 · 底部任務總數", merge_cols=8)
+    b = SheetBuilder(ws, "每日行政檢查表", merge_cols=8)
 
     ws.cell(4, 1, "日期：").font = F(bold=True)
     ws.cell(4, 2, date.today().isoformat()).font = F(bold=True, color=NAVY)
@@ -567,7 +568,7 @@ def sheet_daily(wb: Workbook):
 # ─── 家長通訊 ───────────────────────────────────────────────
 def sheet_parents(wb: Workbook):
     ws = wb.create_sheet("家長通訊")
-    b = SheetBuilder(ws, "家長通訊記錄", "優先級 · 逾期提醒 · 底部總數", merge_cols=13)
+    b = SheetBuilder(ws, "家長通訊記錄", merge_cols=13)
     hdrs = [
         "日期", "學號", "家長姓名", "聯絡方式", "類型", "優先級",
         "內容摘要", "處理狀態", "回覆時限", "跟進日期", "逾期?", "負責人", "備註",
@@ -608,7 +609,7 @@ def sheet_parents(wb: Workbook):
 # ─── 導師資料 ───────────────────────────────────────────────
 def sheet_tutors(wb: Workbook):
     ws = wb.create_sheet("導師資料")
-    b = SheetBuilder(ws, "導師及員工資料", "學生數 · 合約倒數 · 底部薪酬總數", merge_cols=14)
+    b = SheetBuilder(ws, "導師及員工資料", merge_cols=14)
     hdrs = [
         "編號", "姓名", "職位", "電話", "負責課程", "負責學生數",
         "薪酬", "月薪估算", "入職日期", "合約到期", "合約剩餘天數",
@@ -652,7 +653,7 @@ def sheet_readme(wb: Workbook):
     ws.column_dimensions["C"].width = 50
     ws["A1"] = "俊才坊行政系統"
     ws["A1"].font = F(bold=True, size=16, color=NAVY)
-    ws["A2"] = "Upgrade Edition v3.0 · 各表自動計算總數"
+    ws["A2"] = SUBTITLE
     ws["A2"].font = F(size=10, color=MUTED)
 
     for c, h in enumerate(["工作表", "總數統計項目", "升級功能"], 1):
