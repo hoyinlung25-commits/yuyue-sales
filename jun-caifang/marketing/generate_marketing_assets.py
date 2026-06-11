@@ -40,18 +40,15 @@ def draw_rounded_rect(draw, box, radius, fill=None, outline=None, width=1):
     draw.rounded_rectangle(box, radius=radius, fill=fill, outline=outline, width=width)
 
 
-def draw_logo(size: int = 800) -> Image.Image:
-    img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(img)
-    cx, cy = size // 2, size // 2
-
+def draw_emblem(draw, cx: float, cy: float, size: float):
+    """Draw book + star emblem centered at (cx, cy)."""
     # Outer ring
     pad = size * 0.08
-    draw.ellipse((pad, pad, size - pad, size - pad), fill=NAVY + (255,))
+    draw.ellipse((cx - size / 2 + pad, cy - size / 2 + pad, cx + size / 2 - pad, cy + size / 2 - pad), fill=NAVY + (255,))
 
     # Inner cream circle
     inner = size * 0.14
-    draw.ellipse((inner, inner, size - inner, size - inner), fill=CREAM + (255,))
+    draw.ellipse((cx - size / 2 + inner, cy - size / 2 + inner, cx + size / 2 - inner, cy + size / 2 - inner), fill=CREAM + (255,))
 
     # Open book shape
     book_w = size * 0.38
@@ -71,30 +68,52 @@ def draw_logo(size: int = 800) -> Image.Image:
         ],
         fill=WHITE + (255,),
         outline=GOLD + (255,),
-        width=max(2, size // 200),
+        width=max(2, int(size // 200)),
     )
+    draw.line([(cx, by0), (cx, by1)], fill=GOLD + (255,), width=max(2, int(size // 180)))
 
-    # Book spine line
-    draw.line([(cx, by0), (cx, by1)], fill=GOLD + (255,), width=max(2, size // 180))
+    # Star
+    import math
 
-    # Star / talent sprout
     star_y = by0 - size * 0.12
     star_r = size * 0.055
     points = []
     for i in range(10):
         angle = i * 36 - 90
-        import math
-
         rad = math.radians(angle)
         r = star_r if i % 2 == 0 else star_r * 0.45
         points.append((cx + r * math.cos(rad), star_y + r * math.sin(rad)))
     draw.polygon(points, fill=GOLD + (255,))
 
-    # Chinese name (below emblem, outside inner circle)
-    name_font = font(int(size * 0.11), bold=True)
-    sub_font = font(int(size * 0.042), bold=True)
-    draw.text((cx, size * 0.78), "俊才坊", fill=NAVY + (255,), font=name_font, anchor="mm")
-    draw.text((cx, size * 0.88), "培育俊才 · 成就未來", fill=MUTED + (255,), font=sub_font, anchor="mm")
+
+def draw_logo(size: int = 800) -> Image.Image:
+    """Square logo: emblem on top, Chinese name below."""
+    img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+
+    emblem_size = size * 0.62
+    emblem_cy = size * 0.36
+    draw_emblem(draw, size / 2, emblem_cy, emblem_size)
+
+    name_font = font(int(size * 0.14), bold=True)
+    sub_font = font(int(size * 0.05), bold=True)
+    draw.text((size / 2, size * 0.72), "俊才坊", fill=NAVY + (255,), font=name_font, anchor="mm")
+    draw.text((size / 2, size * 0.84), "培育俊才 · 成就未來", fill=MUTED + (255,), font=sub_font, anchor="mm")
+
+    return img
+
+
+def draw_logo_horizontal(width: int = 1200, height: int = 400) -> Image.Image:
+    """Horizontal logo for letterhead / wide banners."""
+    img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    emblem_size = height * 0.85
+    draw_emblem(draw, height * 0.48, height * 0.5, emblem_size)
+
+    tx = height * 0.95
+    draw.text((tx, height * 0.38), "俊才坊補習社", fill=NAVY + (255,), font=font(int(height * 0.22), bold=True), anchor="lm")
+    draw.text((tx, height * 0.62), "培育俊才 · 成就未來", fill=MUTED + (255,), font=font(int(height * 0.1), bold=True), anchor="lm")
+    draw.line([(tx, height * 0.72), (width - 40, height * 0.72)], fill=GOLD + (255,), width=3)
 
     return img
 
@@ -357,6 +376,13 @@ def main():
     logo_white = Image.new("RGBA", (1024, 1024), WHITE + (255,))
     logo_white.paste(logo, (0, 0), logo)
     logo_white.convert("RGB").save(OUTPUT / "jun-caifang-logo-white-bg.png", "PNG")
+
+    logo_h = draw_logo_horizontal()
+    logo_h_path = OUTPUT / "jun-caifang-logo-horizontal.png"
+    logo_h.save(logo_h_path, "PNG")
+    logo_h_white = Image.new("RGBA", logo_h.size, WHITE + (255,))
+    logo_h_white.paste(logo_h, (0, 0), logo_h)
+    logo_h_white.convert("RGB").save(OUTPUT / "jun-caifang-logo-horizontal-white-bg.png", "PNG")
 
     poster = build_poster()
     poster.save(OUTPUT / "jun-caifang-summer-poster.png", "PNG", quality=95)
