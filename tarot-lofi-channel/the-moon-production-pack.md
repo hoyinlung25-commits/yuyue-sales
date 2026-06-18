@@ -26,13 +26,27 @@ Cozy Tower Room × Witch Aesthetic × The Moon symbolism
 
 A mysterious woman sits in silhouette by a gothic tower window. Outside: a luminous full moon, twin distant towers, deep starfield. Inside: amber candlelight, tarot spread, crystal ball, drifting smoke. The mood is dreamy, intuitive, and safe — not horror.
 
-### Reference Images
+### Reference Images & Loop Videos
 
 | Asset | File | Use |
 |-------|------|-----|
 | Main scene concept | `assets/the-moon/the-moon-main-scene.png` | Video background base / AI video keyframe |
+| **Loop video (30s)** | `assets/the-moon/the-moon-loop-30s.mp4` | Seamless scene loop — repeat for 2hr video |
+| **Loop video (15s)** | `assets/the-moon/the-moon-loop-15s.mp4` | Shorter loop variant |
 | YouTube thumbnail | `assets/the-moon/the-moon-thumbnail.png` | Thumbnail base (add text in Canva/Figma) |
 | Frame overlay mockup | `assets/the-moon/the-moon-frame-overlay.png` | UI border + numeral + title placement |
+
+**Regenerate loops:** `bash scripts/build-the-moon-loop.sh`
+
+#### Loop Video Motion Layers (built from main scene)
+
+| Effect | Method | Cycle |
+|--------|--------|-------|
+| Breathing zoom | ffmpeg zoompan sin wave | 30s |
+| Candle flicker | brightness oscillation (eq) | 3s + 1.77s |
+| Moon glow pulse | saturation oscillation | 15s |
+| Mystical smoke | PIL overlay + alpha composite | 5s tile |
+| Film grain | ffmpeg noise filter | continuous |
 
 ### Color Palette
 
