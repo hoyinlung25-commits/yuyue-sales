@@ -1,156 +1,177 @@
-# 大人的童話｜暗色視覺聖經（Dark Adult Fairytale）
+# 大人的童話｜暗黑卡通風格重寫（Dark Cartoon Style Bible）
 
-目標觀眾不是兒童；是 **會被金句刺到的大人**。  
-畫面要像「壁爐邊不敢講給小孩聽的故事書」。
-
-你目前的老人定裝（藍袍、暖壁爐、水彩）骨架可用，但要 **降甜度、加壓迫感**。
+你要的不是「同一張甜水彩，只把燈調暗」。  
+而是把 **繪製筆觸本身** 從兒童卡通／暖水彩，重寫成 **暗黑 2D 卡通插畫**。
 
 ---
 
-## 1. 風格一句話
+## 0. 風格轉換（FROM → TO）
 
-**Muted gothic storybook**＝手繪故事書骨架 ＋ 低飽和 ＋ 強烈明暗 ＋ 詩意陰鬱  
-不是恐怖片血腥，也不是迪士尼溫馨。
+| 舊風格（丟掉） | 新風格（採用） |
+|----------------|----------------|
+| soft watercolor children’s book | **dark 2D gothic cartoon illustration** |
+| cozy warm fireplace glow | dying ember + deep black shadow blocks |
+| cute rounded faces | sharper planes, tired/solemn eyes, heavier lids |
+| bright clean colors | limited desaturated palette, muddy cold tones |
+| sweet storybook airiness | thick ink outlines, flat cel shadow, grain |
+| Disney / Pixar softness | European dark animation / grim fairytale cartoon |
 
----
-
-## 2. 必守規則
-
-| 要 | 不要 |
-|----|------|
-| 低飽和、灰藍、炭黑、枯褐 | 糖果色、粉紅、亮橙大面積 |
-| 單光源／雙色溫對比（燭火琥珀 vs 窗外星藍） | 全場暖亮、開心壁爐廣告感 |
-| 長陰影、眼睛有陰影 | 圓潤可愛大眼、笑咪咪空氣感 |
-| 墨線＋薄釉、紙質顆粒 | 塑料 3D、甜美水彩插畫 |
-| 象徵暴力（剪影、影子狼） | 寫實血、驚悚 jump scare |
-| 成人寓言張力 | 兒童床邊故事甜感 |
+一句話：  
+**Dark gothic 2D cartoon fairytale**＝有卡通輪廓，但筆觸冷、線條重、陰影塊面大、顏色髒而美。
 
 ---
 
-## 3. 色盤（鎖定）
+## 1. 新 Style Anchor（全部鏡頭改貼這個）
 
 ```text
+dark gothic 2D cartoon illustration, adult fairytale animation style,
+thick ink outlines, flat cel shading with large black shadow shapes,
+limited desaturated palette, cold ash blue and charcoal, muddy bone highlights,
+paper grain and light film grit, solemn melancholic mood, grim storybook cartoon,
+NOT children's watercolor, NOT Disney, NOT Pixar, NOT cute anime, NOT photorealistic, NOT 3D CGI
+```
+
+### Negative（加嚴，專門殺「甜卡通」）
+```text
+children's book watercolor, soft pastel wash, cute, wholesome, cozy, cheerful,
+Disney, Pixar, DreamWorks smile, kawaii, big sparkly anime eyes, bright saturated colors,
+candy palette, warm overlit orange glow, clean shiny rendering, photorealistic, live action,
+3D CGI, plastic skin, horror gore, blood splatter, jump scare, modern objects,
+watermark, logo, burned-in text, extra fingers, deformed hands
+```
+
+---
+
+## 2. 畫法規則（讓 AI 真的「換筆觸」）
+
+1. **線條**：粗墨線／不規則手繪線，不要細膩甜美勾線  
+2. **上色**：平塗 cel + 大塊黑影（shadow shapes），少漸層奶油感  
+3. **顏色**：限色；灰藍、炭黑、骨色、暗酒紅；禁止粉嫩  
+4. **臉**：卡通比例可保留，但眼窩加深、表情克制沉重  
+5. **質感**：紙屑、輕微污跡、舊印刷感；不要光滑兒童插畫  
+6. **仍然是卡通**：不要變成寫實照片或恐怖寫實
+
+---
+
+## 3. 色盤（暗黑卡通限色）
+
+```text
+Void black #0E1013
 Ash charcoal #1B1F24
-Frozen ink blue #2E3A46
-Sickly moonlight #A8B4C0
-Dying ember amber #8A4A22   ← 少用，只當點光源
-Dried-blood muted crimson #5C2A2A  ← 圍巾／強調，不要鮮紅
-Bone paper #C9C2B3
-Moss shadow green #2F3B32
+Frozen ink blue #2A3440
+Muddy bone #B7AE9C
+Dying ember #6E3B1C
+Dried crimson #5A2428
+Sick green shadow #243028
 ```
 
-口訣：**80% 冷灰暗部，15% 骨紙中調，5% 殘火／暗酒紅當刺點。**
+口訣：**大面積黑與灰藍，亮部很少，紅色只當傷口式點綴。**
 
 ---
 
-## 4. 光影（最重要）
+## 4. 把「甜卡通老人圖」重畫成暗黑卡通
 
-- 室內：只留 **燭火／壁爐殘火**，半邊臉沒入暗部（chiaroscuro）
-- 室外：月光冷、樹影重、雪是灰藍不是純白
-- 老人看鏡頭時：眼神要有「知道結局仍要講」的沉重，不是慈祥耶誕老人
-- 群戲：臉溶在陰影，只剩輪廓與手指
+上傳你現有角色表，用圖生圖／風格重繪：
+
+### A. 強效換筆觸（建議主用）
+```text
+Redraw this exact character sheet in a completely different art style while keeping identity:
+same elderly storyteller face structure, beard, hair, robe silhouette, fur collar, ornate book.
+NEW STYLE: dark gothic 2D cartoon illustration, thick ink outlines, flat cel shading,
+large black shadow shapes on face and clothing, limited desaturated cold palette,
+ash blue and charcoal, dying ember only as tiny light, grim adult fairytale cartoon,
+heavy solemn expression, paper grain, NOT soft watercolor, NOT children's book, NOT cute
+```
+
+### B. 若還是偏甜，再跑一次（加硬）
+```text
+Same character, push art style harder into dark gothic cartoon: thicker black ink lines,
+harsher cel shadows covering half the face, almost monochrome blue-ash colors,
+remove warm cozy look, remove soft watercolor bleeding, make it look like a grim animated
+adult fairytale still frame, muted, cold, ominous, hand-drawn 2D animation style
+```
+
+### 變化幅度
+- 要換筆觸：可到 **0.55–0.7**  
+- 若臉崩了：降到 0.45，並加 `keep exact facial identity`
 
 ---
 
-## 5. 全域 Style Anchor（之後全部改用這個）
+## 5. 暗黑卡通定裝（文字直出版）
 
+### 老人
 ```text
-dark adult fairytale illustration, muted gothic storybook, desaturated winter palette,
-heavy chiaroscuro, ink-wash and thin glaze painting, paper grain, solemn melancholy,
-not for children, poetic dread, ash charcoal and frozen blue tones, dying ember accents only,
-no cute Disney look, no bright pastel, no photorealism, no gore
+Dark gothic 2D cartoon character sheet, elderly storyteller, front and side view,
+long wavy white hair, heavy white beard, deep shadowed eye sockets, solemn gaze,
+charcoal-navy robe, dark fur collar, ornate leather book, thick ink outlines,
+flat cel shading, large black shadows, limited desaturated palette, grim adult fairytale cartoon,
+paper grain, not children's watercolor, not Disney
 ```
 
-## 5.1 Negative（加嚴）
-
+### Elia
 ```text
-cute, childish, Disney, Pixar, kawaii, bright pastel, candy colors, cheerful, cozy warm overlit,
-photorealistic, live action, 3D CGI, plastic skin, anime big sparkly eyes, horror gore, blood splatter,
-jump scare, modern objects, watermark, logo, burned-in text, extra fingers, deformed face
+Dark gothic 2D cartoon character sheet, 12-year-old girl Elia, freckles,
+tired-hopeful eyes with shadowed lids, worn grey-brown coat, muted dried-crimson scarf,
+loose braid, sketchbook, thick ink outlines, flat cel shading, cold desaturated colors,
+grim adult fairytale world, fragile but not cute Disney child, consistent face
 ```
 
----
-
-## 6. 把你現有老人圖「壓暗」成可用定裝
-
-在圖生圖／編輯時上傳你這張老人角色表，貼以下 prompt：
-
-### 暗化重繪（Image Edit / I2I）
+### 村莊
 ```text
-Keep the exact same elderly storyteller face, beard, hairstyle, body proportions, ornate leather book,
-and fur-trimmed robe design. Restyle into a dark adult fairytale: desaturate colors, charcoal-navy robe,
-dim the fireplace to a dying ember, deepen shadows across half his face, colder blue moonlight from the window,
-solemn heavy expression, ink-wash gothic storybook mood, muted palette, paper grain, no cute warmth,
-no bright orange glow, no childish illustration
-```
-
-### Strength／變化幅度建議
-- 臉要穩：變化 **0.35–0.5**
-- 若仍太暖：再跑一次，加 `even darker, almost monochrome blue-ash`
-
-### 成人版定裝 A（文字直出，若你想重抽）
-```text
-Dark adult fairytale character sheet of an elderly storyteller, front and profile,
-long wavy white hair and full white beard, deep shadowed eyes, solemn knowing gaze,
-charcoal-navy heavy robe with dark brown fur collar and cuffs, leather belt, thick ornate leather book
-with gold filigree, dim dying fireplace ember light, cold blue snow window, heavy chiaroscuro,
-muted gothic storybook illustration, ink-wash, desaturated, not for children, consistent design
-```
-
----
-
-## 7. 其他角色／場景也要跟著變暗
-
-### Elia（仍是孩子，但世界是成人的）
-```text
-12-year-old girl Elia in a dark adult fairytale world, freckles, observant tired-hopeful eyes,
-worn grey-brown winter coat, muted dried-blood crimson scarf (not bright red), loose braid,
-sketchbook, fragile courage, cold desaturated winter light, gothic storybook illustration,
-no cute Disney child look, consistent face
-```
-
-### White Hollow 村莊
-```text
-White Hollow snow village at dusk, almost black forest surrounding small ashen houses,
-thin chimney smoke, oppressive quiet dread, desaturated frozen blue and charcoal,
-muted gothic storybook matte painting, adult fairytale, no cozy Christmas warmth
+Dark gothic 2D cartoon wide shot, White Hollow village at dusk, ashen houses,
+almost black forest wall, thin smoke, oppressive quiet, thick ink outlines,
+flat cel night shadows, limited ash-blue palette, grim adult fairytale animation background
 ```
 
 ### 森林
 ```text
-Winter forest that feels sacred but unsettling, pale bioluminescent flowers as cold ghost-light,
-deer watching too calmly, deep ink shadows between trees, desaturated, poetic dread,
-dark adult fairytale illustration, no wolves visible
+Dark gothic 2D cartoon winter forest, tall black trees, pale cold ghost-light flowers,
+deer staring too calmly, deep shadow pools, thick ink lines, flat cel shading,
+desaturated, sacred and unsettling, adult fairytale animation still
 ```
 
 ### 畫冊
 ```text
-Open sketchbook on grey snow, charcoal portraits of villagers, each casting a wolf-shaped shadow,
-bone-paper pages, dried ink, tragic adult symbolism, no gore, muted gothic storybook
+Dark gothic 2D cartoon close-up, open sketchbook on grey snow, charcoal villager drawings,
+each casts a wolf-shaped shadow, thick ink, flat shadow shapes, tragic symbolism, no gore
 ```
 
 ---
 
-## 8. 音樂也要「大人」一點
+## 6. Kling 影片時也要鎖「暗黑卡通」
+
+每條 Image-to-Video prompt 結尾固定加：
 
 ```text
-Dark adult fairytale score, 66 BPM, low intimate piano, restrained cello, sparse choir in distance,
-desaturated winter dread, melancholic and solemn, no cute music-box sweetness, no epic trailer drums,
-quiet almost-whisper ending, 60 seconds
+keep the same dark gothic 2D cartoon art style, thick ink outlines, flat cel shading,
+large black shadow shapes, limited desaturated palette, grim adult fairytale animation,
+no style drift to cute watercolor or photorealism
 ```
 
-旁白語氣：低、慢、像不想講但仍必須講完；金句處留白，不要煽情配樂蓋過。
+Motion 保持低（0.3–0.4），暗黑平塗卡通最怕大動作導致閃爍脫線。
 
 ---
 
-## 9. 標題／包裝語氣（對準大人）
+## 7. 音樂／標題同步（避免畫面暗、包裝甜）
 
-可用：
+音樂：
+```text
+Dark adult fairytale cue, low piano, dry cello, sparse distant choir, cold and solemn,
+no music-box cute melody, 66 BPM, 60 seconds
+```
+
+標題：
 - `大人的童話｜沒有狼的村莊`
-- `這不是給孩子的故事：代罪羔羊`
-- `The Village Without Wolves｜An Adult Fairytale`
+- 不要用「睡前故事／可愛奇幻」
 
-少用：
-- `睡前故事`、`給小朋友的森林奇幻`、過度可愛縮圖
+---
 
-縮圖構圖建議：老人半臉沒入暗部 ＋ 一行刺點字（「你們需要狼」）＋ 極少暖色。
+## 8. 快速自檢（生成後問自己）
+
+- [ ] 遠看像 **暗色 2D 動畫截圖**，不是兒童水彩明信片？  
+- [ ] 有明顯 **粗墨線 + 大塊黑影**？  
+- [ ] 顏色髒冷，沒有大片暖橙／粉彩？  
+- [ ] 仍然是卡通，不是寫實恐怖片？  
+- [ ] 老人／Elia 臉還認得出來？  
+
+若前兩項失敗＝筆觸沒換成功，回來跑第 4 節 B 段再重畫定裝。

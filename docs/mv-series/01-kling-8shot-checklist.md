@@ -1,224 +1,176 @@
 # 《沒有狼的村莊》8 鏡極簡版｜一鍵操作清單  
-## 定位：大人的童話（Dark Adult Fairytale）
+## 筆觸定位：暗黑哥特 2D 卡通（不是甜水彩）
 
-目標：用最少生成次數做出 **約 50–55 秒** YouTube Shorts。  
-視覺要比兒童童話更暗、更沉、更刺——像壁爐邊不敢講給小孩聽的故事。
+目標：約 **50–55 秒** Shorts。  
+重點：先把定裝 **重畫成暗黑卡通筆觸**，再圖生影片。
 
-完整暗色規範見：`01-adult-fairytale-dark-style.md`
+風格詳見：`01-adult-fairytale-dark-style.md`
 
 ---
 
-## 0. 開始前（只設一次）
+## 0. 全域設定
 
 | 項目 | 設定 |
 |------|------|
-| 工具 | Kling（Image-to-Video） |
-| 畫幅 | **9:16** |
-| 每鏡時長 | **5–6 秒** |
-| Motion / 動態 | **低**（約 0.3–0.4，暗風格忌大動作） |
-| 創意度 | **中低**（臉才穩） |
-| 音樂 | 低沉鋼琴＋大提琴，55–65 秒 |
-| 剪輯 | CapCut 免費版 |
+| 工具 | Kling Image-to-Video |
+| 畫幅 | 9:16 |
+| 每鏡 | 5–6 秒 |
+| Motion | **0.3–0.4**（平塗卡通忌大動） |
+| 創意度 | 中低 |
 
-**Style Anchor（每鏡結尾必加）：**
+**Style Anchor（每鏡必加）：**
 ```text
-dark adult fairytale illustration, muted gothic storybook, desaturated winter palette,
-heavy chiaroscuro, ink-wash and thin glaze, paper grain, solemn melancholy, not for children,
-poetic dread, ash charcoal and frozen blue tones, dying ember accents only, no cute Disney look, no photorealism
+dark gothic 2D cartoon illustration, adult fairytale animation style,
+thick ink outlines, flat cel shading with large black shadow shapes,
+limited desaturated palette, cold ash blue and charcoal, grim storybook cartoon,
+paper grain, NOT children's watercolor, NOT Disney, NOT cute anime, NOT photorealistic
 ```
 
-**Negative（每次生成都貼）：**
+**Style Lock（圖生影片再加一句）：**
 ```text
-cute, childish, Disney, Pixar, kawaii, bright pastel, candy colors, cheerful, cozy warm overlit,
-photorealistic, live action, modern clothing, smartphones, cars, text artifacts, extra fingers,
-deformed face, morphing face, horror gore, explicit violence, blood splatter, jump scare,
-3D CGI plastic skin, watermark, logo, burned-in subtitles, anime big sparkly eyes
+keep the same dark gothic 2D cartoon art style, no style drift to cute watercolor or photorealism
+```
+
+**Negative：**
+```text
+children's book watercolor, soft pastel wash, cute, wholesome, cozy, cheerful, Disney, Pixar,
+kawaii, big sparkly anime eyes, bright saturated colors, candy palette, warm overlit orange glow,
+photorealistic, live action, 3D CGI, plastic skin, horror gore, blood splatter, jump scare,
+modern objects, watermark, logo, burned-in text, extra fingers, deformed hands
 ```
 
 ---
 
-## 1. 先做 4 張「暗色」定裝（不要跳過）
+## 1. 定裝：先換筆觸（4 張）
 
-> 若你已有偏暖的老人角色表：先用下方「壓暗重繪」再當定裝 A。
-
-### 定裝 A｜老人（給 M1、M8）——可從現有圖壓暗
-**圖生圖／編輯（上傳你現有老人表）：**
+### 定裝 A｜老人 —— 用你現有圖「重畫風格」
 ```text
-Keep the exact same elderly storyteller face, beard, hairstyle, body proportions, ornate leather book,
-and fur-trimmed robe. Restyle into dark adult fairytale: desaturate, charcoal-navy robe,
-dim fireplace to dying ember, half face in deep shadow, colder blue moonlight from window,
-solemn heavy expression, ink-wash gothic storybook, muted palette, paper grain,
-no cute warmth, no bright orange glow, no childish illustration
+Redraw this exact character sheet in a completely different art style while keeping identity:
+same elderly storyteller face structure, beard, hair, robe silhouette, fur collar, ornate book.
+NEW STYLE: dark gothic 2D cartoon illustration, thick ink outlines, flat cel shading,
+large black shadow shapes on face and clothing, limited desaturated cold palette,
+ash blue and charcoal, dying ember only as tiny light, grim adult fairytale cartoon,
+heavy solemn expression, paper grain, NOT soft watercolor, NOT children's book, NOT cute
 ```
 
-**或文字直出：**
+若仍甜：
 ```text
-Dark adult fairytale character sheet, elderly storyteller, front and profile,
-long wavy white hair and full white beard, deep shadowed eyes, solemn knowing gaze,
-charcoal-navy heavy robe with dark brown fur collar, thick ornate leather book with gold filigree,
-dying ember fireplace, cold blue snow window, heavy chiaroscuro, muted gothic storybook,
-ink-wash, desaturated, not for children, consistent design
+Same character, push harder into dark gothic cartoon: thicker black ink lines,
+harsher cel shadows covering half the face, almost monochrome blue-ash colors,
+remove warm cozy look, remove soft watercolor bleeding, grim animated adult fairytale still frame
 ```
 
-### 定裝 B｜Elia（給 M3–M6）
+### 定裝 B｜Elia
 ```text
-Dark adult fairytale character sheet, 12-year-old girl Elia, front and three-quarter,
-freckles, observant tired-hopeful eyes, worn grey-brown winter coat,
-muted dried-blood crimson scarf (not bright red), brown hair loose braid, sketchbook,
-fragile courage in a cruel world, cold desaturated light, gothic storybook illustration,
-no cute Disney child look, consistent face
+Dark gothic 2D cartoon character sheet, 12-year-old girl Elia, freckles,
+tired-hopeful eyes with shadowed lids, worn grey-brown coat, muted dried-crimson scarf,
+loose braid, sketchbook, thick ink outlines, flat cel shading, cold desaturated colors,
+grim adult fairytale, not cute Disney child, consistent face
 ```
 
-### 定裝 C｜村莊（給 M2）
+### 定裝 C｜村莊
 ```text
-Wide matte painting of White Hollow at dusk, ashen snowy houses surrounded by almost-black forest,
-thin chimney smoke, oppressive quiet dread, desaturated frozen blue and charcoal,
-muted gothic storybook, adult fairytale, no cozy Christmas warmth, no photorealism
+Dark gothic 2D cartoon wide shot, White Hollow at dusk, ashen houses, almost-black forest,
+thin smoke, oppressive quiet, thick ink outlines, flat cel night shadows,
+limited ash-blue palette, grim adult fairytale animation background
 ```
 
-### 定裝 D｜畫冊結局（給 M7）
+### 定裝 D｜畫冊
 ```text
-Open sketchbook on grey snow, charcoal portraits of villagers, each casting a wolf-shaped shadow,
-bone-paper pages, dried ink, tragic adult symbolism, no gore, cold moonlight,
-muted gothic storybook, dark adult fairytale
+Dark gothic 2D cartoon close-up, open sketchbook on grey snow, charcoal villager drawings,
+each casts a wolf-shaped shadow, thick ink, flat shadow shapes, tragic symbolism, no gore
 ```
 
-**檢查點：**  
-- 整體偏灰藍／炭黑，不是暖橙甜感  
-- 老人眼神沉重，不是耶誕老人慈祥  
-- Elia 圍巾是暗酒紅，不是亮紅卡通巾  
+**過關標準：** 遠看像暗色 2D 動畫截圖；有粗墨線＋大塊黑影；不再是甜水彩。
 
 ---
 
-## 2. 一鍵生成 8 鏡（照順序）
+## 2. 八鏡 Prompt
 
-每鏡：上傳定裝 → 貼 Prompt → 貼 Negative → 加 Style Anchor → 生成 5–6 秒
-
----
-
-### M1｜開頭鉤子（0:00–0:07）｜定裝 A
+### M1｜鉤子（定裝 A）
 **旁白：**「每個童話都說要提防狼。但如果……根本沒有狼呢？」
-
 ```text
-Using this elderly storyteller, he looks toward camera with a solemn knowing gaze, not a cute smile,
-thick fairytale book in hands, dying ember light on one side of face, deep shadow on the other,
-cold blue snow window behind, slow cinematic push-in, heavy silence, dark adult fairytale illustration,
-muted gothic storybook, desaturated, heavy chiaroscuro, ink-wash, not for children
+Using this elderly storyteller in dark gothic 2D cartoon style, solemn gaze to camera,
+thick ink outlines, flat cel shading, half face in black shadow, tiny dying ember light,
+cold blue window, slow push-in, grim adult fairytale animation, keep same art style
 ```
 
----
-
-### M2｜村莊建立（0:07–0:13）｜定裝 C
-**旁白：**「White Hollow 被森林包圍。孩子都聽著狼的故事長大。沒人見過狼，卻每年有人消失。」
-
+### M2｜村莊（定裝 C）
+**旁白：**「White Hollow 被森林包圍。沒人見過狼，卻每年有人消失。」
 ```text
-Using this village image, wide shot of ashen White Hollow surrounded by almost-black forest,
-thin chimney smoke, dusk light almost gone, oppressive quiet dread, slow lateral drift,
-desaturated frozen blue and charcoal, muted gothic storybook matte painting, adult fairytale, no cozy warmth
+Using this village image, dark gothic 2D cartoon wide shot, ashen White Hollow,
+almost-black forest wall, thin smoke, dusk nearly gone, slow lateral drift,
+flat cel shadows, limited ash-blue palette, oppressive quiet, keep same art style
 ```
 
----
-
-### M3｜Elia 登場（0:13–0:19）｜定裝 B
-**旁白：**「今年輪到女孩 Elia。她最想畫出森林真正的樣子。」
-
+### M3｜Elia（定裝 B）
+**旁白：**「今年輪到女孩 Elia。她想畫出森林真正的樣子。」
 ```text
-Using this Elia character, she sketches at a frosted dark window, muted crimson scarf,
-tired-hopeful eyes looking into black forest, weak cold daylight, slow tilt from sketchbook to face,
-fragile courage, dark adult fairytale illustration, desaturated, no cute Disney child look
+Using this Elia character, dark gothic 2D cartoon, she sketches at a black frosted window,
+muted crimson scarf, tired-hopeful shadowed eyes, weak cold light, tilt from sketchbook to face,
+thick ink outlines, flat cel shading, not cute, keep same art style
 ```
 
----
-
-### M4｜走進森林（0:19–0:26）｜定裝 B
-**旁白：**「她偷偷走進森林。沒有狼，只有鹿、狐狸，還有發光的花。」
-
+### M4｜森林（定裝 B）
+**旁白：**「她走進森林。沒有狼，只有鹿、狐狸，與冷冷發光的花。」
 ```text
-Elia walking deeper into a winter forest that feels sacred but unsettling, same freckled girl,
-muted crimson scarf, deer watching too calmly, pale ghost-like bioluminescent flowers,
-deep ink shadows between trees, side-tracking follow, poetic dread mixed with wonder,
-dark adult fairytale, desaturated, no wolves, no cute sparkle overload
+Elia walking in dark gothic 2D cartoon winter forest, thick ink trees, pale ghost-light flowers,
+deer staring too calmly, deep black shadow pools, side-tracking follow, sacred and unsettling,
+desaturated, keep same dark cartoon art style, no cute sparkles
 ```
 
----
-
-### M5｜石碑真相（0:26–0:33）｜定裝 B
+### M5｜石碑（定裝 B）
 **旁白：**「石碑寫著：狼早已離開。留下來的，只有人。」  
-**字卡（後製）：** `The wolves left long ago.` / `Only humans remained.`
-
+**字卡後製：** `The wolves left long ago.` / `Only humans remained.`
 ```text
-Elia kneeling before an ancient blackened mossy stele, wiping moss, cold moonlight,
-awe turning into dread on her face, slow push-in, leave inscription blank for captions,
-muted gothic revelation, dark adult fairytale illustration, heavy shadows, no photorealism
+Elia kneeling at blackened mossy stele, dark gothic 2D cartoon, wiping moss,
+cold moonlight cel highlight, awe turning to dread, slow push-in, blank inscription area,
+thick ink outlines, flat shadows, keep same art style
 ```
 
----
-
-### M6｜代罪羔羊（0:33–0:40）｜定裝 B
-**旁白：**「她把真相告訴村莊。他們卻說：她就是狼。」
-
+### M6｜指控（定裝 B）
+**旁白：**「她說出真相。他們卻說：她就是狼。」
 ```text
-Symbolic dark adult fairytale scene: Elia alone in cold village square, crowd as black silhouettes
-pointing at her, accusation and fear, sparse snow, non-graphic, no close-up violence,
-strongly desaturated, slow push-in on her shadowed tearful face, poetic cruelty, gothic storybook
+Dark gothic 2D cartoon symbolic scene, Elia alone in square, black silhouette crowd pointing,
+flat cel shadows, thick ink, strongly desaturated, non-graphic, slow push-in on tearful shadowed face,
+grim adult fairytale cruelty, keep same art style
 ```
 
----
-
-### M7｜畫冊狼影（0:40–0:47）｜定裝 D
-**旁白：**「後來只找到她的畫冊。每一個村民的影子，都是狼。」  
+### M7｜畫冊（定裝 D）
+**旁白：**「只剩下畫冊。每一個村民的影子，都是狼。」  
 **字卡：** `You needed the wolf—so you would never see yourselves.`
-
 ```text
-Using this sketchbook image, pages on grey snow, charcoal villager portraits with wolf-shaped shadows,
-dried ink, tragic adult symbolism, no gore, faint wind on page edge, slow tilt then push-in,
-muted gothic storybook, dark adult fairytale melancholy
+Using this sketchbook image, dark gothic 2D cartoon, pages on grey snow,
+wolf-shaped shadows under villager drawings, slow tilt then push-in, tragic symbolism,
+thick ink, flat shadow shapes, keep same art style
+```
+
+### M8｜金句（定裝 A）
+**旁白：**「狼從來沒有住在森林裡……牠一直住在人心裡。」
+```text
+Using this elderly storyteller, dark gothic 2D cartoon, closes ornate book,
+ember light dies, final piercing gaze, thick ink, harsh cel shadow, fade to black,
+grim adult fairytale moral ending, keep same art style
 ```
 
 ---
 
-### M8｜金句收束（0:47–0:55）｜定裝 A
-**旁白：**「狼從來沒有住在森林裡……牠一直住在人心裡。」  
-**畫面：**合書 → 殘火／燭滅 → 黑屏 1.5 秒
-
+## 3. 音樂
 ```text
-Using this elderly storyteller, he closes the ornate book slowly, dying ember or candle extinguishes,
-final piercing gaze to camera with quiet sorrow and judgment, warm light dies into total darkness,
-slow fade to black, dark adult fairytale moral ending, muted gothic storybook, heavy silence
+Dark adult fairytale cue, low piano, dry cello, sparse distant choir, cold and solemn,
+no music-box cute melody, 66 BPM, 60 seconds
 ```
 
 ---
 
-## 3. 音樂（大人向）
-
-```text
-Dark adult fairytale score, 66 BPM, low intimate piano, restrained cello, sparse distant choir,
-desaturated winter dread, melancholic and solemn, no cute music-box sweetness,
-no epic trailer drums, quiet almost-whisper ending, 60 seconds
-```
+## 4. CapCut
+`M1→M2→M3→M4→M5→M6→M7→M8`  
+淡入淡出 0.4s；字幕用冷灰／骨色，不要圓潤可愛字體；片頭寫 `大人的童話 Ep.01`；可微加暗角。  
+匯出 1080×1920。
 
 ---
 
-## 4. CapCut 组装
-
-`M1 → M2 → M3 → M4 → M5 → M6 → M7 → M8`
-
-| 步驟 | 做什麼 |
-|------|--------|
-| 1 | 交界 **0.4s 淡入淡出**（偏慢、偏沉） |
-| 2 | 音樂小聲；金句處再降 30% |
-| 3 | 旁白：低、慢、克制，不要播音腔誇張 |
-| 4 | 字幕：骨紙白／淺灰字＋薄黑邊；避免圓潤可愛字體 |
-| 5 | M5／M7 疊字卡 |
-| 6 | 片頭小字：`大人的童話 Ep.01` |
-| 7 | 片尾黑屏：`你們需要狼——才不用看見自己` |
-| 8 | 可微降飽和／加一點暗角（全片統一） |
-| 9 | 匯出 **1080×1920，30fps** |
-
----
-
-## 5. 旁白完整稿（時間碼）
-
+## 5. 旁白時間碼
 ```text
 [0:00] 每個童話都說要提防狼。但如果……根本沒有狼呢？
 [0:07] White Hollow 被森林包圍。孩子都聽著狼的故事長大。
@@ -233,34 +185,9 @@ no epic trailer drums, quiet almost-whisper ending, 60 seconds
 
 ---
 
-## 6. 上傳檢查
-
-- [ ] 標題走大人向（例：`大人的童話｜沒有狼的村莊`）
-- [ ] 說明欄寫原創寓言；AI 輔助畫面／音樂
-- [ ] AI 揭露依實際勾選
-- [ ] 縮圖：半臉暗部＋刺點字，避免可愛插畫風
-- [ ] 結尾留金句黑屏，引導留言
-
-**說明欄：**
-```text
-【大人的童話】《沒有狼的村莊》
-主題：人性最醜陋的，不是邪惡，而是需要一個代罪羔羊。
-
-本片為原創故事與分鏡，畫面／音樂使用 AI 工具輔助製作。
-系列：大人的童話｜Ep.01
-
-狼住在哪裡？歡迎留言。
-```
-
----
-
-## 7. 今天打勾順序
-
-1. [ ] 把現有老人圖 **壓暗** 成定裝 A  
-2. [ ] 出定裝 B/C/D（同一暗色規則）  
-3. [ ] 生成 M1–M8  
-4. [ ] 生成暗色音樂  
-5. [ ] CapCut：降甜、留白、金句  
-6. [ ] 上傳 Shorts  
-
-> 你這張暖色老人圖不要直接拿去生成整支片；先壓暗一次，後面 8 鏡才會統一成「大人的童話」。
+## 6. 今天順序
+1. [ ] 用「Redraw... NEW STYLE: dark gothic 2D cartoon」重畫老人定裝  
+2. [ ] 確認筆觸夠暗（粗墨線＋大塊黑影）  
+3. [ ] 出 Elia／村莊／畫冊同筆觸  
+4. [ ] 生成 M1–M8  
+5. [ ] 音樂＋剪輯＋上傳
