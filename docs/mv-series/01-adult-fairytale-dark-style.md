@@ -1,177 +1,181 @@
-# 大人的童話｜暗黑卡通風格重寫（Dark Cartoon Style Bible）
+# 大人的童話｜全新 Prompt 包（不依賴既有圖片）
 
-你要的不是「同一張甜水彩，只把燈調暗」。  
-而是把 **繪製筆觸本身** 從兒童卡通／暖水彩，重寫成 **暗黑 2D 卡通插畫**。
-
----
-
-## 0. 風格轉換（FROM → TO）
-
-| 舊風格（丟掉） | 新風格（採用） |
-|----------------|----------------|
-| soft watercolor children’s book | **dark 2D gothic cartoon illustration** |
-| cozy warm fireplace glow | dying ember + deep black shadow blocks |
-| cute rounded faces | sharper planes, tired/solemn eyes, heavier lids |
-| bright clean colors | limited desaturated palette, muddy cold tones |
-| sweet storybook airiness | thick ink outlines, flat cel shadow, grain |
-| Disney / Pixar softness | European dark animation / grim fairytale cartoon |
-
-一句話：  
-**Dark gothic 2D cartoon fairytale**＝有卡通輪廓，但筆觸冷、線條重、陰影塊面大、顏色髒而美。
+全部用文字直出。不沿用、不重繪任何舊角色表。
 
 ---
 
-## 1. 新 Style Anchor（全部鏡頭改貼這個）
+## 全域 Style Anchor（每條必加）
 
 ```text
-dark gothic 2D cartoon illustration, adult fairytale animation style,
-thick ink outlines, flat cel shading with large black shadow shapes,
-limited desaturated palette, cold ash blue and charcoal, muddy bone highlights,
-paper grain and light film grit, solemn melancholic mood, grim storybook cartoon,
-NOT children's watercolor, NOT Disney, NOT Pixar, NOT cute anime, NOT photorealistic, NOT 3D CGI
+dark adult fairytale, gothic 2D cartoon animation still, thick uneven ink outlines,
+flat cel shading, large hard black shadow shapes, limited cold desaturated palette,
+ash charcoal, frozen blue, muddy bone, dried crimson accents only, paper grain,
+grim melancholic mood, poetic dread, made for adults, not for children,
+no Disney, no Pixar, no cute watercolor, no kawaii anime, no photorealism, no 3D CGI
 ```
 
-### Negative（加嚴，專門殺「甜卡通」）
+## 全域 Negative（每條必加）
+
 ```text
-children's book watercolor, soft pastel wash, cute, wholesome, cozy, cheerful,
-Disney, Pixar, DreamWorks smile, kawaii, big sparkly anime eyes, bright saturated colors,
-candy palette, warm overlit orange glow, clean shiny rendering, photorealistic, live action,
-3D CGI, plastic skin, horror gore, blood splatter, jump scare, modern objects,
-watermark, logo, burned-in text, extra fingers, deformed hands
+children's book, soft watercolor, pastel, cute, wholesome, cozy, cheerful, smiling warmly,
+Disney, Pixar, DreamWorks, kawaii, big sparkly eyes, bright saturated colors, candy colors,
+warm overlit orange glow, clean glossy render, photorealistic, live action, 3D CGI,
+plastic skin, horror gore, blood splatter, jump scare, modern objects, watermark, logo,
+burned-in text, extra fingers, deformed hands, blurry face
 ```
 
 ---
 
-## 2. 畫法規則（讓 AI 真的「換筆觸」）
+## 1. 角色定裝（文字直出）
 
-1. **線條**：粗墨線／不規則手繪線，不要細膩甜美勾線  
-2. **上色**：平塗 cel + 大塊黑影（shadow shapes），少漸層奶油感  
-3. **顏色**：限色；灰藍、炭黑、骨色、暗酒紅；禁止粉嫩  
-4. **臉**：卡通比例可保留，但眼窩加深、表情克制沉重  
-5. **質感**：紙屑、輕微污跡、舊印刷感；不要光滑兒童插畫  
-6. **仍然是卡通**：不要變成寫實照片或恐怖寫實
-
----
-
-## 3. 色盤（暗黑卡通限色）
-
+### 定裝 A｜說書老人
 ```text
-Void black #0E1013
-Ash charcoal #1B1F24
-Frozen ink blue #2A3440
-Muddy bone #B7AE9C
-Dying ember #6E3B1C
-Dried crimson #5A2428
-Sick green shadow #243028
+Character design sheet of an elderly male storyteller for a dark adult fairytale,
+front view and side view on charcoal background, long unkempt white hair, heavy white beard,
+deep-set shadowed eyes, solemn piercing expression, sharp cheek planes, no warm smile,
+charcoal-black heavy robe, ragged dark fur collar, cracked leather belt, holding a thick
+blackened storybook with dull brass corners, thick uneven ink outlines, flat cel shading,
+half face buried in hard black shadow, dying candle speck only, cold ash-blue rim light,
+gothic 2D cartoon, limited desaturated palette, paper grain, adult audience only
 ```
 
-口訣：**大面積黑與灰藍，亮部很少，紅色只當傷口式點綴。**
-
----
-
-## 4. 把「甜卡通老人圖」重畫成暗黑卡通
-
-上傳你現有角色表，用圖生圖／風格重繪：
-
-### A. 強效換筆觸（建議主用）
+### 定裝 B｜Elia（12 歲）
 ```text
-Redraw this exact character sheet in a completely different art style while keeping identity:
-same elderly storyteller face structure, beard, hair, robe silhouette, fur collar, ornate book.
-NEW STYLE: dark gothic 2D cartoon illustration, thick ink outlines, flat cel shading,
-large black shadow shapes on face and clothing, limited desaturated cold palette,
-ash blue and charcoal, dying ember only as tiny light, grim adult fairytale cartoon,
-heavy solemn expression, paper grain, NOT soft watercolor, NOT children's book, NOT cute
+Character design sheet of a 12-year-old girl named Elia for a dark adult fairytale,
+front view and three-quarter view, thin freckled face, shadowed eyelids, tired-hopeful eyes,
+not cute Disney child proportions, worn ash-brown winter coat, muted dried-crimson scarf,
+messy brown braid, small charcoal sketchbook in hand, fragile courage, thick ink outlines,
+flat cel shading, cold desaturated winter light, gothic 2D cartoon, grim storybook mood,
+limited palette, paper grain, consistent facial features
 ```
 
-### B. 若還是偏甜，再跑一次（加硬）
+### 定裝 C｜White Hollow 村莊
 ```text
-Same character, push art style harder into dark gothic cartoon: thicker black ink lines,
-harsher cel shadows covering half the face, almost monochrome blue-ash colors,
-remove warm cozy look, remove soft watercolor bleeding, make it look like a grim animated
-adult fairytale still frame, muted, cold, ominous, hand-drawn 2D animation style
+Wide establishing background of White Hollow village for a dark adult fairytale,
+small ashen wooden houses half-swallowed by an almost-black pine forest, thin grey chimney smoke,
+frozen mud-snow, oppressive dusk, empty streets, no cozy Christmas warmth,
+thick uneven ink outlines, flat cel night shadows, limited ash-blue and charcoal palette,
+gothic 2D cartoon matte, poetic dread, adult fairytale animation background
 ```
 
-### 變化幅度
-- 要換筆觸：可到 **0.55–0.7**  
-- 若臉崩了：降到 0.45，並加 `keep exact facial identity`
-
----
-
-## 5. 暗黑卡通定裝（文字直出版）
-
-### 老人
+### 定裝 D｜冷光森林
 ```text
-Dark gothic 2D cartoon character sheet, elderly storyteller, front and side view,
-long wavy white hair, heavy white beard, deep shadowed eye sockets, solemn gaze,
-charcoal-navy robe, dark fur collar, ornate leather book, thick ink outlines,
-flat cel shading, large black shadows, limited desaturated palette, grim adult fairytale cartoon,
-paper grain, not children's watercolor, not Disney
+Dark adult fairytale forest interior, tall black ink trees, grey-blue snow,
+pale ghostly bioluminescent flowers giving cold light, a deer and fox staring too calmly,
+deep black shadow pools between trunks, sacred and unsettling, no wolves visible,
+thick ink outlines, flat cel shading, desaturated gothic 2D cartoon, paper grain
 ```
 
-### Elia
+### 定裝 E｜石碑
 ```text
-Dark gothic 2D cartoon character sheet, 12-year-old girl Elia, freckles,
-tired-hopeful eyes with shadowed lids, worn grey-brown coat, muted dried-crimson scarf,
-loose braid, sketchbook, thick ink outlines, flat cel shading, cold desaturated colors,
-grim adult fairytale world, fragile but not cute Disney child, consistent face
+Ancient blackened stone stele in a forest clearing, heavy moss, cold moonlight slash,
+inscription area left blank and unreadable, gothic 2D cartoon, thick ink, flat hard shadows,
+desaturated ash palette, mysterious dread, dark adult fairytale prop design
 ```
 
-### 村莊
+### 定裝 F｜狼影畫冊
 ```text
-Dark gothic 2D cartoon wide shot, White Hollow village at dusk, ashen houses,
-almost black forest wall, thin smoke, oppressive quiet, thick ink outlines,
-flat cel night shadows, limited ash-blue palette, grim adult fairytale animation background
-```
-
-### 森林
-```text
-Dark gothic 2D cartoon winter forest, tall black trees, pale cold ghost-light flowers,
-deer staring too calmly, deep shadow pools, thick ink lines, flat cel shading,
-desaturated, sacred and unsettling, adult fairytale animation still
-```
-
-### 畫冊
-```text
-Dark gothic 2D cartoon close-up, open sketchbook on grey snow, charcoal villager drawings,
-each casts a wolf-shaped shadow, thick ink, flat shadow shapes, tragic symbolism, no gore
+Open sketchbook on grey snow, charcoal drawings of villagers, each figure casts a wolf-shaped shadow,
+bone-colored pages, dried ink stains, tragic adult symbolism, no gore, thick ink outlines,
+flat cel shading, gothic 2D cartoon close-up, dark adult fairytale
 ```
 
 ---
 
-## 6. Kling 影片時也要鎖「暗黑卡通」
+## 2. 8 鏡影片 Prompt（文字／圖生皆可，不引用舊圖）
 
-每條 Image-to-Video prompt 結尾固定加：
+> 建議流程：先用上面定裝生靜幀 → 再 Image-to-Video。  
+> 若直接 Text-to-Video，把對應定裝描述縮短後併進每鏡亦可。
 
+### M1｜老人鉤子
 ```text
-keep the same dark gothic 2D cartoon art style, thick ink outlines, flat cel shading,
-large black shadow shapes, limited desaturated palette, grim adult fairytale animation,
-no style drift to cute watercolor or photorealism
+Dark adult fairytale gothic 2D cartoon, elderly storyteller with long white hair and heavy beard
+looks into camera with solemn piercing eyes, thick blackened storybook in hands,
+half face in hard black shadow, tiny dying candle light, cold blue window snow behind,
+slow push-in, thick ink outlines, flat cel shading, limited desaturated palette, grim silence,
+no smile, no cozy warmth, no children's book style
 ```
 
-Motion 保持低（0.3–0.4），暗黑平塗卡通最怕大動作導致閃爍脫線。
+### M2｜村莊
+```text
+Dark adult fairytale gothic 2D cartoon wide shot of White Hollow, ashen houses under dusk,
+almost-black forest surrounding the village, thin smoke, empty fearful streets,
+slow lateral camera drift, thick ink outlines, flat cel shadows, ash-blue limited palette,
+oppressive quiet, no cozy holiday look
+```
+
+### M3｜Elia 窗邊
+```text
+Dark adult fairytale gothic 2D cartoon, girl Elia with freckles and muted crimson scarf
+sketching at a black frosted window, tired-hopeful shadowed eyes looking toward dark forest,
+weak cold light, slow tilt from sketchbook to face, thick ink outlines, flat cel shading,
+desaturated, not cute, not Disney child
+```
+
+### M4｜進森林
+```text
+Dark adult fairytale gothic 2D cartoon, Elia walking deeper into black winter forest,
+pale ghost-light flowers, deer staring too calmly, deep shadow pools, side-tracking follow,
+sacred unsettling mood, thick ink outlines, flat cel shading, cold desaturated palette,
+no wolves, no cute sparkles
+```
+
+### M5｜石碑
+```text
+Dark adult fairytale gothic 2D cartoon, Elia kneeling before blackened mossy stele,
+wiping moss with hand, cold moonlight cel highlight, awe turning into dread,
+slow push-in, leave carved text blank for captions, thick ink outlines, hard shadows,
+desaturated grim revelation
+```
+
+### M6｜代罪羔羊
+```text
+Dark adult fairytale gothic 2D cartoon, Elia alone in frozen village square,
+crowd as pure black silhouettes pointing at her, accusation and fear, sparse snow,
+non-graphic, no violence close-up, slow push-in on tearful face half in shadow,
+thick ink, flat cel, strongly desaturated, poetic cruelty
+```
+
+### M7｜畫冊狼影
+```text
+Dark adult fairytale gothic 2D cartoon, open sketchbook on grey snow,
+hand-drawn villagers casting wolf-shaped shadows, slow tilt then push-in,
+tragic adult symbolism, no gore, thick ink outlines, flat shadow shapes,
+cold muted palette
+```
+
+### M8｜金句收束
+```text
+Dark adult fairytale gothic 2D cartoon, elderly storyteller closes the blackened book,
+candle ember extinguishes, final piercing gaze to camera, hard black shadows swallow the frame,
+slow fade to black, thick ink outlines, flat cel shading, solemn moral ending, heavy silence
+```
+
+每鏡影片可再加一句鎖風格：
+```text
+keep consistent dark gothic 2D cartoon art style throughout, no style drift
+```
 
 ---
 
-## 7. 音樂／標題同步（避免畫面暗、包裝甜）
+## 3. 音樂 Prompt
 
-音樂：
 ```text
-Dark adult fairytale cue, low piano, dry cello, sparse distant choir, cold and solemn,
-no music-box cute melody, 66 BPM, 60 seconds
+Dark adult fairytale underscore, 66 BPM, low dry piano, restrained cello, sparse distant choir,
+cold solemn melancholy, no music-box sweetness, no epic drums, quiet ending, 60 seconds
 ```
+
+---
+
+## 4. 標題／說明（大人向）
 
 標題：
 - `大人的童話｜沒有狼的村莊`
-- 不要用「睡前故事／可愛奇幻」
+- `The Village Without Wolves｜Adult Fairytale`
 
----
-
-## 8. 快速自檢（生成後問自己）
-
-- [ ] 遠看像 **暗色 2D 動畫截圖**，不是兒童水彩明信片？  
-- [ ] 有明顯 **粗墨線 + 大塊黑影**？  
-- [ ] 顏色髒冷，沒有大片暖橙／粉彩？  
-- [ ] 仍然是卡通，不是寫實恐怖片？  
-- [ ] 老人／Elia 臉還認得出來？  
-
-若前兩項失敗＝筆觸沒換成功，回來跑第 4 節 B 段再重畫定裝。
+說明：
+```text
+【大人的童話】《沒有狼的村莊》
+主題：人性最醜陋的，不是邪惡，而是需要一個代罪羔羊。
+原創故事與分鏡；畫面／音樂由 AI 輔助製作。
+```
