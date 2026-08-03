@@ -119,9 +119,9 @@ YouTube **沒有全面禁止 AI 影片**，而是限制兩件事：
 | 中文名 | 《沒有狼的村莊》 |
 | 英文名 | The Village Without Wolves |
 | 核心主題 | 人性最醜陋的，不是邪惡，而是需要一個代罪羔羊 |
-| 類型 | Dark fairytale / moral fantasy / winter folklore |
-| 視覺風格 | **Painterly storybook animation**（手繪故事書＋薄霧北歐冬夜） |
-| 色盤 | 冷灰藍雪、壁爐琥珀光、森林翡翠綠、石碑苔蘚、月光銀白、陰影焦褐 |
+| 類型 | **大人的童話**／Dark adult fairytale / moral fantasy / winter folklore |
+| 視覺風格 | **Muted gothic storybook**（低飽和、重明暗、墨洗感；非兒童甜感水彩） |
+| 色盤 | 炭灰、凍墨藍、骨紙、殘火琥珀（少用）、暗酒紅點綴、苔蘚陰影 |
 | 情緒弧線 | 溫柔說書 → 好奇探索 → 真相石碑 → 群體恐懼 → 悲劇昇華 → 金句收束 |
 | 目標長度 | **68 秒 Shorts**（可伸縮 60–75） |
 | 畫幅 | 9:16 直式（Shorts 優先） |
