@@ -12,9 +12,9 @@
 photorealistic, live action, modern clothing, smartphones, cars, text artifacts, extra fingers, deformed face, morphing face, horror gore, explicit violence, blood, jump scare, 3D CGI plastic skin, watermark, logo, burned-in subtitles
 ```
 
-## Style Anchor（每鏡結尾追加）
+## Style Anchor（每鏡結尾追加｜暗黑哥特 2D 卡通）
 ```text
-hand-painted dark fairytale storybook animation, soft watercolor and ink edges, Nordic winter folklore mood, cinematic storybook lighting, subtle film grain, no photorealism, cool snow blue, amber fireplace light, deep forest green, silver moonlight
+dark gothic 2D cartoon illustration, adult fairytale animation style, thick ink outlines, flat cel shading with large black shadow shapes, limited desaturated palette, cold ash blue and charcoal, grim storybook cartoon, paper grain, NOT children's watercolor, NOT Disney, NOT cute anime, NOT photorealistic
 ```
 
 ---
