@@ -8,6 +8,7 @@
 |------|------|
 | [01-the-village-without-wolves.md](./01-the-village-without-wolves.md) | 第一集完整研究、YouTube 合規、趨勢、分鏡腳本 |
 | [01-kling-prompts-batch.md](./01-kling-prompts-batch.md) | Kling 可直接貼上的定裝／分鏡／旁白批次包 |
+| [01-kling-8shot-checklist.md](./01-kling-8shot-checklist.md) | **8 鏡極簡版一鍵操作清單（建議先做這個）** |
 
 ## 系列原則
 
