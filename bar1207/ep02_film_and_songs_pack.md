@@ -27,12 +27,12 @@
 
 | # | 歌名 | 類型 | BPM | 人聲 |
 |---|------|------|-----|------|
-| 01 | 下一班人生 | City Pop Jazzhop | 86 | 男聲 |
-| 02 | 錯過末班車 | Night Drive 純器樂 | 92 | — |
-| 03 | 零時零七分 | 慢 City Pop 純器樂 | 78 | 可選哼唱 |
-| 04 | 來自2026年的信 | 抒情 City Pop | 84 | 男聲 |
-| 05 | 關掉傳呼機 | Jazzhop / Lo-Fi 純器樂 | 88 | — |
-| 06 | 現在 | 終曲 City Pop | 90 | 男聲 |
+| 01 | 下一班人生 | City Pop Jazzhop | 86 | 男聲 ✓ |
+| 02 | 錯過末班車 | Night Drive Jazzhop | 92 | 男聲 ✓ |
+| 03 | 零時零七分 | 慢 City Pop | 78 | 男聲 ✓ |
+| 04 | 來自2026年的信 | 抒情 City Pop | 84 | 男聲 ✓ |
+| 05 | 關掉傳呼機 | Lo-Fi Jazzhop | 88 | 男聲 ✓ |
+| 06 | 現在 | 終曲 City Pop | 90 | 男聲 ✓ |
 
 完整歌詞 + Mureka Style 見：`ep02_songs_mureka_pack.md`
 
