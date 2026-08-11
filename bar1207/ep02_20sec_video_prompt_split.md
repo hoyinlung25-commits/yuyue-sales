@@ -1,11 +1,11 @@
-# EP02 — 20 秒影片 Prompt（拆成 10 秒 + 10 秒）
+# EP02 — 影片 Prompt（10 秒 × 3 段）
 
-**用途：** YouTube 開場 · 兩段各生成 10 秒，CapCut 拼接成 20 秒  
+**用途：** YouTube 開場 / 故事 intro · 三段各 10 秒，CapCut 拼接成 **30 秒**  
 **風格：** Vintage Hong Kong Movie · 1996 City Pop · 真人電影感  
 
 ---
 
-## 共用 GLOBAL LOCK（兩段都要貼在最前）
+## 共用 GLOBAL LOCK（三段都要貼在最前）
 
 ```text
 GLOBAL LOCK — do not change across all frames:
@@ -89,26 +89,75 @@ NEGATIVE: extra people, smartphone, running, text on door, logo, watermark, bart
 
 ---
 
-## CapCut 拼接（20 秒）
+## Part C — 第三 10 秒｜酒吧讀信
+
+**故事：** 空吧檯前展信 → 靜讀 → 輕微動容（配《來自2026年的信》）  
+**首幀參考：** `ep02_scene_04_letter_in_bar.png`（或 Part B 尾幀接「推門進入」後的第一帧）  
+**尾幀：** 同一坐姿，信紙在手中，視線落在信上，表情比開頭柔和
+
+### Prompt C（貼 Flova · 10 s）
+
+```text
+GLOBAL LOCK — [貼上共用 LOCK]
+
+SCENE:
+Inside hidden timeless bar at 12:07 AM, 1996 Hong Kong. Same office worker now seated
+alone at dark polished wood bar counter. Warm amber lamp light on face, cold blue rain
+on window far background softly blurred. Empty bar — no bartender, no other customers.
+Black vinyl on vintage turntable softly out of focus. Colorful bottle wall bokeh.
+Intimate city-pop jazzhop mood, film grain, shallow depth of field.
+
+PROP:
+Plain folded handwritten letter on bar counter, cream paper, no readable text or dates
+on page (blank scribble lines only). No red vinyl close-up.
+
+ACTION — exactly 10 seconds, one shot, no cuts:
+0:00–0:03  Medium shot. He unfolds the letter with both hands, places it on counter,
+            lowers eyes to read. Shoulders slightly hunched from fatigue.
+0:03–0:06  Very slow dolly-in (5%). Eyes move slowly left-to-right across letter lines.
+            One slow blink. Jaw softens — not crying, just quietly moved.
+0:06–0:10  Hold medium-close. Fingers gently flatten paper corner. Faint exhale.
+            Expression: weary but seen — as if letter knows him. End frame: still
+            reading, same pose, eyes on paper, amber light unchanged.
+
+CAMERA: slow dolly-in only, then static hold. No pan, no shake, 24fps film blur.
+LIGHTING: warm amber interior dominant, soft rim from window rain cool tone.
+
+AUDIO SYNC NOTE (for edit): paper rustle at 0:01, silence 0:03–0:08, optional soft
+turntable hiss under — no voiceover in video generation.
+
+NEGATIVE: readable letter text, date 2026 visible, bartender, Mr Seven visible, extra
+          people, smartphone, red vinyl hero shot, talking mouth/lip sync speech,
+          crying tears streaming, supernatural glow, horror, text overlay, logo,
+          watermark, face morph, clothing change, standing up abruptly.
+```
+
+**Flova 設定 C：** Duration **10 s** · 16:9 · First frame = scene_04 · Final frame = 同姿勢讀信 close hold
+
+---
+
+## CapCut 拼接（30 秒 · 三段）
 
 | 秒數 | 片段 | 聲音 |
 |------|------|------|
 | 0–10 | **Part A** | 地鐵環境音 + 輕 beep |
-| 10–20 | **Part B** | 腳步 + 琥珀門光時音樂淡入 |
-| 10 秒處 | **Crossfade 0.3–0.5 秒** 或 hard cut（若尾首幀一致可 hard cut） |
+| 10–20 | **Part B** | 腳步 + 琥珀門光 |
+| 20–30 | **Part C** | 信紙聲 + 《來自2026年的信》Intro 淡入 |
+| 接點 | 每段 **Crossfade 0.3–0.5 秒** 或 hard cut | |
 
 **Simple Text（可選）：**  
 - 全程左上：`12:07 時空酒吧`  
-- 16–20 秒左下：`EP02 · 錯過末班車的那一夜`
+- 20–30 秒左下：`《來自2026年的信》` 或 `EP02 · 錯過末班車的那一夜`
 
 ---
 
 ## 製作順序
 
-1. 先生成 **Part A** → 导出 **最后一帧** 截图  
-2. 用该截图作 **Part B 首帧** + scene_03 作尾帧参考  
-3. CapCut 拼接 → 接《下一班人生》Intro  
+1. 生成 **Part A** → 导出尾幀  
+2. 尾幀作 **Part B** 首帧 + scene_03 尾帧参考  
+3. 生成 **Part C**（可獨立用 scene_04 首帧，不必接 B 尾帧）  
+4. CapCut 三段拼接 → 接專輯第一首或《來自2026年的信》
 
 ---
 
-*Bar Twelve-O-Seven · EP02 10s + 10s*
+*Bar Twelve-O-Seven · EP02 10s × 3*
