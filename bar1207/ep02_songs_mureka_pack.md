@@ -121,54 +121,165 @@ drums or dramatic climax.
 
 ---
 
-## 曲目二《錯過末班車》— 純器樂 Night Drive
+## 曲目二《錯過末班車》— 男聲 Night Drive Jazzhop
 
-**類型：** 純器樂 · 約 3:30–4:00 · 92 BPM  
-**功能：** Deep Focus / 開車 BGM；地鐵月台→空隧→霓虹公路
+**類型：** 男聲華語 · 約 3:30–4:00 · 92 BPM  
+**功能：** 錯過末班車後的月台→夜路；Deep Focus / 夜駕 BGM
 
 ### Mureka Style Prompt
 
 ```text
-Original instrumental 1990s urban night-drive jazzhop, 92 BPM, 4/4,
-around 3 minutes 45 seconds. No vocals. Rolling fingerstyle electric bass,
-muted drum machine with soft kick and rim clicks, Rhodes electric piano
-melody, clean jazz guitar comping, subtle chorus pedal on guitar,
-analog synth pad swells like passing streetlights. Mood: empty MTR platform
-after last train, then taxi window and wet asphalt reflections. Steady
-groove, not sleepy, not aggressive. Major-minor color, lo-fi tape warmth,
-light vinyl crackle optional. End fade on bass and distant train-door chime
-sample feel (synthetic only, no real samples required). No EDM drops,
-trap hi-hats, rock drums, epic strings, or EP01-style acoustic jazz trio.
+Original 1990s Mandarin urban night-drive jazzhop song, 92 BPM, 4/4,
+around 3 minutes 45 seconds. Same mature male mid-tenor as track 1, calm and
+reflective, clear natural Mandarin, no belting. Rolling fingerstyle electric bass,
+muted drum machine with soft kick and rim clicks, Rhodes electric piano melody,
+clean jazz guitar comping, subtle chorus pedal, analog synth pad swells like
+passing streetlights. Mood: empty MTR platform after last train, then walking
+into wet neon street. Steady groove, verses almost spoken-sung, chorus slightly
+more open. Lo-fi tape warmth. End fade on bass and distant train-door chime feel.
+No EDM drops, trap hi-hats, rock drums, or EP01 acoustic jazz trio.
 ```
 
 ### 歌詞
 
-不適用（純器樂）。製作備註：標題可打在影片 lower third；情緒＝「站錯了車，但路還在」。
+```
+[Intro]
+（地鐵門合上的回音）
+
+[Verse 1]
+月台只剩我一個
+燈把影子拉得很長
+最後一班車已經走了
+我卻還在等 某種原諒
+
+傳呼機又震一下
+像催我回到明天
+我沒有回 只是看著
+空蕩軌道 發亮
+
+[Pre-Chorus]
+不是第一次錯過
+卻是第一次 這麼安靜地
+承認自己 真的累了
+
+[Chorus]
+錯過末班車 錯過又怎样
+城市還亮著 路還在身旁
+不必急著 趕回日常
+這一夜 可以屬於我
+
+錯過末班車 沒有月台票
+也許正適合 慢慢走 慢慢想
+霓虹把雨 染成星光
+我還能 走向 某個方向
+
+[Verse 2]
+電梯關了 閘口關了
+心卻好像 第一次打開
+我穿過冷風和廣告牌
+像穿過 所有來不及的愛
+
+若人生也是一班車
+我願意今晚 先下錯站
+看看這條 沒坐過的街
+有沒有 另一種答案
+
+[Chorus]
+錯過末班車 錯過又怎样
+城市還亮著 路還在身旁
+不必急著 趕回日常
+這一夜 可以屬於我
+
+[Bridge]
+若你也站在 關門的月台
+請別責怪 自己太晚
+有時候錯過
+是為了 遇見 另一條路
+
+[Outro]
+（footsteps, distant train fade）
+我開始走
+不再等
+下一班
+```
+
 
 ---
 
-## 曲目三《零時零七分》— 慢 City Pop / 酒吧過渡
+## 曲目三《零時零七分》— 男聲慢 City Pop
 
-**類型：** 純器樂（可選極短男聲哼唱「嗯～」無歌詞）· 約 3:00 · 78 BPM  
-**功能：** 連結 1207 世界觀；比 EP01 同題材更「合成器與電鋼」，非 Acoustic Jazz
+**類型：** 男聲華語 · 約 3:00 · 78 BPM  
+**功能：** 走進 12:07 酒吧；連結 1207 世界觀（**1996 電氣版**，非 EP01 acoustic）
 
 ### Mureka Style Prompt
 
 ```text
-Original instrumental slow city-pop ballad groove, 78 BPM, 4/4,
-around 3 minutes. No lyrics; optional wordless male hum for 4 bars only.
-Soft DX-style electric piano, round synth bass, minimal brush drum machine,
-occasional muted trumpet single notes (not jazz solo), clock-tick percussion
-very subtle. Feeling of entering a hidden bar at 12:07 AM in 1996 Hong Kong:
-warm amber interior against cold blue street. Smaller arrangement than EP01
-"12:07 at Midnight" — no upright bass, no smoky sax section, no 1950s jazz.
-Gentle loop-friendly ending matching opening chord. No big band, no erhu,
-no piano trio swing.
+Original 1990s Mandarin slow city-pop ballad, 78 BPM, 4/4, around 3 minutes.
+Same mature male mid-tenor as track 1, very intimate and quiet, almost whispered
+verses, clear Mandarin. Soft DX-style electric piano, round synth bass, minimal
+brush drum machine, occasional muted trumpet single notes (not solo), subtle
+clock-tick percussion. Mood: pushing open hidden bar door at 12:07 AM, warm amber
+interior meets cold blue street. Smaller than EP01 acoustic jazz version. Gentle
+vocal in chorus only slightly louder. No big band, erhu, upright bass swing,
+no belting.
 ```
 
 ### 歌詞
 
-不適用（純器樂）。與 EP01《午夜十二點零七分》區隔：本曲是 **1996 電氣化、室內琥珀光**；EP01 是 **1957 雨夜 acoustic 慢爵士**。
+```
+[Intro]
+（時鐘滴答，門推開）
+
+[Verse 1]
+雨巷盡頭 有一盞燈
+比城市慢 半個鐘點
+指針停在 零時零七分
+像給我 一口喘息的空間
+
+門後傳來 舊唱片的聲
+混著 很遠很遠 的雨
+我進去 沒有回頭
+像走進 另一段 時間
+
+[Pre-Chorus]
+這裡沒有 會議室
+沒有 待辦事項
+只有 時鐘 與 我
+
+[Chorus]
+零時零七分
+不是遲到 是邀請
+讓我在 忙與忙之間
+暫時 做回一個人
+
+零時零七分
+不用解釋 為何來
+只要 把肩上的明天
+輕輕 放在 門外
+
+[Verse 2]
+牆上酒瓶 像彩色玻璃
+光把 影子 照得很暖
+我坐到 吧台邊
+第一次 覺得 夜可以長
+
+若時間能停
+請停在此刻
+不是逃避
+是為了 再出發
+
+[Chorus]
+零時零七分
+不是遲到 是邀請
+讓我在 忙與忙之間
+暫時 做回一個人
+
+[Outro]
+（clock tick, door close softly）
+零時
+零七分
+```
+
 
 ---
 
@@ -275,27 +386,81 @@ EP01 female jazz vocal style.
 
 ---
 
-## 曲目五《關掉傳呼機》— 純器樂 Jazzhop / Lo-Fi 節奏
+## 曲目五《關掉傳呼機》— 男聲 Jazzhop / Lo-Fi
 
-**類型：** 純器樂 · 約 3:15 · 88 BPM  
-**功能：** Study / Focus；傳呼機「嗶嗶」用合成器暗示，不用真實 sample 除非你有授權
+**類型：** 男聲華語 · 約 3:15 · 88 BPM  
+**功能：** Study / Focus；關掉傳呼機後的心靜
 
 ### Mureka Style Prompt
 
 ```text
-Original instrumental lo-fi jazzhop and city-pop groove, 88 BPM, 4/4,
-around 3 minutes 15 seconds. No vocals. Chopped Rhodes chords, sidechain-soft
-kick, snappy snare, walking synth bass, vinyl texture, occasional short
-beep motif like an old pager (synthetic square wave, very quiet in mix).
-Mood: finally turning off the pager after overtime, mental silence returning.
-Head-nod groove, repeatable for focus playlists. Bright enough to stay awake,
-soft enough for 1-hour study video. No trap 808 slides, no guitar shredding,
-no EP01 rain-jazz drums. End with one last quiet beep then fade.
+Original 1990s Mandarin lo-fi jazzhop city-pop song, 88 BPM, 4/4,
+around 3 minutes 15 seconds. Same mature male mid-tenor as track 1, relaxed
+almost conversational delivery, clear Mandarin, light rhythm in phrasing.
+Chopped Rhodes chords, sidechain-soft kick, snappy snare, walking synth bass,
+vinyl texture, occasional short beep motif like old pager very quiet under vocal.
+Mood: finally turning off pager after overtime, mental silence returning.
+Head-nod groove, chorus catchy but restrained. No trap 808 slides, no belting,
+no EP01 rain-jazz drums. End with one last quiet beep then vocal fade.
 ```
 
 ### 歌詞
 
-不適用（純器樂）。
+```
+[Intro]
+（傳呼機嗶一聲）
+
+[Verse 1]
+腰間又響 像不會停的雨
+每一聲都在問 你在哪裡
+我按掉 又按掉
+像按掉 多少自己
+
+辦公室關了 電腦關了
+只有這小機器 還在催
+我終於 把它翻過來
+讓屏幕 暗下去
+
+[Pre-Chorus]
+不是失聯
+是第一次
+允許世界
+晚一點找到我
+
+[Chorus]
+關掉傳呼機 關掉那種著急
+讓安靜 回到身體裡
+我還要生活 不是只有回電
+這一夜 先留給 呼吸
+
+關掉傳呼機 嗶聲不再響
+心卻比剛才 更清楚地跳
+原來沉默 不是空虛
+是終於 聽見自己
+
+[Verse 2]
+他們說努力 就要隨時在
+我學會了 在 卻忘了存在
+今晚我選擇 慢一分鐘
+像給靈魂 充一次電
+
+若明天還要忙
+至少此刻 我還在
+不是訊號 裡的名字
+是完整 的 一個人
+
+[Chorus]
+關掉傳呼機 關掉那種著急
+讓安靜 回到身體裡
+我還要生活 不是只有回電
+這一夜 先留給 呼吸
+
+[Outro]
+（最後一聲 beep，然後靜）
+關了
+也好
+```
+
 
 ---
 
