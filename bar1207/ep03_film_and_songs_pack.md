@@ -260,48 +260,78 @@ No folk, no epic orchestra, no jazz.
 
 ## 曲目五《呼吸之間》Between Breaths
 
-**類型：** 女聲 · 約 3:00 · 52 BPM · 冥想向  
+**類型：** 女聲 · 約 3:30 · 52 BPM · 冥想向  
 
 ### Mureka Style
 
 ```text
-Original meditation ambient Mandarin song, 52 BPM, 4/4, around 3 minutes.
-Female vocal whisper ear-close, almost guided meditation but musical. Drone pad, piano
-single notes, no percussion. Phrases long with silence between. Sleep and meditation playlist.
-No new-age flute cliche, no talking only, must stay musical.
+Original 2018 Mandarin meditation ambient sleep song, 52 BPM, 4/4, around 3 minutes 30 seconds.
+Same soft female vocal as EP03 track 1, whisper-close mic, slow and spacious, clear Mandarin,
+not spoken-word only — fully sung melodic lines. Long reverb drone pad, sparse felt piano
+single notes every 2 bars, no drums, no percussion, no beat drop. Mood: guided calm without
+new-age cliche, body finally slowing down after insomnia. Gentle rising chorus then dissolve.
+End 20 seconds piano and pad only. No flute, no singing bowl, no EP01 jazz, no EP02 drums.
 ```
 
 ### 歌詞
 
 ```
 [Intro]
-（pad）
+（長 pad，像一次緩慢的吸氣）
 
 [Verse 1]
-吸——
-气 进 来
-带 走 日 里 的 紧
+肩 膀 還 記 得 白 日 的 重
+锁 骨 還 記 得 趕 稿 的 緊
+我 在 这 里 不 用 改 任 何 一 笔
+只 用 把 呼 吸 交 还 给 夜
 
-[Verse 2]
-呼——
-气 出 去
-留 下 夜 的 轻
+[Pre-Chorus]
+吸 进 去
+不 是 新 的 任 务
+呼 出 来
+不 是 失 败 的 证 明
 
 [Chorus]
 呼 吸 之 间
-有 一 秒 属 于 你
-不 用 回 任 何 讯 息
-不 用 证 明 任 何 事
+有 一 寸 属 于 我 的 空 白
+不 用 回 讯 息
+不 用 证 明 我 还 活 着
+只 用 在
+一 进 一 出 里
+慢慢 变 轻
 
-[Bridge]
-再 吸 一 次
-再 呼 一 次
+[Verse 2]
+心 跳 仍 在 但 不 再 催 我
+像 远 处 海 面 退 去 的 线
+我 不 是 被 夜 抛 下 的 人
+我 是 终 于 被 夜 接 住 的 人
+
+[Pre-Chorus]
+再 深 一 点
+再 慢 一 点
 你 在
 就 够
 
+[Chorus]
+呼 吸 之 间
+有 一 寸 属 于 我 的 空 白
+不 用 回 讯 息
+不 用 证 明 我 还 活 着
+只 用 在
+一 进 一 出 里
+慢慢 变 轻
+
+[Bridge]
+若 你 也 听 见
+自 己 的 呼 吸
+请 把 所 有 未 读
+留 给 明 天
+
 [Outro]
-（耳 语）
-……
+（人 声 渐 弱）
+吸——
+呼——
+（钢 琴 单 音 渐 无）
 ```
 
 ---
@@ -313,26 +343,36 @@ No new-age flute cliche, no talking only, must stay musical.
 ### Mureka Style
 
 ```text
-Original closing ambient sleep song, 58 BPM, 4/4, around 4 minutes.
-Same soft female vocal, most peaceful track. Piano, pad, very soft vocal in first 2:30,
-final 90 seconds instrumental only fade to silence. Theme: permission to sleep.
-Not triumphant, just gentle release. No EP02 city pop brightness.
+Original 2018 Mandarin closing ambient sleep lullaby, 58 BPM, 4/4, around 4 minutes.
+Same soft female vocal, most peaceful and warm on album, intimate not sentimental crying.
+Felt piano melody, soft synth pad, very subtle sub bass, no drums until final chorus barely.
+Verses almost lullaby; final chorus slightly fuller then vocal drops out completely.
+Last 90 seconds instrumental piano and pad fade to near silence — sleep playlist ending.
+Theme: illustrator finally resting at bar. No EP02 city pop, no EP01 jazz vocals.
 ```
 
 ### 歌詞
 
 ```
+[Intro]
+（钢 琴，像 关 上 素描 本 的 轻 响）
+
 [Verse 1]
-Sketchbook 合上 了
+素 描 本 合 上 了
 茶 也 凉 了
 眼 皮 终 于 找 回 重 量
 像 回 到 该 在 的 地 方
+
+窗 外 的 城 还 亮 着
+但 这 里 的 光 已 经 暗 一 度
+时 钟 不 催 我 离 开
+只 替 我 守 着 这 一 夜
 
 [Pre-Chorus]
 没 有 人 催
 没 有 稿 要 交
 这 里 的 时 间
-比 外 面 宽
+比 外 面 宽 一 些
 
 [Chorus]
 可 以 睡 了
@@ -346,17 +386,33 @@ Sketchbook 合上 了
 呼 吸 和 梦
 
 [Verse 2]
+三 周 的 醒 像 一 条 长 线
+终 于 在 这 里 打 了 结
+我 不 用 变 回 白 日 的 我
+才 配 得 上 休 息
+
 若 你 也 听 到
 这 句 话
 请 把 肩 膀 放 下
 像 我 一 样
 
+[Pre-Chorus]
+不 必 完 美
+不 必 交 代
+睡 与 不 睡
+都 是 身 体 的 语 言
+
 [Final Chorus]
 可 以 睡 了
-……
+把 未 画 完 的 线
+留 给 明 天 的 光
+可 以 睡 了
+把 还 亮 着 的 眼
+轻轻 还 给 夜
 
 [Outro]
-（人 声 停，钢 琴 + pad 90 秒 渐 弱 至 无）
+（人 声 停 — 以 下 纯 器 乐 约 90 秒 渐 弱 至 无）
+（钢 琴 重 复 Chorus 旋 律 两 遍，pad 渐 弱，像 入 睡）
 ```
 
 ---
