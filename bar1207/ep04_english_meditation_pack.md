@@ -1,52 +1,169 @@
-# EP04《Be Still》— English Meditation Album
+# EP04《Be Still》— A Meditation Session at Twelve-O-Seven
 
-**Theme:** English · Meditation · Mindfulness · Ambient Piano & Pad  
-**Guest:** 2017 — A burned-out expat who tried every meditation app; the bar teaches her stillness without fixing  
-**Market:** Global meditation / mindfulness / focus / sleep-adjacent (English lyrics)  
-**Bar Twelve-O-Seven:** Clock at 12:07 · no bartender required on screen · silence is the guest  
-
----
-
-## Story
-
-She spoke to calendars more than to people.  
-Headphones full of guided voices — *breathe in, breathe out* — and still her mind ran.  
-One rain night she followed a dim amber line in the alley and found a door with no sign.  
-Inside: empty bar, warm light, clock at **12:07**, no one asking her to perform wellness.  
-She sat on the floor, not to become better, but to **be still**.  
-When she left, she didn't take a lesson. She took a breath she already had.
-
-**Visual:** Soft sand · white linen · amber bar light · minimal zen · **English film calm**  
-**Vocal:** Female · soft English · close mic · neutral accent · never preachy  
+**Full title:** *Be Still · A Luxury Meditation Session at Twelve-O-Seven*  
+**Theme:** English · High-end Mindfulness · Ambient Piano · Harp · Soft Choir Pad  
+**Guest:** **Clara Webb** — 2017 wellness copywriter; wrote meditation-app scripts, never felt still  
+**Signature:** The bar's **Invisible Meditation Menu** — six courses, no guru, only amber light  
+**Positioning:** First **English** album · anti-app meditation · literary luxury · not generic spa  
 
 ---
 
-## Six Tracks
+## What Makes EP04 Special (Topic + Fancy)
 
-| # | Title | BPM | Mood |
-|---|--------|-----|------|
-| 01 | Still Point | 60 | Opening meditation |
-| 02 | Return to Breath | 54 | Breath-focused |
-| 03 | Twelve Seven | 58 | 12:07 bar theme |
-| 04 | Empty Glass, Full Silence | 56 | Letting go |
-| 05 | Body of Light | 52 | Body-scan calm |
-| 06 | Let the Mind Rest | 50 | Closing · long fade |
+| Special element | Description |
+|-----------------|-------------|
+| **Invisible Menu** | Each song = one "course" on a menu only guests can *feel*, not read — fancy through absence |
+| **Anti-App Meditation** | Guest wrote *inhale peace, exhale stress* for a living; EP04 is the bar's answer to productized calm |
+| **Still Point** | T.S. Eliot mood — *the still point of the turning world*; meditation as poetry, not SKU |
+| **4-7-8 Breath** | Track 2 phrasing spaced for slow inhale / hold / exhale — functional luxury |
+| **Time Meditation** | Track 3 — clock at 12:07 as **luxury pause**, not deadline; temporal forgiveness |
+| **Zen Emptiness (Ku 空)** | Track 4 — empty crystal glass; fancy minimalism; *form is emptiness* without saying it |
+| **Yoga Nidra scan** | Track 5 — crown-to-feet **body of light**; spa-grade without clinical voice |
+| **Metta Close** | Track 6 — self-compassion ending; 90s silence fade; session ends like a fine restaurant |
+| **Literary English** | Neutral international accent · whisper-sing · Eliot / Rilke mood · not influencer wellness |
+| **Sonic luxury** | Harp harmonics, felt piano, distant wordless choir pad, tape warmth, cathedral reverb |
+| **Visual luxury** | Ivory silk · candle gold · jewel bottle wall · floating dust in amber light · rain on glass |
+
+**Not generic:** No cheap rain loops, no plastic flute, no "528Hz healing" gimmick in title — **fancy through restraint**.
+
+---
+
+## Guest · Clara Webb (2017)
+
+| Field | Detail |
+|-------|--------|
+| Age | 31 |
+| Origin | London → moved to Hong Kong for wellness startup |
+| Job | Senior copywriter — meditation apps, breathwork courses, "mindful productivity" |
+| Burnout | Wrote 200+ guided scripts; couldn't sleep without a screen; hated the word *journey* |
+| Look | Dark wavy hair, loose bun; ivory linen shirt, cream trousers; thin gold bracelet |
+| Voice | Soft English, neutral accent, literary, close-mic — **not** yoga-instructor bright |
+| Why 2017 | Peak wellness-industrial era — apps, subscriptions, "self-care as content" |
+
+**One line:** She sold stillness for a living and forgot how to own it.
+
+---
+
+## Story (Fancy Cut)
+
+She wrote the words other people breathed to — *inhale peace, exhale stress* —  
+and went home to a screen that never dimmed inside her skull.
+
+One rain night, gold dust seemed to hang in an alley that wasn't on Maps.  
+The door opened without a chime. Inside: **Twelve-O-Seven**,  
+candles in amber, bottles like stained glass, a turntable turning slow as thought.
+
+The bartender didn't speak. On the counter, an **invisible menu** appeared  
+only when she stopped trying to read it:
+
+> **Course I** — Still Point · *The Turning World*  
+> **Course II** — Return to Breath · *Four-Count Tide*  
+> **Course III** — Twelve Seven · *Where the Clock Forgives*  
+> **Course IV** — Empty Glass · *Ku*  
+> **Course V** — Body of Light · *Nidra*  
+> **Course VI** — Let the Mind Rest · *Metta Close*  
+
+She didn't become a better person. She became **present** — which is fancier.
+
+**Visual:** Ivory silk · candlelight · gold dust · jewel-glass bar · cinematic luxury wellness  
+**Vocal:** Female · soft English · close mic · **neutral international accent** · literary, not influencer  
+
+---
+
+## The Invisible Meditation Menu (Session Card)
+
+*Print / overlay concept for YouTube chapters or CapCut title cards — gold serif on amber, no box.*
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        TWELVE-O-SEVEN · SESSION MENU
+              invisible · felt only
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ I    STILL POINT          The Turning World
+      Poetic presence · Eliot stillness
+
+ II   RETURN TO BREATH     Four-Count Tide
+      4-7-8 pacing · release the day
+
+ III  TWELVE SEVEN         Where the Clock Forgives
+      Temporal pause · 12:07
+
+ IV   EMPTY GLASS          Ku · 空
+      Zen emptiness · crystal silence
+
+ V    BODY OF LIGHT        Nidra
+      Crown-to-feet scan · golden glow
+
+ VI   LET THE MIND REST    Metta Close
+      Self-compassion · fade to silence
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     no guru · no performance · only amber
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+---
+
+## Film Assets
+
+| File | Beat |
+|------|------|
+| `ep04_character_clara_webb.png` | Character lock |
+| `ep04_scene_01_meditation_bar.png` | Enters · sits · still point |
+| `ep04_scene_02_breath_window.png` | Breath · rain · candle |
+| `ep04_scene_03_empty_glass_ku.png` | Empty glass · ku |
+| `ep04_scene_04_metta_door.png` | Leaving · metta close |
+| `ep04_film_cover_poster.png` | YouTube cover |
+| `ep04_film_cover_poster_1280.jpg` | YouTube upload |
+
+---
+
+## Six Tracks · The Invisible Menu
+
+| # | Title | Subtitle | Technique | BPM |
+|---|--------|----------|-----------|-----|
+| 01 | Still Point | *The Turning World* | Poetic presence · T.S. Eliot mood | 60 |
+| 02 | Return to Breath | *Four-Count Tide* | 4-7-8 breath pacing | 54 |
+| 03 | Twelve Seven | *Where the Clock Forgives* | Temporal meditation · 12:07 | 58 |
+| 04 | Empty Glass, Full Silence | *Ku* | Zen emptiness · release | 56 |
+| 05 | Body of Light | *Nidra* | Yoga nidra body scan | 52 |
+| 06 | Let the Mind Rest | *Metta Close* | Loving-kindness · silence out | 50 |
+
+---
+
+## CapCut · 1-Hour Luxury Session Structure
+
+| Segment | Content | Visual |
+|---------|---------|--------|
+| 0:00–0:30 | 30s English narration (optional) + logo `12:07 時空酒吧` | Flova Part A→B→C or scene montage |
+| 0:30–4:15 | Track 01 Still Point | scene_01 · slow Ken Burns |
+| 4:15–7:45 | Track 02 Return to Breath | scene_02 · rain window |
+| 7:45–11:05 | Track 03 Twelve Seven | cover clock detail · bar wide |
+| 11:05–14:45 | Track 04 Empty Glass | scene_03 · glass close-up |
+| 14:45–18:00 | Track 05 Body of Light | scene_01 → soft dissolve |
+| 18:00–22:00+ | Track 06 Let the Mind Rest | scene_04 · door · fade black |
+| 22:00–60:00 | Loop tracks 2–5 at low crossfade OR repeat full album | same scenes · loop-friendly |
+
+**On-screen text (minimal):**  
+Top-left: `12:07 時空酒吧` · Bottom-large: song title · **no black bars, no boxes**
 
 ---
 
 ## Track 01 — Still Point
 
-**Type:** Female vocal · ~3:45 · 60 BPM  
+**Type:** Female vocal · ~3:45 · 60 BPM · *Course I · The Turning World*
 
 ### Mureka Style
 
 ```text
-Original English meditation ambient song, 60 BPM, 4/4, around 3 minutes 45 seconds.
-Soft female vocal, neutral English accent, intimate close-mic whisper-sing, not gospel not pop belt.
-Felt piano, warm synth pad, very soft sub drone, no drums first minute, single brush tap only later.
-Mood: finding stillness in an empty bar at night, mindfulness without cliché flute or singing bowls.
-Spacious reverb, slow phrases, sleep and meditation playlist friendly. No EDM, trap, jazz scat,
-no Mandarin vocals, no EP02 city pop drums.
+Original luxury English meditation ambient song, 60 BPM, 4/4, around 3 minutes 45 seconds.
+Soft female vocal, neutral international English, intimate close-mic whisper-sing, literary not pop.
+Felt piano, harp harmonics sparse and elegant, warm analog synth pad, soft wordless choir pad
+very distant like cathedral air, gentle sub drone. One brush tap only after 90 seconds.
+Mood: high-end mindfulness session in hidden amber bar — fancy, spacious, expensive silence.
+Long plate reverb, tape warmth, subtle vinyl crackle optional. No EDM, trap, cheap flute loops,
+singing bowl clichés, Mandarin vocals, EP02 drums.
 ```
 
 ### Lyrics
@@ -79,8 +196,8 @@ Until the waves in my mind settle down
 [Verse 2]
 No guru in the corner, no voice telling me how
 Just amber on the bottles and rain on the window now
-I thought meditation meant becoming someone new
-But stillness only asked me to stop running from the truth
+Between the motion and the act, I finally land
+Stillness isn't something that I hold — it's something I allow
 
 [Chorus]
 At the still point
@@ -95,15 +212,16 @@ Still
 
 ## Track 02 — Return to Breath
 
-**Type:** Female vocal · ~3:30 · 54 BPM  
+**Type:** Female vocal · ~3:30 · 54 BPM · *Course II · Four-Count Tide*
 
 ### Mureka Style
 
 ```text
-Original English breath-meditation ambient song, 54 BPM, 4/4, around 3 minutes 30 seconds.
-Same soft female vocal, even quieter verses. Long pad drone, sparse piano notes, no percussion.
-Phrases leave space for breathing. Theme: inhale/exhale as home. Guided but musical.
-End fade on pad only. No new-age flute, no spoken-only track, no drums.
+Original luxury English breath-meditation song, 54 BPM, 4/4, around 3 minutes 30 seconds.
+Same soft female vocal, slower than track 1. Long pad drone, felt piano, harp single plucks,
+phrases spaced for 4-7-8 breathing feel. Soft choir pad like distant light. No percussion.
+High-end spa meditation mood, fancy and minimal. End 25 seconds harp and pad only.
+No spoken-only track, no new-age kitsch.
 ```
 
 ### Lyrics
@@ -148,15 +266,15 @@ You are here
 
 ## Track 03 — Twelve Seven
 
-**Type:** Female vocal · ~3:20 · 58 BPM  
+**Type:** Female vocal · ~3:20 · 58 BPM · *Course III · Where the Clock Forgives*
 
 ### Mureka Style
 
 ```text
-Original English ambient mindfulness song, 58 BPM, 4/4, around 3 minutes 20 seconds.
-Soft female vocal, gentle melody, English only. Piano and pad, subtle clock-tick texture very quiet.
-Theme: hidden bar where time pauses at 12:07, meditation not escape. Warm not mystical horror.
-No big chorus belting, no jazz, no city pop.
+Original luxury English temporal meditation song, 58 BPM, 4/4, around 3 minutes 20 seconds.
+Soft female vocal, gentle melody, English only. Felt piano, harp, warm pad, very subtle clock tick
+like expensive watch in velvet. Mood: time pauses at twelve-oh-seven, fancy bar stillness.
+Wordless choir pad on chorus only once, soft. Cinematic reverb, tape warmth. No city pop, no jazz.
 ```
 
 ### Lyrics
@@ -198,15 +316,15 @@ Seven
 
 ## Track 04 — Empty Glass, Full Silence
 
-**Type:** Female vocal · ~3:40 · 56 BPM  
+**Type:** Female vocal · ~3:40 · 56 BPM · *Course IV · Ku*
 
 ### Mureka Style
 
 ```text
-Original English meditation ambient ballad, 56 BPM, 4/4, around 3 minutes 40 seconds.
-Soft female vocal, reflective tone. Piano-led, soft pad, minimal brushed texture once.
-Theme: empty glass on bar counter as metaphor for cleared mind. No alcohol glorification — symbolic only.
-Calm release, not sad. No rock drums, no folk banjo.
+Original luxury English zen meditation ballad, 56 BPM, 4/4, around 3 minutes 40 seconds.
+Soft female vocal, reflective elegant tone. Felt piano, harp harmonics, crystal-glass shimmer texture
+in pad (synthetic only), one soft brush texture far in mix. Theme: ku — emptiness as luxury.
+Calm release, sophisticated not sad. No folk banjo, no rock drums.
 ```
 
 ### Lyrics
@@ -247,15 +365,15 @@ Full
 
 ## Track 05 — Body of Light
 
-**Type:** Female vocal · ~3:15 · 52 BPM  
+**Type:** Female vocal · ~3:15 · 52 BPM · *Course V · Nidra*
 
 ### Mureka Style
 
 ```text
-Original English body-scan meditation song, 52 BPM, 4/4, around 3 minutes 15 seconds.
-Soft female vocal whisper-sing, English only. Very slow, almost lullaby. Pad drone, piano every 4 bars,
-no beat. Lyrics move from crown to feet gently. Meditation and sleep crossover.
-No clinical medical tone, no ASMR mouth sounds.
+Original luxury English yoga-nidra inspired song, 52 BPM, 4/4, around 3 minutes 15 seconds.
+Soft female vocal whisper-sing, English only. Very slow lullaby. Pad drone, harp, piano every 4 bars,
+distant choir pad like golden light. Crown-to-feet body scan lyrics. Fancy spa meditation, not clinical.
+No ASMR mouth sounds, no cheap healing frequency tones.
 ```
 
 ### Lyrics
@@ -297,15 +415,15 @@ Light
 
 ## Track 06 — Let the Mind Rest (Closing)
 
-**Type:** Female vocal · ~4:00 · 50 BPM  
+**Type:** Female vocal · ~4:00 · 50 BPM · *Course VI · Metta Close*
 
 ### Mureka Style
 
 ```text
-Original English closing meditation song, 50 BPM, 4/4, around 4 minutes.
-Softest female vocal on album. Piano and pad, vocals stop after 2:30, final 90 seconds
-instrumental fade to silence for meditation/sleep end. Theme: permission to stop trying.
-Not triumphant — gentle completion. No choir, no epic strings.
+Original luxury English metta closing meditation song, 50 BPM, 4/4, around 4 minutes.
+Softest female vocal on album, warm and compassionate. Felt piano, harp, choir pad gentle swell on
+final chorus only. Vocals stop after 2:30, final 90 seconds harp piano pad fade to complete silence.
+Self-compassion theme, fancy spa session ending. No epic orchestra, no gospel belting.
 ```
 
 ### Lyrics
@@ -335,8 +453,8 @@ And tonight you are finally alone with the truth
 [Verse 2]
 If you hear this later on a screen or in the dark
 May you feel the same amber settle in your heart
-No teacher, no score — only breath and time
-Twelve-seven still and kind
+May you meet yourself with kindness, not a grade
+Twelve-seven still and kind — the finest drink I've ever made
 
 [Final Chorus]
 Let the mind rest
@@ -358,14 +476,26 @@ Let the mind rest
 
 ---
 
+## Related Files
+
+| File | Purpose |
+|------|---------|
+| `ep04_30sec_narration_en_philosophy.md` | English intro narration |
+| `ep04_20sec_video_prompt_split.md` | Flova 10s × 3 video prompts |
+| `ep04_elevenlabs_voice_design.md` | Narration + vocal reference |
+| `ep04_youtube_title_description.md` | Upload copy |
+
+---
+
 ## vs EP01–EP03
 
 | | EP03 | EP04 |
 |---|------|------|
 | Language | 華語 | **English** |
 | Theme | 失眠助眠 | **冥想 Mindfulness** |
-| Guest | 插畫師 2018 | **Expat burnout 2017** |
-| Vocal | 華語氣聲 | **English soft** |
+| Guest | 插畫師 2018 | **Clara Webb · wellness burnout 2017** |
+| Vocal | 華語氣聲 | **English soft · literary** |
+| Special | 睡眠儀式 | **Invisible Menu · anti-app luxury** |
 
 ---
 
