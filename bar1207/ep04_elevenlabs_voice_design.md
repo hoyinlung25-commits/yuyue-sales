@@ -9,7 +9,7 @@
 ### Voice Design Prompt
 
 ```text
-Create a female English voice, early 30s, for a quiet literary meditation monologue.
+Create a female English voice, mid-20s, for a quiet literary meditation monologue.
 
 Tone: Soft, intimate, close-microphone. Neutral international English accent — not strongly
 American or British, slightly European-international. Think wellness copywriter who is tired

@@ -32,11 +32,11 @@
 
 | Field | Detail |
 |-------|--------|
-| Age | 31 |
+| Age | **24** (young, elegant · Hong Kong cinema beauty) |
 | Origin | London → moved to Hong Kong for wellness startup |
-| Job | Senior copywriter — meditation apps, breathwork courses, "mindful productivity" |
+| Job | Junior copywriter — meditation apps, breathwork courses, "mindful productivity" |
 | Burnout | Wrote 200+ guided scripts; couldn't sleep without a screen; hated the word *journey* |
-| Look | Dark wavy hair, loose bun; ivory linen shirt, cream trousers; thin gold bracelet |
+| Look | Long dark wavy hair, loose bun; delicate refined features; ivory silk linen, cream trousers; thin gold bracelet |
 | Voice | Soft English, neutral accent, literary, close-mic — **not** yoga-instructor bright |
 | Why 2017 | Peak wellness-industrial era — apps, subscriptions, "self-care as content" |
 
@@ -107,15 +107,27 @@ She didn't become a better person. She became **present** — which is fancier.
 
 ## Film Assets
 
+**Character lock (use v2):** `ep04_character_clara_webb_v2_young.png`  
+**Cover (recommended):** `ep04_film_cover_poster_v2_young.png` · `ep04_film_cover_poster_v2_1280.jpg`
+
 | File | Beat |
 |------|------|
-| `ep04_character_clara_webb.png` | Character lock |
-| `ep04_scene_01_meditation_bar.png` | Enters · sits · still point |
-| `ep04_scene_02_breath_window.png` | Breath · rain · candle |
-| `ep04_scene_03_empty_glass_ku.png` | Empty glass · ku |
-| `ep04_scene_04_metta_door.png` | Leaving · metta close |
-| `ep04_film_cover_poster.png` | YouTube cover |
-| `ep04_film_cover_poster_1280.jpg` | YouTube upload |
+| `ep04_character_clara_webb_v2_young.png` | **Character lock · young & elegant** |
+| `ep04_scene_01_meditation_bar_v2.png` | Still Point · meditation cushion |
+| `ep04_scene_02_breath_window_v2.png` | Return to Breath · rain window |
+| `ep04_scene_03_empty_glass_ku_v2.png` | Empty Glass · Ku |
+| `ep04_scene_04_metta_door_v2.png` | Metta Close · leaving |
+| `ep04_scene_05_rain_alley_door.png` | Intro · rain alley · finds door |
+| `ep04_scene_06_body_of_light.png` | Body of Light · golden profile |
+| `ep04_scene_07_clock_twelve_seven.png` | Twelve Seven · clock 12:07 |
+| `ep04_scene_08_bar_wide_establishing.png` | Wide bar · establishing |
+| `ep04_scene_09_still_point_piano.png` | Still Point · piano stillness |
+| `ep04_scene_10_face_close_meditation.png` | Close portrait · luxury mindfulness |
+| `ep04_scene_11_nidra_rest.png` | Nidra · resting body scan |
+| `ep04_film_cover_poster_v2_young.png` | **YouTube cover (new)** |
+| `ep04_film_cover_poster_v2_1280.jpg` | YouTube upload JPG |
+
+*Legacy v1 files kept for reference (`ep04_scene_01` etc. without `_v2`).*
 
 ---
 

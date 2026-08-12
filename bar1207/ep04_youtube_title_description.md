@@ -104,7 +104,7 @@ Bar Twelve-O-Seven · 12:07 Bar
 **Line 3 (small):** `BE STILL · INVISIBLE MENU`  
 **Bottom left:** `12:07 時空酒吧` · **Bottom right:** `BAR TWELVE-O-SEVEN`  
 
-Use `ep04_film_cover_poster_1280.jpg` — no black bars, gold texture matches 12.07 font.
+Use `ep04_film_cover_poster_v2_young.png` or `ep04_film_cover_poster_v2_1280.jpg` — no black bars, gold texture matches 12.07 font.
 
 ---
 

@@ -1,6 +1,6 @@
 # EP04 — 30 Second English Narration (Philosophy Cut)
 
-**Character:** Clara Webb — 2017 wellness copywriter  
+**Character:** Clara Webb — 2017 wellness copywriter · age 24  
 **Duration:** ~28–32 seconds · **Tone:** Quiet, literary, anti-performative — not inspirational  
 
 ---
@@ -55,7 +55,7 @@ I became present — which, I think, is the finer thing.
 | Avoid | Motivational uplift, crying, yoga-instructor brightness, fast delivery |
 
 **TTS prompt:**  
-`English female, early 30s, soft literary monologue, neutral international accent, quiet exhaustion turning into clarity, close mic, meditative pace, not dramatic, not influencer wellness voice.`
+`English female, mid-20s, soft literary monologue, neutral international accent, quiet exhaustion turning into clarity, close mic, meditative pace, not dramatic, not influencer wellness voice.`
 
 ---
 

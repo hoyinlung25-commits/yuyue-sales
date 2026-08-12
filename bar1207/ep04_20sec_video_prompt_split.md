@@ -9,9 +9,10 @@
 
 ```text
 GLOBAL LOCK — do not change across all frames:
-Same fictional woman Clara Webb, age 31, slim build, dark wavy hair in loose low bun,
-ivory linen button shirt, cream wide-leg trousers, thin gold bracelet, bare feet or simple sandals,
-soft tired face becoming calm, natural skin texture, live-action only.
+Same fictional woman Clara Webb, age 24, slim elegant build, beautiful delicate refined features,
+long dark wavy hair in loose low bun, ivory silk linen button shirt, cream wide-leg trousers,
+thin gold bracelet, bare feet or simple sandals, soft tired face becoming calm radiant beauty,
+natural luminous skin, live-action Hong Kong cinema actress look only.
 Live-action vintage Hong Kong cinema, luxury wellness mood. NOT anime, NOT cartoon, NOT 3D,
 NOT yoga studio, NOT generic spa stock photo.
 Color: amber candlelight + cool rain blue through windows. Film grain, shallow DOF.
