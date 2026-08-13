@@ -347,13 +347,25 @@ I would still choose you...
 
 ## Film Assets
 
+**Character lock:** `ep06_character_damien.png` — **所有場景同一人物**  
+**Style lock:** Live-action **Vintage Hong Kong Cinema** × Gothic · 35mm film grain · NOT anime
+
+### GLOBAL LOCK（所有圖 · Flova · 新圖）
+
+```text
+Same young handsome man Damien as ep06_character_damien.png: age 26, pale skin,
+dark hair, black high-collar coat, same face every frame. Live-action vintage
+Hong Kong cinema gothic film still, 35mm film grain, shallow DOF, subtle red rim light.
+NOT anime, NOT cartoon, NOT devil horns costume, NOT 3D render.
+```
+
 | File | Beat |
 |------|------|
-| `ep06_character_damien.png` | Devil character lock |
-| `ep06_scene_01_below_her_light.png` | Watching angel light from shadow |
-| `ep06_scene_02_forbidden_halo.png` | Halo reflection · cannot touch |
-| `ep06_scene_03_bar_1207.png` | Twelve Seven · amber bar |
-| `ep06_scene_04_ash_and_feathers.png` | Ash vs feather metaphor |
+| `ep06_character_damien.png` | **Damien character lock** |
+| `ep06_scene_01_below_her_light.png` | 看天使之光 · from shadow |
+| `ep06_scene_02_forbidden_halo.png` | 禁忌光環 · halo reflection |
+| `ep06_scene_03_bar_1207.png` | 十二時七分 · amber bar |
+| `ep06_scene_04_ash_and_feathers.png` | 灰与羽 · metaphor |
 | `ep06_film_cover_poster.png` | YouTube cover |
 
 ---
