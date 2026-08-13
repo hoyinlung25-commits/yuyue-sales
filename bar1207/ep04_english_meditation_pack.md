@@ -128,6 +128,7 @@ She didn't become a better person. She became **present** — which is fancier.
 | `ep04_scene_12_entering_bar.png` | Intro · stepping into bar |
 | `ep04_scene_13_vinyl_turntable.png` | Twelve Seven · vinyl slow time |
 | `ep04_scene_14_moon_rain_window_wide.png` | Wide · moon rain · poetic loop |
+| `ep04_scene_15_clara_inner_monologue.png` | **Clara close-up · 内心獨白用** |
 | `ep04_film_cover_poster_v2_young.png` | **YouTube cover (new)** |
 | `ep04_film_cover_poster_v2_1280.jpg` | YouTube upload JPG |
 
