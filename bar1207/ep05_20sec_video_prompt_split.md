@@ -104,4 +104,21 @@ NEGATIVE: bartender lecture, cheering, anime glow, armor off, face morph.
 
 ---
 
+## Extended Dragon Fight · Still Montage (Track 02 龍の影)
+
+*Use when song 02 plays · ~3:40 · crossfade or slow Ken Burns*
+
+| Order | File | Beat |
+|-------|------|------|
+| 1 | `ep05_scene_06_dragon_fight_charge.png` | Hero runs · sword raised |
+| 2 | `ep05_scene_09_dragon_faceoff.png` | Eye to eye · last stand |
+| 3 | `ep05_scene_07_dragon_fire_clash.png` | Dragon breath · block |
+| 4 | `ep05_scene_08_sword_breaks_on_dragon.png` | Blade shatters |
+| 5 | `ep05_scene_01_dragon_battle_v2.png` | Kneeling · ash · defeat |
+| 6 | `ep05_scene_02_no_hope_rain.png` | Cut to rain · no hope |
+
+**Timing guide:** ~40s per still or match verse/chorus sections · no victory shots · end on defeat
+
+---
+
 *Bar Twelve-O-Seven · EP05*
