@@ -1,111 +1,102 @@
-# EP04 YouTube — Title & Description
+# EP04 YouTube — 影片標題與描述
 
 ---
 
-## Title (recommended · fancy)
+## 推薦標題（選一個）
 
+**主標（推薦）：**
 ```
-【1 Hour Luxury Meditation】English Mindfulness · Be Still · Invisible Menu · 12:07 Bar EP04
-```
-
-**Search-optimized:**
-```
-【1 Hour Meditation】English Ambient Mindfulness | Be Still | 12:07 Bar EP04 | Piano · Harp · Breath
+【1小時】English 冥想 Ambient｜靜止之時 Be Still｜12:07 時空酒吧 EP04｜英文女聲 · 鋼琴 · 助眠
 ```
 
-**Short:**
+**簡短版：**
 ```
-12:07 Bar EP04 | Be Still | English Meditation Music | Luxury Mindfulness · 1 Hour
+12:07 時空酒吧 EP04｜靜止之時 Be Still｜English Meditation · 1 Hour
 ```
 
----
-
-## Description (paste into YouTube)
-
+**英文搜尋向：**
 ```
-🧘 12:07 Bar · Bar Twelve-O-Seven
-EP04《Be Still · A Luxury Meditation Session at Twelve-O-Seven》
-Full album · ~1 hour · English meditation music
-
-She wrote the scripts other people breathed to —
-"inhale peace, exhale stress" — ten minutes a day, subscription calm.
-Still her mind kept running.
-
-One rainy night: a door with no sign, a bar where the clock rests at 12:07.
-No guru. No performance. Only an **Invisible Meditation Menu**
-— six courses you feel, not read:
-
-I   Still Point · II Return to Breath · III Twelve Seven
-IV  Empty Glass (Ku) · V Body of Light · VI Let the Mind Rest
-
-🎧 For: Meditation · Mindfulness · 4-7-8 breath · Yoga nidra · Sleep prep · Study · Luxury calm
-🎵 Style: English ambient · Felt piano · Harp · Soft choir pad · Female whisper-vocal · Literary
-🎬 Visual: Ivory silk · Amber candle · Gold dust · Jewel-glass bar · Cinematic wellness
-
-━━━━━━━━━━━━━━━━━━━━
-📀 Tracklist · The Invisible Menu
-
-00:00:00 01 Still Point · The Turning World
-00:03:45 02 Return to Breath · Four-Count Tide
-00:07:15 03 Twelve Seven · Where the Clock Forgives
-00:10:35 04 Empty Glass, Full Silence · Ku
-00:14:15 05 Body of Light · Nidra
-00:17:30 06 Let the Mind Rest · Metta Close
-
-⏱ Timestamps are estimates — adjust after Mureka final masters.
-
-━━━━━━━━━━━━━━━━━━━━
-🌃 12:07 Bar · Four worlds
-
-Every guest arrives from a different decade.
-The clock on the wall is always 12:07.
-
-EP01 · 1950s Shanghai rainy jazz (Mandarin)
-EP02 · 1996 City Pop night drive (Mandarin)
-EP03 · 2018 sleepless ambient (Mandarin)
-EP04 · **English meditation · Be Still · Invisible Menu**
-
-Subscribe · Bell on · Next session soon
-
-━━━━━━━━━━━━━━━━━━━━
-🧘 How to use this session
-
-· Low volume · headphones optional
-· Track 2 paced for slow breath (4-7-8 feel)
-· Track 5: body scan — lie down if you wish
-· Track 6 fades to 90 seconds silence — natural session end
-· Keep bar visuals as soft focus, or close your eyes
-
-━━━━━━━━━━━━━━━━━━━━
-🤖 AI disclosure
-
-Music generated with AI tools (Mureka) with human lyrics, curation, editing, and channel direction.
-Altered/synthetic content labeled where required by platform policy.
-
-━━━━━━━━━━━━━━━━━━━━
-Tags
-
-#MeditationMusic #Mindfulness #EnglishMeditation #LuxuryWellness #Ambient
-#12:07Bar #Breathwork #YogaNidra #Piano #Harp #SleepMusic #AIMusic #BeStill
-
-━━━━━━━━━━━━━━━━━━━━
-
-🧘 Be still. You are already here — which is the finer thing.
-
-Bar Twelve-O-Seven · 12:07 Bar
+English Meditation Ambient Piano | Be Still | 12:07 Bar EP04 | 1 Hour Mindfulness Sleep
 ```
 
 ---
 
-## Thumbnail Text Overlay (CapCut / Canva)
+## 影片描述（直接貼 YouTube）
 
-**Line 1 (large gold):** `12.07`  
-**Line 2:** `ENGLISH MEDITATION`  
-**Line 3 (small):** `BE STILL · INVISIBLE MENU`  
-**Bottom left:** `12:07 時空酒吧` · **Bottom right:** `BAR TWELVE-O-SEVEN`  
+```
+🕛 12:07 時空酒吧 · Bar Twelve-O-Seven
+EP04《靜止之時 · Be Still》· 完整專輯影片 · 約 1 小時
 
-Use `ep04_film_cover_poster_v2_young.png` or `ep04_film_cover_poster_v2_1280.jpg` — no black bars, gold texture matches 12.07 font.
+2017 年，一個替冥想 App 寫文案的女孩。
+「吸气，平靜；呼气，放鬆。」——她写給几百万人跟著做，
+关掉了屏幕，脑子里面，却还亮着。
+直到雨夜，她走进一条地图上没有的巷，
+推开一扇没有招牌的门；时钟停在十二时七分，
+没有导师，没有剧本，只有一张看不见的冥想餐单。
+
+🎧 適合：Meditation · 冥想 · Mindfulness · 助眠 · Sleep · 深呼吸 · Study · 深夜放鬆
+🎵 風格：English Ambient / Luxury Wellness / Felt Piano · Harp · 英文女聲氣聲
+🎬 視覺：Ivory Silk 電影感 · 琥珀燈 · 靜態畫面 · 適合背景播放
+
+━━━━━━━━━━━━━━━━━━━━
+📀 曲目列表 Tracklist
+
+00:00:00 00
+00:00:38 01 Still Point · 寧靜之點
+00:04:23 02 Return to Breath · 回到呼吸
+00:07:53 03 Twelve Seven · 十二時七分
+00:11:13 04 Empty Glass · 空杯滿靜
+00:14:53 05 Body of Light · 光之身
+00:18:08 06 Let the Mind Rest · 讓心休息
+00:22:08 Loop
+
+⏱ 時間戳為預估，上傳前請按 Mureka 實際音檔長度調整。
+
+━━━━━━━━━━━━━━━━━━━━
+🌃 12:07 時空酒吧
+
+每位客人來自不同年代，
+牆上的時鐘永遠停在午夜 12:07。
+
+EP01｜1950s 上海雨夜爵士 · 傳奇女歌手
+EP02｜1996 City Pop 夜駕 · 錯過末班車的上班族
+EP03｜2018 失眠 Ambient · 還沒睡的那一夜
+EP04｜English 冥想 · 靜止之時 Be Still
+
+訂閱 · 開啟小鈴鐺 · 下一集不錯過
+
+━━━━━━━━━━━━━━━━━━━━
+🤖 AI 內容披露
+
+本影片音樂部分由 AI 音樂工具（Mureka）協助生成，
+歌詞、編曲方向、選曲、影片剪輯與頻道策劃由創作者人工完成與策展。
+若平台要求，已標示變造／合成內容。
+
+━━━━━━━━━━━━━━━━━━━━
+🔖 標籤 Tags
+
+#12:07時空酒吧 #Meditation #冥想 #Mindfulness #EnglishMeditation
+#SleepMusic #助眠 #Ambient #Piano #Harp #Breathwork
+#AI音樂 #放鬆音樂 #深夜 #BeStill #YogaNidra
+
+━━━━━━━━━━━━━━━━━━━━
+
+🧘 建議佩戴耳機 · 音量偏低 · 你不需要變得更好，只需要在場。
+
+Bar Twelve-O-Seven · 12:07 時空酒吧
+```
 
 ---
 
-*Bar Twelve-O-Seven · EP04*
+## 封面字幕（CapCut / Canva）
+
+**第一行（大字金）：** `12.07`  
+**第二行：** `靜止之時 · BE STILL`  
+**第三行（小）：** `ENGLISH MEDITATION · 看不見的冥想餐單`  
+**左下：** `12:07 時空酒吧` · **右下：** `BAR TWELVE-O-SEVEN`  
+
+使用 `ep04_film_cover_poster_v2_young.png` 或 `ep04_film_cover_poster_v2_1280.jpg` · 不加黑底框
+
+---
+
+*Bar Twelve-O-Seven · EP04 · 12:07 時空酒吧*
