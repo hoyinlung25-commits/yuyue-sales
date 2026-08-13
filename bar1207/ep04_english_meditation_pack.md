@@ -124,6 +124,9 @@ She didn't become a better person. She became **present** — which is fancier.
 | `ep04_scene_09_still_point_piano.png` | Still Point · piano stillness |
 | `ep04_scene_10_face_close_meditation.png` | Close portrait · luxury mindfulness |
 | `ep04_scene_11_nidra_rest.png` | Nidra · resting body scan |
+| `ep04_scene_12_entering_bar.png` | Intro · stepping into bar |
+| `ep04_scene_13_vinyl_turntable.png` | Twelve Seven · vinyl slow time |
+| `ep04_scene_14_moon_rain_window_wide.png` | Wide · moon rain · poetic loop |
 | `ep04_film_cover_poster_v2_young.png` | **YouTube cover (new)** |
 | `ep04_film_cover_poster_v2_1280.jpg` | YouTube upload JPG |
 
