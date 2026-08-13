@@ -497,7 +497,7 @@ Let the mind rest
 | File | Purpose |
 |------|---------|
 | `ep04_30sec_narration_en_philosophy.md` | English intro narration |
-| `ep04_30sec_narration_zh_philosophy.md` | **中文旁白 · 哲思 · 故事交代（粵語 + 普通話）** |
+| `ep04_30sec_narration_zh_philosophy.md` | **中文内心獨白 · 哲思 · 故事（粵語 + 普通話 · 第一人稱）** |
 | `ep04_20sec_video_prompt_split.md` | Flova 10s × 3 video prompts |
 | `ep04_elevenlabs_voice_design.md` | Narration + vocal reference |
 | `ep04_youtube_title_description.md` | Upload copy |
