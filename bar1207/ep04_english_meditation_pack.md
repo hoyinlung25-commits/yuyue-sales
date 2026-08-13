@@ -108,6 +108,7 @@ She didn't become a better person. She became **present** — which is fancier.
 ## Film Assets
 
 **Character lock (use v2):** `ep04_character_clara_webb_v2_young.png`  
+**Scenes 01–06:** Recreated with same character lock · young elegant Clara · consistent style  
 **Cover (recommended):** `ep04_film_cover_poster_v2_young.png` · `ep04_film_cover_poster_v2_1280.jpg`
 
 | File | Beat |
