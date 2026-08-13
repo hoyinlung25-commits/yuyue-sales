@@ -317,14 +317,26 @@ Gentle hope only — 也许还在路上.
 
 ## Film Assets
 
+**Character lock:** `ep07_character_chenwan.png` — **所有場景同一人物**  
+**Style lock:** Live-action **Vintage Hong Kong Cinema** · 35mm film grain · shallow DOF · NOT anime / cartoon
+
+### GLOBAL LOCK（所有圖 · Flova · 新圖）
+
+```text
+Same young Chinese woman Chen Wan, age 26, short dark hair, beige trench coat,
+same face as ep07_character_chenwan.png. Live-action vintage Hong Kong cinema
+1990s film still, 35mm film grain, shallow depth of field, rain night neon mood.
+NOT anime, NOT cartoon, NOT illustration, NOT 3D render.
+```
+
 | File | Beat |
 |------|------|
-| `ep07_character_chenwan.png` | 陳晚 character lock |
-| `ep07_scene_01_dog_lost_rain.png` | 走失雨夜 |
-| `ep07_scene_02_waiting_corner.png` | 路口等 |
-| `ep07_scene_03_bar_1207.png` | 十二时七分 |
-| `ep07_scene_04_empty_leash.png` | 空绳圈 |
-| `ep07_scene_05_dog_memory.png` | 豆丁记忆 |
+| `ep07_character_chenwan.png` | **陳晚 character lock · 短髮 · 米色風衣** |
+| `ep07_scene_01_dog_lost_rain.png` | 走失雨夜 · 豆丁跑向巷口 |
+| `ep07_scene_02_waiting_corner.png` | 路口等 · 寻狗启事 |
+| `ep07_scene_03_bar_1207.png` | 十二时七分 · 空绳圈在吧台 |
+| `ep07_scene_04_empty_leash.png` | 空绳圈 · 家中 |
+| `ep07_scene_05_dog_memory.png` | 豆丁记忆 · 沙发 |
 | `ep07_film_cover_poster.png` | YouTube cover |
 
 ---
