@@ -1,10 +1,11 @@
-# EP05《希望などない勇者》— From a Distant Kingdom
+# EP05《勇者找勇氣》— 十二時七分 · Searching for Courage
 
-**Full title:** *希望などない勇者 · The Hero Who Has No Hope*  
-**Theme:** Japanese · Cinematic J-Ballad · Fantasy Hero · Dragon · Despair  
+**中文標題：** *勇者找勇氣 · 在 12:07 時空酒吧*  
+**Full title:** *勇者は勇気を探す · The Hero Searching for Courage*  
+**Theme:** Japanese · Cinematic J-Ballad · Fantasy Hero · Dragon · **Courage at 12:07**  
 **Guest:** **遥斗 蓮 (Haruto Ren)** — 勇者 from **遙かの王国** (Haruka no Ōkoku · Distant Kingdom)  
-**Signature:** A broken oath, a cracked sword, and a bar where even heroes are allowed to have no hope  
-**Positioning:** First **Japanese** album · JRPG melancholy · live-action cinematic fantasy  
+**Signature:** 打輸龍之後，他來 12:07 **找勇氣** — 不是找勝利，是找再站起來的理由  
+**Positioning:** First **Japanese** album · JRPG melancholy · hero's courage arc at the bar  
 
 ---
 
@@ -12,17 +13,16 @@
 
 | Special element | Description |
 |-----------------|-------------|
-| **遙かの王国** | Distant fantasy kingdom — not Japan, not Hong Kong; a world that only exists in oath and memory |
-| **勇者 (Yuusha)** | Classic RPG hero — chosen by prophecy, believed in by everyone except himself tonight |
-| **龍 (Dragon)** | The enemy that burned the sky; he fought back and lost; village ashes still on his cloak |
-| **希望などない** | Core theme — *there is no hope*; not fake triumph, not power-up montage |
-| **Broken Sword** | Physical symbol — 折れた剣; courage without certainty |
-| **12:07 Pause** | The bar stops time; the dragon waits outside every door except this one |
-| **Japanese male vocal** | Clear Japanese · cinematic ballad · restrained J-rock · anime OST sadness (FF / Kingdom Hearts mood) |
-| **Sonic palette** | Strings, taiko far in mix, koto/shamisen accents, electric guitar only on chorus, rain, orchestral swells |
-| **Visual** | Live-action vintage Hong Kong cinema × fantasy — worn armor, rain, amber bar warmth vs cold dragon memory |
+| **勇者找勇氣** | Core theme — hero **searches for courage** at Twelve-O-Seven |
+| **遙かの王国** | Distant kingdom · oath · dragon · defeat first |
+| **龍 (Dragon)** | He fought back and lost — courage shattered, not just hope |
+| **12:07 時空酒吧** | Clock stops · amber bar · **where courage is found without victory** |
+| **折れた剣** | Courage ≠ perfect sword · can walk with broken blade |
+| **勇気の在処** | Closing — courage lives in sitting still, then walking anyway |
+| **Japanese male vocal** | Clear tenor · cinematic ballad · restrained J-rock |
+| **Visual** | Live-action HK cinema × fantasy · rain · armor · amber bar |
 
-**Not generic:** No cheerful anime opening, no victory fanfare at end — **beauty through despair that still breathes**.
+**Not generic:** No power-up montage — **courage as quiet discovery at 12:07**, not instant win.
 
 ---
 
@@ -31,62 +31,57 @@
 | Field | Detail |
 |-------|--------|
 | Age | 23 |
-| Title | 勇者 (Yuusha · the Chosen Hero) |
-| Kingdom | **遙かの王国** Haruka no Ōkoku — Distant Kingdom beyond the mist sea |
-| Oath | At sixteen he swore to slay the dragon that ate the northern stars |
-| Battle | Last week — dragon's breath took his squad, cracked his blade, scorched the sky |
-| Now | Walks alone in rain; people still call him 勇者; he feels **希望などない** (no hope) |
-| Look | Young handsome Japanese man, 23; dark hair tied back; worn silver-blue light armor, torn black cloak; cracked sword at hip; exhausted beautiful eyes |
-| Voice | Japanese male · clear tenor · tired but young · cinematic ballad · not screamo |
+| Title | 勇者 (Yuusha) |
+| Kingdom | **遙かの王国** Haruka no Ōkoku |
+| Battle | Lost to dragon · cracked sword · squad gone |
+| Now | **来 12:07 找勇氣** — village still calls him hero; he lost his courage |
+| Look | Young handsome Japanese man; dark hair tied back; worn silver-blue armor; torn black cloak; cracked sword |
+| Voice | Japanese male · clear tenor · tired → slowly steadier by track 6 |
 
-**One line:** 皆はまだ彼を勇者と呼ぶ。彼だけが、もう信じられない。
+**One line（中文）：** 人人都叫他勇者，只有他知道——勇氣丟在了那場龍火裡；他來 12:07，把它找回來。
 
-*(Everyone still calls him hero. He alone cannot believe it anymore.)*
+**One line（日本語）：** 皆は勇者と呼ぶ。僕だけが、勇気をどこに落としたか知っている。十二時七分で、探しに来た。
 
 ---
 
 ## Story
 
-遙かの王国 — a kingdom so far away it only appears on maps drawn by children.  
-At sixteen, **蓮 Ren** was named 勇者: the one who would kill the dragon.
+遙かの王国 — a kingdom on children's maps only.  
+At sixteen, **蓮 Ren** was named 勇者. Seven years later he ran toward the dragon — and **lost**.
 
-Seven years he trained. Seven years the villages sent him rice and prayers.  
-When the dragon descended, he ran toward the fire — because that is what a hero does.
+The sword cracked. His friends did not return.  
+The village still cheers his name. But **courage** — the thing that made him run — **was gone**.
 
-He lost.  
-The sword cracked. The sky stayed burned. His friends did not come back.
+He walked in rain until a door with no sign appeared.  
+Inside: **Twelve-O-Seven** · clock at **12:07** · amber light · no one says *win* or *try harder*.
 
-Now he walks in rain that is not his kingdom's rain.  
-He finds a door with no sign. Inside: **Twelve-O-Seven** — clock frozen at 12:07,  
-amber light, bottles like relics, a turntable turning slow as memory.
+He came not for hope. Not for prophecy.  
+He came **to search for courage** — the quiet kind that lets you stand up when the sword is broken.
 
-No one asks him to be brave here.  
-He sits. He drinks nothing. He listens to the silence that does not demand victory.
+He did not slay the dragon that night.  
+He found something smaller and more real: **courage lives here, between twelve and seven.**
 
-He still has no hope.  
-But for one night, he does not have to pretend he does.
-
-**Visual:** Rain · worn armor · amber bar · dragon shadow in window reflection only  
-**Vocal:** Japanese male · cinematic · melancholic · clear pronunciation  
+**Visual:** Rain · armor · amber bar · dragon in memory only  
+**Vocal:** Japanese male · cinematic · clear  
 
 ---
 
-## Six Tracks · The Broken Oath
+## Six Tracks · 勇者找勇氣
 
-| # | Japanese | Romaji | Story beat | BPM |
-|---|----------|--------|------------|-----|
-| 01 | 遙かの王国 | Haruka no Ōkoku | Origin · distant kingdom | 78 |
-| 02 | 龍の影 | Ryū no Kage | Dragon battle · shadow | 92 |
-| 03 | 希望などない | Kibō nado Nai | **No hope** · core despair | 72 |
-| 04 | 十二時七分 | Jūni-ji Nanafun | Finds 12:07 bar | 68 |
-| 05 | 折れた剣 | Oreta Ken | Broken sword · sitting with failure | 64 |
-| 06 | それでも歩く | Soredemo Aruku | Still walking · not victory · continuing | 80 |
+| # | Japanese | 中文 | Story beat | BPM |
+|---|----------|------|------------|-----|
+| 01 | 遙かの王国 | 遙遠的王國 | Origin · oath | 78 |
+| 02 | 龍の影 | 龍之影 | Dragon battle · lost | 92 |
+| 03 | 勇気を探して | **找勇氣** | Core · searching | 72 |
+| 04 | 十二時七分 | 十二時七分 | **12:07 bar** · search begins | 68 |
+| 05 | 折れた剣 | 折斷的劍 | Broken sword · courage ≠ blade | 64 |
+| 06 | 勇気の在処 | 勇氣所在 | Where courage lives · closing | 80 |
 
 ---
 
 ## Track 01 — 遙かの王国 (Haruka no Ōkoku)
 
-**Type:** Male vocal · ~3:50 · 78 BPM · origin ballad
+**Type:** Male vocal · ~3:50 · 78 BPM
 
 ### Mureka Style
 
@@ -94,9 +89,8 @@ But for one night, he does not have to pretend he does.
 Original Japanese cinematic fantasy ballad, 78 BPM, 4/4, around 3 minutes 50 seconds.
 Young Japanese male vocal, clear tenor, tired heroic tone, emotional but controlled, no screaming.
 Orchestral strings, soft taiko far in background, koto accent sparse, piano and cello main.
-Mood: distant kingdom memory, JRPG opening sadness, Final Fantasy calm town feeling turned melancholic.
-Light electric guitar only in final chorus. Japanese lyrics only, clear pronunciation.
-No Mandarin, no English vocals, no EDM drop, no cheerful anime opening energy.
+Mood: distant kingdom memory, JRPG opening sadness. Japanese lyrics only, clear pronunciation.
+No Mandarin, no English vocals, no EDM, no cheerful anime opening.
 ```
 
 ### 歌詞 Lyrics
@@ -140,16 +134,15 @@ No Mandarin, no English vocals, no EDM drop, no cheerful anime opening energy.
 
 ## Track 02 — 龍の影 (Ryū no Kage)
 
-**Type:** Male vocal · ~3:40 · 92 BPM · battle / dragon shadow
+**Type:** Male vocal · ~3:40 · 92 BPM
 
 ### Mureka Style
 
 ```text
 Original Japanese cinematic battle ballad, 92 BPM, 4/4, around 3 minutes 40 seconds.
-Same young Japanese male vocal, more intensity in chorus but still melodic not scream.
-Orchestral strings staccato, taiko drums medium not overpowering, low brass, restrained electric
-guitar on chorus. Dragon battle mood, tragic not triumphant. Rain and wind SFX very subtle.
-Japanese lyrics clear. No metal screaming, no EDM, no EP04 meditation piano.
+Same young Japanese male vocal, more intensity in chorus but melodic not scream.
+Orchestral strings staccato, taiko medium, low brass, restrained electric guitar on chorus.
+Dragon battle tragic not triumphant. Japanese clear. No metal screaming.
 ```
 
 ### 歌詞 Lyrics
@@ -182,6 +175,7 @@ Japanese lyrics clear. No metal screaming, no EDM, no EP04 meditation piano.
 [Bridge]
 （ギター 控えめ）
 折れた 刃 落ちた 光
+勇気 も 一緒に 落ちた
 
 [Chorus]
 龍の 影……（同前 · より静かに）
@@ -193,18 +187,17 @@ Japanese lyrics clear. No metal screaming, no EDM, no EP04 meditation piano.
 
 ---
 
-## Track 03 — 希望などない (Kibō nado Nai)
+## Track 03 — 勇気を探して (Yuuki wo Sagashite) · 找勇氣
 
-**Type:** Male vocal · ~4:00 · 72 BPM · **core theme — no hope**
+**Type:** Male vocal · ~4:00 · 72 BPM · **core theme**
 
 ### Mureka Style
 
 ```text
-Original Japanese melancholic cinematic ballad, 72 BPM, 4/4, around 4 minutes.
-Same young Japanese male vocal, most emotional track, quiet verses, swelling chorus not happy.
-Piano, cello, strings, minimal taiko, no electric guitar until last chorus very soft.
-Mood: hero admits no hope, beautiful despair, Kingdom Hearts sad theme energy.
-Japanese clear pronunciation. No fake uplifting major key ending, fade on piano and strings.
+Original Japanese cinematic ballad, 72 BPM, 4/4, around 4 minutes.
+Same young Japanese male vocal, most emotional track, searching for courage theme not despair only.
+Piano, cello, strings, minimal taiko. Mood: hero lost courage after dragon, begins search.
+Japanese clear. Chorus lifts slightly — searching, not yet found. No fake victory fanfare at end.
 ```
 
 ### 歌詞 Lyrics
@@ -216,53 +209,57 @@ Japanese clear pronunciation. No fake uplifting major key ending, fade on piano 
 [Verse 1]
 村は まだ 「勇者様」と 呼ぶ
 旗は まだ 僕の 色を 染めている
-僕だけ 知っている 中身の 空っぽ
-希望 など どこにも ない
+僕だけ 知っている 勇気が どこにも ない
+空っぽの 胸 だけが 音を 立てる
 
 [Pre-Chorus]
-嘘を つく 方が 楽なのに
-皆の 夢を 背負う 体が まだ 動く
+勝て とは もう 言わない
+負けろ とも 言わない
+探せ だけが 残っている
 
 [Chorus]
-希望など ない 希望など ない
-それでも 夜明けは 来る 来る 来る
-止められない から 苦しい
-希望が ない まま 生きる 方が 苦しい
+勇気を 探して 勇気を 探して
+地図に ない 路地を 歩く
+龍は まだ 空に いる それでも
+立ち上がる 理由 だけを 探している
+
+勇気を 探して 名前 では ない
+「勇者」 という 重さ では ない
+小さな 一歩 を 取り戻す ため
+僕は 今夜 ここを 探している
 
 [Verse 2]
-龍は まだ 空に いる
-僕は まだ ここに いる
-勝てない ことは もう わかった
-それでも 呼ばれる 勇者 という 名前
+剣は 折れた 仲間は 帰らない
+それでも 村の 子供が 僕を 見ている
+何を 探している か 自分 も わからない
+ただ 探す こと だけが 僕を 動かす
 
 [Bridge]
-（弦 だけ）
-「信じろ」 誰かが 言う
-信じたい 気持ち すら 見つからない
+（弦）
+十二時 七分 という 名前を 聞いた
+時計が 止まる 場所 がある と
 
 [Final Chorus]
-希望など ない……（同前 · 声 震える）
+勇気を 探して……（同前 · 声 少し 稳）
 
 [Outro]
 （ピアノ）
-ない
-（長い フェード）
+探して
+（フェード）
 ```
 
 ---
 
-## Track 04 — 十二時七分 (Jūni-ji Nanafun)
+## Track 04 — 十二時七分 (Jūni-ji Nanafun) · 在 1207 找勇氣
 
-**Type:** Male vocal · ~3:30 · 68 BPM · finds the bar
+**Type:** Male vocal · ~3:30 · 68 BPM
 
 ### Mureka Style
 
 ```text
 Original Japanese cinematic ambient ballad, 68 BPM, 4/4, around 3 minutes 30 seconds.
-Same young Japanese male vocal, softer than track 3, bar discovery mood.
-Felt piano, warm strings, very subtle vinyl crackle, amber mood, clock tick soft far away.
-Rain on window texture. Twelve-O-Seven time pause feeling. Japanese lyrics clear.
-No city pop, no EP04 harp meditation, no cheerful tone.
+Same male vocal, bar discovery, searching for courage at Twelve-O-Seven mood.
+Felt piano, warm strings, clock tick soft, amber bar, rain window. Japanese clear.
 ```
 
 ### 歌詞 Lyrics
@@ -277,18 +274,24 @@ No city pop, no EP04 harp meditation, no cheerful tone.
 [Pre-Chorus]
 ここでは 龍の 話を しなくていい
 勇者と 呼ばなくて いい
+ただ 座って 探していい
 
 [Chorus]
-十二時 七分 世界が 止まる
-僕は ただ 座る それだけ
+十二時 七分 勇気を 探す 場所
+世界が 止まる その 隙間に
 琥珀の 灯り 瓶の 教会
-勝利 も 希望 も 求めない 夜
+勝利 も 奇跡 も 求めない 夜
+
+十二時 七分 僕は ここに 来た
+折れた 剣 も その まま
+勇気 だけが まだ 見つからない
+だから ここで 探す 十二時 七分
 
 [Verse 2]
 レコードが ゆっくり 回る
 戦いの 音 遠ざかる
 バーテンは 何も 言わない
-それが 一番 救い だった
+それが 一番 近い 勇気 だった
 
 [Outro]
 十二
@@ -300,15 +303,14 @@ No city pop, no EP04 harp meditation, no cheerful tone.
 
 ## Track 05 — 折れた剣 (Oreta Ken)
 
-**Type:** Male vocal · ~3:45 · 64 BPM · broken sword meditation
+**Type:** Male vocal · ~3:45 · 64 BPM
 
 ### Mureka Style
 
 ```text
 Original Japanese slow cinematic ballad, 64 BPM, 4/4, around 3 minutes 45 seconds.
-Same young Japanese male vocal, quiet intimate verses, koto and piano main, strings swell gentle.
-Broken sword theme, sitting with failure, not fixing yet. Bar interior mood, amber light.
-Japanese clear. No rock drums, no battle energy, no EP03 sleep ambient female vocal.
+Same male vocal, broken sword theme, courage is not the blade. Koto and piano, bar interior.
+Japanese clear. No battle drums.
 ```
 
 ### 歌詞 Lyrics
@@ -321,7 +323,7 @@ Japanese clear. No rock drums, no battle energy, no EP03 sleep ambient female vo
 腰に 残る 折れた 剣
 磨けば 直る と 言われた
 直しても 折れた 夜は 消えない
-僕の 中 まだ 燃えている
+勇気は 剣の 中 に ある と 思っていた
 
 [Pre-Chorus]
 英雄は 倒れない と 書いてある
@@ -329,106 +331,98 @@ Japanese clear. No rock drums, no battle energy, no EP03 sleep ambient female vo
 
 [Chorus]
 折れた 剣 折れた 誓い
+勇気は 刃に ない かも しれない
 それでも 手放せない
 名前 だけが まだ 重い
-希望 など ない まま 持つ 重さ
 
 [Verse 2]
 バーの カウンターに 置いた 刃
 灯りが 亀裂を 優しく 見せた
-バーテンは 直せ とも 捨てろ とも 言わない
+バーテンは 「探せ」 とも 「諦めろ」 とも 言わない
+ただ 十二時 七分 が 続く
 
 [Outro]
 （箏と ピアノ）
-折れた まま
+折れた まま 探す
 （フェード）
 ```
 
 ---
 
-## Track 06 — それでも歩く (Soredemo Aruku) — Closing
+## Track 06 — 勇気の在処 (Yuuki no Arika) · 勇氣所在 — Closing
 
-**Type:** Male vocal · ~4:10 · 80 BPM · not victory — still walking
+**Type:** Male vocal · ~4:10 · 80 BPM
 
 ### Mureka Style
 
 ```text
 Original Japanese cinematic closing ballad, 80 BPM, 4/4, around 4 minutes 10 seconds.
-Same young Japanese male vocal, bittersweet not triumphant. Orchestra builds modestly, taiko soft,
-electric guitar restrained, hope is NOT restored explicitly — walking anyway mood.
-Final 30 seconds instrumental fade strings and rain. Japanese clear.
-No victory fanfare, no major key explosion, no EP02 city pop.
+Same male vocal, finds where courage lives — quiet not triumphant. Orchestra modest swell.
+Not dragon victory — courage to walk on. Final 30s instrumental fade. Japanese clear.
 ```
 
 ### 歌詞 Lyrics
 
 ```
 [Verse 1]
-希望は まだ ない 龍は まだ いる
-それは 変わらない 朝が 来ても
-でも この 扉を 出る 時
-足は 一歩 前を 向いていた
+龍は まだ 空に いる それは 変わらない
+剣は まだ 折れた まま だ
+でも 十二時 七分 で わかった こと がある
+勇気は 勝つ こと じゃ ない
 
 [Pre-Chorus]
 勝て とは 言われなかった
-行け とも 言われなかった
-「歩け」 さえ ない 静けさ だけ
+倒れ とも 言われなかった
+「ここに いていい」 だけ だった
 
 [Chorus]
-それでも 歩く 希望 なく 歩く
-英雄 では ない ただの 僕 として
-遙かの 王国 まだ 燃えている
-行く 理由 も ない まま 行く
+勇気の 在処 ここ に あった
+時計が 止まる 部屋 の 中
+琥珀の 灯り 静かな レコード
+僕は まだ 英雄 じゃ ない かも しれない
+でも 立つ 勇気 だけ 見つけた
+
+勇気の 在処 名前 じゃ ない
+奇跡 じゃ ない 十二時 七分
+扉を 出る 時 足が 前を 向いた
+それが 今夜 見つけた 勇気
 
 [Verse 2]
-十二時 七分 振り返らない
-時計 より 自分 だけ 遅い から
-雨 また 降る 龍 また いる
-それでも 歩く それが 今夜 選んだ こと
+村は まだ 遠い 龍 も まだ いる
+それでも 歩く 折れた 剣 を 持って
+探し 続ける 勇気 を 胸 に
 
 [Final Chorus]
-それでも 歩く……（同前 · 声 穏やか）
+勇気の 在処……（同前 · 声 穏やかに 強く）
 
 [Outro]
 （オーケストラ 30秒 フェード · 雨）
-歩く
+十二時 七分
 ```
 
 ---
 
 ## Mureka Order
 
-1. **希望などない** (voice anchor — most emotional) → 2. **それでも歩く** → 3. **遙かの王国**  
+1. **勇気を探して** (voice anchor) → 2. **勇気の在処** → 3. **遙かの王国**  
 4. **龍の影** → 5. **十二時七分** → 6. **折れた剣**
 
-**Voice lock line for all tracks:**  
-`Same young Japanese male vocal as track 3, clear tenor, cinematic ballad, tired hero tone.`
+**Voice lock:** `Same young Japanese male vocal as track 3, clear tenor, cinematic ballad, searching for courage tone.`
 
 ---
 
-## Film Assets (to generate)
+## Film Assets
 
 | File | Beat |
 |------|------|
 | `ep05_character_haruto_ren.png` | Hero character lock |
-| `ep05_scene_01_dragon_battle.png` | 龍の影 · flashback battle |
-| `ep05_scene_02_no_hope_rain.png` | 希望などない · rain alone |
-| `ep05_scene_03_bar_1207.png` | 十二時七分 · enters bar |
-| `ep05_scene_04_broken_sword.png` | 折れた剣 · sword on counter |
-| `ep05_scene_05_walking_away.png` | それでも歩く · leaving |
+| `ep05_scene_01_dragon_battle_v2.png` | 龍の影 · defeat |
+| `ep05_scene_06–08` | Dragon fight extended |
+| `ep05_scene_02_no_hope_rain.png` | 勇気を探して · rain search |
+| `ep05_scene_03_bar_1207.png` | **十二時七分 · 找勇氣** |
+| `ep05_scene_04_broken_sword.png` | 折れた剣 |
+| `ep05_scene_05_walking_away.png` | 勇気の在処 · leaving with courage |
 | `ep05_film_cover_poster.png` | YouTube cover |
-
----
-
-## vs EP01–EP04
-
-| | EP04 | EP05 |
-|---|------|------|
-| Language | English | **Japanese** |
-| Theme | Meditation luxury | **Fantasy hero · dragon · no hope** |
-| Guest | Clara · wellness | **Haruto Ren · 勇者** |
-| Vocal | Female soft English | **Male Japanese cinematic** |
-| World | Real rain city | **遙かの王国 · distant kingdom** |
 
 ---
 
@@ -436,10 +430,20 @@ No victory fanfare, no major key explosion, no EP02 city pop.
 
 | File | Purpose |
 |------|---------|
-| `ep05_30sec_narration_ja.md` | Japanese intro narration |
-| `ep05_20sec_video_prompt_split.md` | Flova 10s × 3 prompts |
+| `ep05_30sec_narration_ja.md` | Japanese intro |
+| `ep05_30sec_narration_zh.md` | **中文 · 勇者找勇氣** |
+| `ep05_20sec_video_prompt_split.md` | Flova prompts |
 | `ep05_youtube_title_description.md` | Upload copy |
 
 ---
 
-*Bar Twelve-O-Seven · EP05 · 12:07 時空酒吧*
+## vs EP01–EP04
+
+| | EP04 | EP05 |
+|---|------|------|
+| Theme | Meditation | **勇者找勇氣 · dragon · 12:07** |
+| Core | Be present | **Search for courage at the bar** |
+
+---
+
+*Bar Twelve-O-Seven · EP05 · 勇者找勇氣 · 12:07 時空酒吧*

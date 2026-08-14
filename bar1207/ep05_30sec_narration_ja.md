@@ -1,78 +1,53 @@
 # EP05 — 30 Second Japanese Narration
 
-**Character:** 遥斗 蓮 Haruto Ren — 勇者 from 遙かの王国  
-**Duration:** ~28–32 seconds · **Tone:** Quiet, exhausted, no performance of bravery  
+**Character:** 遥斗 蓮 — 勇者 · **勇気を探しに来た**  
+**Duration:** ~28–32 s · **Tone:** Quiet search · not hype  
 
 ---
 
-## 旁白正文（日本語 · 哲思版）
+## 旁白正文（日本語）
 
 ```
 遙かの王国——子供の地図にだけ、ある国。
-十六で僕は「勇者」と呼ばれた。
-龍を倒せ、と。皆が信じた。
+十六で僕は「勇者」と呼ばれた。龍を倒せ、と。
 
 先週、空は燃えた。剣は折れた。仲間は戻らない。
 村はまだ「勇者様」と呼ぶ。
-僕だけ、希望などない。
+僕だけ、勇気をどこに落としたか知っている。
+
+希望がない、だけじゃない。
+立ち上がる理由を、探している。
 
 雨の路地に、看板のない扉。
 中の時計は、十二時七分——遅くも早くもない。
 
 ここでは、勝たなくていい。
-希望がなくても、座っていい。
+英雄を演じなくていい。
+僕は、勇気を探しに来た。
 ```
 
 ---
 
-## Cantonese / 中文大意（給你參考）
+## 中文大意
 
 ```
-遙遠嘅王國——只喺細路地圖先有嘅國度。
-十六歲嗰陣，人哋叫我「勇者」。
-去殺龍，人人都信我可以。
-
-上星期，天燒起，劍斷咗，同伴冇返嚟。
-村里仍然叫我勇者。
-得我一個，覺得冇希望。
-
-雨巷有扇冇招牌嘅門。
-入面時鐘停喺十二點七分——唔遲唔早。
-
-喺度，唔使贏。
-冇希望，都可以坐低。
+遙遠嘅王國。十六歲做勇者，去殺龍。
+上星期輸咗。劍斷，同伴冇返。
+村里仲叫我勇者——得我知道，勇氣唔見咗。
+我嚟十二時七分，搵勇氣。
+唔使贏。唔使扮。勇者找勇氣。
 ```
 
 ---
 
-## Split for Three 10-Second Video Parts
+## Split · 10s × 3
 
-### Part A (0–10 s · Kingdom memory / dragon fire)
-> 遙かの王国——子供の地図にだけ、ある国。  
-> 十六で僕は「勇者」と呼ばれた。龍を倒せ、と。皆が信じた。
+**Part A：** 王国 · 勇者 · 龍 · 負けた  
+**Part B：** 勇気を落とした · 探している · 十二時七分  
+**Part C：** 勝たなくていい · 勇気を探しに来た  
 
-### Part B (10–20 s · Defeat / no hope)
-> 先週、空は燃えた。剣は折れた。仲間は戻らない。  
-> 村はまだ「勇者様」と呼ぶ。僕だけ、希望などない。
-
-### Part C (20–30 s · Bar 12:07)
-> 雨の路地に、看板のない扉。中の時計は、十二時七分——遅くも早くもない。  
-> ここでは、勝たなくていい。希望がなくても、座っていい。
+**TTS:** `Japanese male, early 20s, tired hero searching for courage, quiet monologue, clear pronunciation, close mic, not anime hype.`
 
 ---
 
-## Delivery Notes
-
-| Item | Guide |
-|------|-------|
-| Language | Japanese · clear · young male |
-| Pace | Slow · each sentence lands heavy |
-| Emphasis | *希望などない* · *十二時七分* · *勝たなくていい* |
-| Avoid | Shonen scream, cheerful tone, anime narrator hype |
-
-**TTS prompt:**  
-`Japanese male, early 20s, tired heroic monologue, cinematic fantasy drama, quiet despair not angry, clear pronunciation, close mic, literary tone, not anime hype voice.`
-
----
-
-*Bar Twelve-O-Seven · EP05*
+*Bar Twelve-O-Seven · EP05 · 勇者找勇氣*

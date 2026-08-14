@@ -1,105 +1,97 @@
-# EP05 YouTube — Title & Description
+# EP05 YouTube — 影片標題與描述
 
 ---
 
-## Title (recommended)
+## 推薦標題
 
 ```
-【1 Hour】Japanese Fantasy Ballad | 希望などない勇者 | 12:07 Bar EP05 | Dragon · Hero · No Hope
-```
-
-**Japanese search:**
-```
-【1時間】日本語 ファンタジー バラード | 勇者 ドラゴン | 12:07 時空酒吧 EP05 | 希望などない
+【1小時】Japanese Fantasy Ballad｜勇者找勇氣｜12:07 時空酒吧 EP05｜龍 · 勇者 · 在酒吧找勇氣
 ```
 
 **Short:**
 ```
-12:07 Bar EP05 | 希望などない勇者 | Japanese Cinematic Ballad | Dragon Hero
+12:07 時空酒吧 EP05｜勇者找勇氣｜Japanese Hero · Dragon · Courage at 12:07
 ```
 
 ---
 
-## Description (paste into YouTube)
+## 影片描述（直接貼 YouTube）
 
 ```
-⚔️ 12:07 Bar · Bar Twelve-O-Seven · 12:07 時空酒吧
-EP05《希望などない勇者》· Full album · ~1 hour · **Japanese fantasy ballad**
+🕛 12:07 時空酒吧 · Bar Twelve-O-Seven
+EP05《勇者找勇氣》· 完整專輯影片 · 約 1 小時
 
-遙かの王国——a kingdom only on children's maps.
-At sixteen he was named 勇者 (the Hero): slay the dragon, save the stars.
+遙遠的王國，十六歲的勇者，誓要殺龍。
+上星期，天烧起来——剑断了，同伴没有回来。
+村里仍然叫他勇者，只有他知道：**勇气丢在了那场龙火里。**
 
-He ran toward the fire. He lost. The sword cracked. His friends did not return.
-The village still calls him hero. **He alone has no hope.**
+不是来找胜利，不是来找奇迹。
+雨夜，他走进一条地图上没有的巷，
+推开没有招牌的门；时钟停在**十二时七分**。
+在这里，不必赢，不必假装——**只需找勇气。**
 
-Rain. A door with no sign. A clock frozen at **12:07**.
-Here, he doesn't have to win. Here, he can sit without pretending.
-
-🎧 For: Japanese music · Fantasy · JRPG mood · Melancholy · Study · Night drive · Emotional
-🎵 Style: Japanese male vocal · Cinematic ballad · Orchestra · Taiko · Koto · Restrained J-rock
-🎬 Visual: Live-action fantasy × vintage Hong Kong cinema · Rain · Armor · Amber bar
-
-━━━━━━━━━━━━━━━━━━━━
-📀 Tracklist · 曲目
-
-00:00:00 01 遙かの王国 Haruka no Ōkoku · From the Distant Kingdom
-00:03:50 02 龍の影 Ryū no Kage · Shadow of the Dragon
-00:07:30 03 希望などない Kibō nado Nai · There Is No Hope
-00:11:30 04 十二時七分 Jūni-ji Nanafun · Twelve Seven
-00:15:00 05 折れた剣 Oreta Ken · Broken Sword
-00:18:45 06 それでも歩く Soredemo Aruku · Still I Walk
-
-⏱ Timestamps are estimates — adjust after Mureka final masters.
+🎧 適合：Japanese Music · Fantasy · JRPG · 深夜 · Study · 情感 · 勇者 · 龙
+🎵 風格：Japanese Cinematic Ballad / Orchestra · Taiko · 男声日语
+🎬 視覺：Live-action Fantasy × Vintage Hong Kong Cinema · 雨 · 盔甲 · 琥珀酒吧
 
 ━━━━━━━━━━━━━━━━━━━━
-🌃 12:07 Bar · Five worlds
+📀 曲目列表 Tracklist
 
-Every guest from a different decade — or a different kingdom.
-The clock is always 12:07.
+00:00:00 00
+00:00:38 01 遙かの王国 · 遙遠的王國
+00:04:28 02 龍の影 · 龍之影
+00:08:08 03 勇気を探して · 找勇氣
+00:12:08 04 十二時七分 · 在 1207 找勇氣
+00:15:38 05 折れた剣 · 折斷的劍
+00:19:23 06 勇気の在処 · 勇氣所在
+00:23:33 Loop
 
-EP01 · 1950s Shanghai rainy jazz (Mandarin)
-EP02 · 1996 City Pop night drive (Mandarin)
-EP03 · 2018 sleepless ambient (Mandarin)
-EP04 · English meditation · Be Still
-EP05 · **Japanese fantasy · 希望などない勇者**
-
-Subscribe · Bell on
-
-━━━━━━━━━━━━━━━━━━━━
-⚔️ Story note
-
-This EP is about a hero who **fights the dragon and feels no hope** — not a victory arc,
-but the night he is allowed to stop pretending. The bar does not fix him. It lets him rest.
+⏱ 時間戳為預估，上傳前請按 Mureka 實際音檔長度調整。
 
 ━━━━━━━━━━━━━━━━━━━━
-🤖 AI disclosure
+🌃 12:07 時空酒吧
 
-Music generated with AI tools (Mureka) with human lyrics, curation, editing, and channel direction.
+EP01–EP04 之後 · EP05 · **勇者找勇氣**
+每位客人來自不同年代——或不同王國。
+牆上的時鐘永遠停在午夜 12:07。
 
-━━━━━━━━━━━━━━━━━━━━
-Tags
-
-#JapaneseMusic #JPop #FantasyMusic #Dragon #Hero #Yuusha #12:07Bar
-#Cinematic #Ballad #AIMusic #JRPG #AnimeMusic #希望などない
+訂閱 · 開啟小鈴鐺 · 下一集不錯過
 
 ━━━━━━━━━━━━━━━━━━━━
+⚔️ 故事說明
 
-⚔️ 希望などない。それでも、歩く。
+勇者打龍輸了，勇氣也碎了。
+他來 12:07 時空酒吧，**不是找希望，是找勇氣**——
+那種劍折了也能再站起來的、很小的勇氣。
+結局不是屠龍勝利，是在十二時七分，找到勇氣所在。
+
+━━━━━━━━━━━━━━━━━━━━
+🤖 AI 內容披露
+
+本影片音樂部分由 AI 音樂工具（Mureka）協助生成，
+歌詞、編曲方向、選曲、影片剪輯與頻道策劃由創作者人工完成與策展。
+
+━━━━━━━━━━━━━━━━━━━━
+🔖 標籤 Tags
+
+#12:07時空酒吧 #勇者找勇氣 #JapaneseMusic #Fantasy #Dragon #Hero
+#Yuusha #JRPG #Cinematic #Ballad #AI音樂 #十二時七分 #勇気
+
+━━━━━━━━━━━━━━━━━━━━
+
+⚔️ 十二時七分。勇者找勇氣。
 
 Bar Twelve-O-Seven · 12:07 時空酒吧
 ```
 
 ---
 
-## Thumbnail Text Overlay
+## 封面字幕
 
-**Line 1 (large gold):** `12.07`  
-**Line 2:** `希望などない勇者`  
-**Line 3 (small):** `JAPANESE · DRAGON · HERO`  
-**Bottom left:** `12:07 時空酒吧` · **Bottom right:** `BAR TWELVE-O-SEVEN`  
-
-Use `ep05_film_cover_poster.png` — no black bars.
+**Line 1（大字金）：** `12.07`  
+**Line 2：** `勇者找勇氣`  
+**Line 3（小）：** `JAPANESE · DRAGON · COURAGE AT 12:07`  
 
 ---
 
-*Bar Twelve-O-Seven · EP05*
+*Bar Twelve-O-Seven · EP05 · 勇者找勇氣*
