@@ -432,6 +432,7 @@ Not dragon victory — courage to walk on. Final 30s instrumental fade. Japanese
 |------|---------|
 | `ep05_30sec_narration_ja.md` | Japanese intro |
 | `ep05_30sec_narration_zh.md` | **中文 · 勇者找勇氣** |
+| `ep05_elevenlabs_voice_design.md` | **Voice prompts · ElevenLabs + Mureka** |
 | `ep05_20sec_video_prompt_split.md` | Flova prompts |
 | `ep05_youtube_title_description.md` | Upload copy |
 
