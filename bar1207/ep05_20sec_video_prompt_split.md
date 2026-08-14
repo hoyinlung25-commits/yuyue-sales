@@ -98,7 +98,7 @@ NEGATIVE: bartender lecture, cheering, anime glow, armor off, face morph.
 
 1. Part A (flashback) → Part B (rain) → Part C (bar)  
 2. Lay Japanese narration from `ep05_30sec_narration_ja.md`  
-3. Fade to Track 01 or 03 · title: **遙かの王国** or **希望などない**  
+3. Fade to Track 03 **勇気を探して** or Track 04 **十二時七分** · title card: **勇者找勇氣**  
 
 **On-screen text:** Top-left `12:07 時空酒吧` · Bottom-large song title · no black bars  
 
