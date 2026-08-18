@@ -15,22 +15,23 @@
 ## GLOBAL LOCK · 全片視覺鎖定
 
 ```text
-Live-action vintage Hong Kong cinema film still ONLY.
-35mm film grain, cinematic neo-noir lighting, Wong Kar-wai mood.
-Twelve-O-Seven bar: amber interior glow, wooden bar, old bottles, rain window.
+手繪日式奇幻動畫電影感 — hand-drawn Japanese fantasy animation film style.
+Watercolor painterly backgrounds, soft cel-shading, Ghibli × Shinkai cinematic mood.
+Twelve-O-Seven bar: warm amber glow, wooden bar, old bottles, rain window.
 Clock ALWAYS frozen at 12:07 on wall.
-NOT anime, NOT cartoon, NOT 3D, NOT illustration, NOT CGI fantasy glow.
+NO text overlays on song background scenes — no track numbers, no titles on frame.
+NOT live-action photo, NOT 3D CGI, NOT chibi, NOT western cartoon, NOT Hong Kong noir.
 
 Aster lock: ep08_character_aster.png
-East Asian luminous youth age 14-16, dark messy hair, subtle golden sparkles in hair,
-sincere boyish face, simple dark jacket — NOT angel wings, NOT devil, NOT cartoon star.
+East Asian luminous youth age 14-16, dark messy hair, subtle golden starlight in hair,
+sincere gentle eyes, soft glow — NOT angel wings, NOT devil, NOT chibi.
 
 Mira lock: ep08_character_mira.png
 East Asian girl age 17, short dark hair, gray wool coat, canvas tote bag,
 head down in rain, quiet despair — NOT melodrama tears, NOT fashion model pose.
 ```
 
-**Use character refs on every scene generation.** Same person, same cinema style.
+**Use character refs on every scene generation.** Same person, same 手繪日式奇幻動畫 style.
 
 ---
 
